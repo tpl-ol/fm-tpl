@@ -1,0 +1,57 @@
+# es2017.sharedmemory.tpld.toml
+tpl-spec = "0.1.0"
+from = "ts"
+to = "zh_CN"
+
+type = "lib"
+# lib.es2017.sharedmemory.d.ts
+
+dep = [
+  "./es2015.symbol",
+  "./es2015.symbol.wellknown",
+]
+
+
+# 全局
+[[d]]
+scope = ""
+[d.d]
+SharedArrayBuffer = "共享数组存储"
+Atomics = "原子"
+
+
+[[d]]
+scope = "SharedArrayBuffer"
+to = "共享数组存储"
+[d.d]
+byteLength = "字节长度"
+"slice()" = "切片()"
+
+[[d]]
+scope = "SharedArrayBufferConstructor"
+to = "共享数组存储构造器"
+[d.d]
+prototype = "原型"
+"new()" = "新()"
+
+[[d]]
+scope = "ArrayBufferTypes"
+to = "数组存储类型"
+[d.d]
+SharedArrayBuffer = "共享数组存储"
+
+[[d]]
+scope = "Atomics"
+to = "原子"
+[d.d]
+"add()" = "加()"
+"compareExchange()" = "比交换()"
+"exchange()" = "交换()"
+"isLockFree()" = "无锁()"
+"load()" = "加载()"
+"or()" = "或()"
+"store()" = "存储()"
+"sub()" = "减()"
+"wait()" = "等()"
+"notify()" = "通知()"
+"xor()" = "异或()"

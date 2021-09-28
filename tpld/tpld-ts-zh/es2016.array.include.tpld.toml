@@ -1,0 +1,13 @@
+# es2016.array.include.tpld.toml
+tpl-spec = "0.1.0"
+from = "ts"
+to = "zh_CN"
+
+type = "lib"
+# lib.es2016.array.include.d.ts
+
+
+[[d]]
+scope = ["Array", "ReadonlyArray", "Int8Array", "Uint8Array", "Uint8ClampedArray", "Int16Array", "Uint16Array", "Int32Array", "Uint32Array", "Float32Array", "Float64Array"]
+[d.d]
+"includes()" = "包含()"

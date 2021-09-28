@@ -1,0 +1,54 @@
+# tpld-toml-tpld-zh.tpld.toml
+# 替语言自举
+
+tpl-spec = "0.1.0"
+
+from = "toml"
+# 简体中文 (中国)
+to = "zh_CN"
+
+type = "lib:tpld"
+
+[[d]]
+type = "tpl"
+[d.d]
+tpl = "替"
+filename = "文件名"
+file-ext = ".替"
+
+[[d]]
+type = "keyword"
+[d.d]
+false = "假"
+true = "真"
+nan = "非数"
+inf = "无穷"
+
+[[d]]
+scope = ""
+[d.d]
+tpl-spec = "替语言规范"
+from = "从"
+to = "至"
+dep = "依赖"
+type = "类型"
+scope = "范围"
+d = "定"
+
+[[d]]
+scope = "*.d"
+to = "定"
+[d.d]
+scope = "范围"
+from = "从"
+to = "至"
+
+[[d]]
+scope = ["type", "d.type"]
+[d.d]
+keyword = "关键字"
+type = "类型"
+"/$lib/" = "库"
+tpl = "替语言"
+
+#

@@ -1,0 +1,16 @@
+# es2017.tpld.toml
+tpl-spec = "0.1.0"
+from = "ts"
+to = "zh_CN"
+
+type = "lib"
+# lib.es2017.d.ts
+
+dep = [
+  "./es2016",
+  "./es2017.object",
+  "./es2017.sharedmemory",
+  "./es2017.string",
+  "./es2017.typedarrays",
+  "./intl/es2017.intl",
+]

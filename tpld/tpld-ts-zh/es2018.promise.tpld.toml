@@ -1,0 +1,14 @@
+# es2018.promise.tpld.toml
+tpl-spec = "0.1.0"
+from = "ts"
+to = "zh_CN"
+
+type = "lib"
+# lib.es2018.promise.d.ts
+
+
+[[d]]
+scope = "Promise"
+to = "许诺"
+[d.d]
+"finally()" = "最后()"

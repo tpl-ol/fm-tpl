@@ -1,0 +1,628 @@
+# es5.tpld.toml
+tpl-spec = "0.1.0"
+from = "ts"
+to = "zh_CN"
+
+# 标准库
+type = "lib"
+# lib.es5.d.ts
+
+dep = [
+  "./intl/es5.intl",
+]
+
+# 全局定义
+[[d]]
+scope = ""
+[d.d]
+NaN = "非数"
+Infinity = "无穷"
+# 拒绝翻译
+#eval()
+"parseInt()" = "解析整数()"
+"parseFloat()" = "解析实数()"
+"isNaN()" = "是非数()"
+"isFinite()" = "是有限数()"
+"decodeURI()" = "解码URI()"
+"decodeURIComponent()" = "解码URI组分()"
+"encodeURI()" = "编码URI()"
+"encodeURIComponent()" = "编码URI组分()"
+"escape()" = "转义()"
+"unescape()" = "去转义()"
+
+Object = "物类"
+Function = "函数"
+String = "字符串"
+Boolean = "布尔"
+Number = "数字"
+Math = "数学"
+Date = "日期"
+RegExp = "正则"
+#JSON
+
+# Error
+Error = "错误"
+EvalError = "执行错误"
+RangeError = "范围错误"
+ReferenceError = "引用错误"
+SyntaxError = "符号错误"
+TypeError = "类型错误"
+URIError = "URI错误"
+
+Array = "数组"
+ArrayBuffer = "数组存储"
+DataView = "数据视图"
+Int8Array = "i8数组"
+Uint8Array = "u8数组"
+Uint8ClampedArray = "u8夹数组"
+Int16Array = "i16数组"
+Uint16Array = "u16数组"
+Int32Array = "i32数组"
+Uint32Array = "u32数组"
+Float32Array = "f32数组"
+Float64Array = "f64数组"
+
+## 全局定义 结束
+
+# type
+[[d]]
+scope = "type:"
+[d.d]
+PropertyKey = "属性键"
+PropertyDescriptorMap = "属性描述符映射"
+ThisParameterType = "这参数类型"
+OmitThisParameter = "无这参数"
+ClassDecorator = "类装饰器"
+PropertyDecorator = "属性装饰器"
+MethodDecorator = "方法装饰器"
+ParameterDecorator = "参数装饰器"
+PromiseConstructorLike = "类似许诺构造器"
+
+Partial = "部分"
+Required = "强制"
+Readonly = "只读"
+Pick = "挑选"
+Record = "记录"
+Exclude = "排除"
+Extract = "提取"
+Omit = "省略"
+NonNullable = "不可空"
+Parameters = "参数们"
+ConstructorParameters = "构造器参数们"
+ReturnType = "返回类型"
+InstanceType = "实例类型"
+Uppercase = "大写"
+Lowercase = "小写"
+Capitalize = "首字母大写"
+Uncapitalize = "首字母小写"
+
+ArrayBufferLike = "类似数组存储"
+
+
+[[d]]
+scope = "Symbol"
+to = "符号类"
+[d.d]
+"toString()" = "至串()"
+"valueOf()" = "原始值()"
+
+[[d]]
+scope = "PropertyDescriptor"
+to = "属性描述符"
+[d.d]
+configurable = "可配置"
+enumerable = "可枚举"
+value = "值"
+writable = "可写"
+"get()" = "取()"
+"set()" = "设()"
+
+[[d]]
+scope = "Object"
+to = "物类"
+[d.d]
+" constructor" = "构造器"
+"toString()" = "至串()"
+"toLocaleString()" = "本地串()"
+"valueOf()" = "原始值()"
+"hasOwnProperty()" = "有自属性()"
+"isPrototypeOf()" = "是其原型()"
+"propertyIsEnumerable()" = "属性可枚举()"
+
+[[d]]
+scope = "ObjectConstructor"
+to = "物构造器"
+[d.d]
+"new()" = "新()"
+"prototype" = "原型"
+"getPrototypeOf()" = "取其原型()"
+"getOwnPropertyDescriptor()" = "取自属性描述符()"
+"getOwnPropertyNames()" = "取自属性名()"
+"create()" = "创建()"
+"defineProperty()" = "定义属性()"
+"defineProperties()" = "定义多个属性()"
+"seal()" = "密封()"
+"freeze()" = "冻结()"
+"preventExtensions()" = "阻止扩展()"
+"isSealed()" = "已密封()"
+"isFrozen()" = "已冻结()"
+"isExtensible()" = "可扩展()"
+"keys()" = "键们()"
+
+[[d]]
+scope = "Function"
+to = "函数"
+[d.d]
+"apply()" = "施用()"
+"call()" = "调用()"
+"bind()" = "绑定()"
+"toString()" = "至串()"
+prototype = "原型"
+length = "长度"
+arguments = "参数们"
+caller = "调用者"
+
+[[d]]
+scope = "FunctionConstructor"
+to = "函数构造器"
+[d.d]
+"new()" = "新()"
+prototype = "原型"
+
+[[d]]
+scope = "CallableFunction"
+to = "可调用函数"
+[d.d]
+"apply()" = "施用()"
+"call()" = "调用()"
+"bind()" = "绑定()"
+
+[[d]]
+scope = "NewableFunction"
+to = "可新函数"
+[d.d]
+"apply()" = "施用()"
+"call()" = "调用()"
+"bind()" = "绑定()"
+
+[[d]]
+scope = "IArguments"
+to = "参数们接口"
+[d.d]
+index = "下标"
+length = "长度"
+callee = "被调用者"
+
+[[d]]
+scope = "String"
+to = "字符串"
+[d.d]
+"toString()" = "至串()"
+"charAt()" = "字符在()"
+"charCodeAt()" = "字符码在()"
+"concat()" = "连接()"
+"indexOf()" = "找下标()"
+"lastIndexOf()" = "反找下标()"
+"localeCompare()" = "本地对比()"
+"match()" = "匹配()"
+"replace()" = "替换()"
+"search()" = "查找()"
+"slice()" = "切片()"
+"split()" = "分割()"
+"toLowerCase()" = "小写()"
+"toLocaleLowerCase()" = "本地小写()"
+"toUpperCase()" = "大写()"
+"toLocaleUpperCase()" = "本地大写()"
+"trim()" = "修剪()"
+length = "长度"
+"valueOf()" = "原始值()"
+index = "下标"
+
+[[d]]
+scope = "StringConstructor"
+to = "字符串构造器"
+[d.d]
+"new()" = "新()"
+prototype = "原型"
+"fromCharCode()" = "从字符码()"
+
+[[d]]
+scope = "Boolean"
+to = "布尔"
+[d.d]
+"valueOf()" = "原始值()"
+
+[[d]]
+scope = "BooleanConstructor"
+to = "布尔构造器"
+[d.d]
+"new()" = "新()"
+prototype = "原型"
+
+[[d]]
+scope = "Number"
+to = "数字"
+[d.d]
+"toString()" = "至串()"
+"toFixed()" = "至固定()"
+"toExponential()" = "至指数()"
+"toPrecision()" = "至精度()"
+"valueOf()" = "原始值()"
+
+[[d]]
+scope = "NumberConstructor"
+to = "数字构造器"
+[d.d]
+"new()" = "新()"
+prototype = "原型"
+MAX_VALUE = "最大值"
+MIN_VALUE = "最小值"
+NaN = "非数"
+NEGATIVE_INFINITY = "负无穷"
+POSITIVE_INFINITY = "正无穷"
+
+[[d]]
+scope = "TemplateStringsArray"
+to = "模板字符串数组"
+[d.d]
+raw = "原始"
+
+[[d]]
+scope = "ImportMeta"
+to = "导入元数据"
+
+[[d]]
+scope = "Math"
+to = "数学"
+[d.d]
+# 此部分翻译困难
+E = "自然常数"
+LN10 = "自然对数10"
+LN2 = "自然对数2"
+LOG2E = "对数2E"
+LOG10E = "对数10E"
+PI = "圆周率"
+SQRT1_2 = "开方1_2"
+SQRT2 = "开方2"
+"abs()" = "绝对值()"
+"acos()" = "反余弦()"
+"asin()" = "反正弦()"
+"atan()" = "反正切()"
+"atan2()" = "反正切2()"
+"ceil()" = "上取整()"
+"floor()" = "下取整()"
+"cos()" = "余弦()"
+"exp()" = "对数e()"
+"log()" = "对数()"
+"max()" = "最大()"
+"min()" = "最小()"
+"pow()" = "乘方()"
+"random()" = "随机()"
+"round()" = "取整()"
+"sin()" = "正弦()"
+"sqrt()" = "开方()"
+"tan()" = "正切()"
+
+[[d]]
+scope = "Date"
+to = "日期"
+[d.d]
+"toString()" = "至串()"
+"toDateString()" = "日期串()"
+"toTimeString()" = "时间串()"
+"toLocaleString()" = "本地串()"
+"toLocaleDateString()" = "本地日期串()"
+"toLocaleTimeString()" = "本地时间串()"
+"valueOf()" = "原始值()"
+"getTime()" = "时间()"
+"getFullYear()" = "年()"
+"getMonth()" = "月0()"
+"getDate()" = "日()"
+"getDay()" = "星期()"
+"getHours()" = "时()"
+"getMinutes()" = "分()"
+"getSeconds()" = "秒()"
+"getMilliseconds()" = "毫秒()"
+"getUTCFullYear()" = "UTC年()"
+"getUTCMonth()" = "UTC月0()"
+"getUTCDate()" = "UTC日()"
+"getUTCDay()" = "UTC星期()"
+"getUTCHours()" = "UTC时()"
+"getUTCMinutes()" = "UTC分()"
+"getUTCSeconds()" = "UTC秒()"
+"getUTCMilliseconds()" = "UTC毫秒()"
+"getTimezoneOffset()" = "时区偏移()"
+"setTime()" = "设时间()"
+"setMilliseconds()" = "设毫秒()"
+"setSeconds()" = "设秒()"
+"setMinutes()" = "设分()"
+"setHours()" = "设时()"
+"setDate()" = "设日()"
+"setMonth()" = "设月0()"
+"setFullYear()" = "设年()"
+"setUTCMilliseconds()" = "设UTC毫秒()"
+"setUTCSeconds()" = "设UTC秒()"
+"setUTCMinutes()" = "设UTC分()"
+"setUTCHours()" = "设UTC时()"
+"setUTCDate()" = "设UTC日()"
+"setUTCMonth()" = "设月0()"
+"setUTCFullYear()" = "设UTC年()"
+"toUTCString()" = "UTC串()"
+"toISOString()" = "ISO串()"
+"toJSON()" = "JSON()"
+
+[[d]]
+scope = "DateConstructor"
+to = "日期构造器"
+[d.d]
+"new()" = "新()"
+prototype = "原型"
+"parse()" = "解析()"
+#UTC()
+"now()" = "现在()"
+
+[[d]]
+scope = ["RegExpMatchArray", "RegExpExecArray"]
+to = ["正则表达式匹配数组", "正则表达式执行数组"]
+[d.d]
+index = "下标"
+input = "输入"
+
+[[d]]
+scope = "RegExp"
+to = "正则表达式"
+[d.d]
+"exec()" = "执行()"
+"test()" = "测试()"
+source = "源"
+global = "全局"
+ignoreCase = "忽略大小写"
+multiline = "多行"
+lastIndex = "最后下标"
+"compile()" = "编译()"
+
+[[d]]
+scope = "RegExpConstructor"
+to = "正则表达式构造器"
+[d.d]
+"new()" = "新()"
+prototype = "原型"
+#$1
+#$2
+#$3
+#$4
+#$5
+#$6
+#$7
+#$8
+#$9
+lastMatch = "最后匹配"
+
+[[d]]
+scope = "Error"
+to = "错误"
+[d.d]
+name = "名称"
+message = "消息"
+stack = "栈"
+
+[[d]]
+scope = "ErrorConstructor"
+to = "错误构造器"
+[d.d]
+"new()" = "新()"
+prototype = "原型"
+
+[[d]]
+scope = "JSON"
+[d.d]
+"parse()" = "解析()"
+"stringify()" = "序列化()"
+
+# Array
+
+[[d]]
+scope = "ReadonlyArray"
+to = "只读数组"
+[d.d]
+length = "长度"
+"toString()" = "至串()"
+"toLocaleString()" = "本地串()"
+"concat()" = "连接()"
+"join()" = "拼接()"
+"slice()" = "切片()"
+"indexOf()" = "找下标()"
+"lastIndexOf()" = "反找下标()"
+"every()" = "所有()"
+"some()" = "某些()"
+"forEach()" = "每个()"
+"map()" = "映射()"
+"filter()" = "过滤()"
+"reduce()" = "缩减()"
+"reduceRight()" = "右缩减()"
+n = "下标"
+
+[[d]]
+scope = "ConcatArray"
+to = "连接数组"
+[d.d]
+length = "长度"
+n = "下标"
+"join()" = "拼接()"
+"slice()" = "切片()"
+
+[[d]]
+scope = "Array"
+to = "数组"
+[d.d]
+length = "长度"
+"toString()" = "至串()"
+"toLocaleString()" = "本地串()"
+"pop()" = "出()"
+"push()" = "入()"
+"concat()" = "连接()"
+"join()" = "拼接()"
+"reverse()" = "逆序()"
+"shift()" = "去头()"
+"slice()" = "切片()"
+"sort()" = "排序()"
+"splice()" = "更换()"
+"unshift()" = "加头()"
+"indexOf()" = "找下标()"
+"lastIndexOf()" = "反找下标()"
+"every()" = "所有()"
+"some()" = "某些()"
+"forEach()" = "每个()"
+"map()" = "映射()"
+"filter()" = "过滤()"
+"reduce()" = "缩减()"
+"reduceRight()" = "右缩减()"
+n = "下标"
+
+[[d]]
+scope = "ArrayConstructor"
+to = "数组构造器"
+[d.d]
+"new()" = "新()"
+"isArray()" = "是数组()"
+prototype = "原型"
+
+[[d]]
+scope = "TypedPropertyDescriptor"
+to = "类型属性描述符"
+[d.d]
+enumerable = "可枚举"
+configurable = "可配置"
+writable = "可写"
+value = "值"
+"get()" = "取()"
+"set()" = "设()"
+
+# Promise
+
+[[d]]
+scope = "PromiseLike"
+to = "类似许诺"
+[d.d]
+"then()" = "然后()"
+
+[[d]]
+scope = "Promise"
+to = "许诺"
+[d.d]
+"then()" = "然后()"
+"catch()" = "捉()"
+
+[[d]]
+scope = "ArrayLike"
+to = "类似数组"
+[d.d]
+length = "长度"
+n = "下标"
+
+[[d]]
+scope = "ThisType"
+to = "这类型"
+
+[[d]]
+scope = "ArrayBuffer"
+to = "数组存储"
+[d.d]
+byteLength = "字节长度"
+"slice()" = "切片()"
+
+[[d]]
+scope = "ArrayBufferTypes"
+to = "数组存储类型"
+[d.d]
+ArrayBuffer = "数组存储"
+
+[[d]]
+scope = "ArrayBufferConstructor"
+to = "数组存储构造器"
+[d.d]
+prototype = "原型"
+"new()" = "新()"
+"isView()" = "是视图()"
+
+[[d]]
+scope = "ArrayBufferView"
+to = "数组存储视图"
+[d.d]
+buffer = "存储"
+byteLength = "字节长度"
+byteOffset = "字节偏移"
+
+[[d]]
+scope = "DataView"
+to = "数据视图"
+[d.d]
+buffer = "存储"
+byteLength = "字节长度"
+byteOffset = "字节偏移"
+"getFloat32()" = "取f32()"
+"getFloat64()" = "取f64()"
+"getInt8()" = "取i8()"
+"getInt16()" = "取i16()"
+"getInt32" = "取i32()"
+"getUint8()" = "取u8()"
+"getUint16()" = "取u16()"
+"getUint32()" = "取u32()"
+"setFloat32()" = "设f32()"
+"setFloat64()" = "设f64()"
+"setInt8()" = "设i8()"
+"setInt16()" = "设i16()"
+"setInt32" = "设i32()"
+"setUint8()" = "设u8()"
+"setUint16()" = "设u16()"
+"setUint32()" = "设u32()"
+
+[[d]]
+scope = "DataViewConstructor"
+to = "数据视图构造器"
+[d.d]
+prototype = "原型"
+"new()" = "新()"
+
+[[d]]
+scope = ["Int8Array", "Uint8Array", "Uint8ClampedArray", "Int16Array", "Uint16Array", "Int32Array", "Uint32Array", "Float32Array", "Float64Array"]
+to = ["i8数组", "u8数组", "u8夹数组", "i16数组", "u16数组", "i32数组", "u32数组", "f32数组", "f64数组"]
+[d.d]
+BYTES_PER_ELEMENT = "元素字节数"
+buffer = "存储"
+byteLength = "字节长度"
+byteOffset = "字节偏移"
+"copyWithin()" = "内部复制()"
+"every()" = "所有()"
+"fill()" = "填充()"
+"filter()" = "过滤()"
+"find()" = "查找()"
+"findIndex()" = "查找下标()"
+"forEach()" = "每个()"
+"indexOf()" = "找下标()"
+"join()" = "拼接()"
+"lastIndexOf()" = "反找下标()"
+length = "长度"
+"map()" = "映射()"
+"reduce()" = "缩减()"
+"reduceRight()" = "右缩减()"
+"reverse()" = "逆序()"
+"set()" = "设()"
+"slice()" = "切片()"
+"some()" = "某些()"
+"sort()" = "排序()"
+"subarray()" = "下级()"
+"toLocaleString()" = "本地串()"
+"toString()" = "至串()"
+"valueOf()" = "原始值()"
+index = "下标"
+
+[[d]]
+scope = ["Int8ArrayConstructor", "Uint8ArrayConstructor", "Uint8ClampedArrayConstructor", "Int16ArrayConstructor", "Uint16ArrayConstructor", "Int32ArrayConstructor", "Uint32ArrayConstructor", "Float32ArrayConstructor", "Float64ArrayConstructor"]
+to = ["i8数组构造器", "u8数组构造器", "u8夹数组构造器", "i16数组构造器", "u16数组构造器", "i32数组构造器", "u32数组构造器", "f32数组构造器", "f64数组构造器"]
+[d.d]
+prototype = "原型"
+"new()" = "新()"
+BYTES_PER_ELEMENT = "元素字节数"
+"of()" = "于()"
+"from()" = "从()"

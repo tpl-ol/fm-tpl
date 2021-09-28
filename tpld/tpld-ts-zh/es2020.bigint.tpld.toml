@@ -1,0 +1,118 @@
+# es2020.bigint.tpld.toml
+tpl-spec = "0.1.0"
+from = "ts"
+to = "zh_CN"
+
+type = "lib"
+# lib.es2020.bigint.d.ts
+
+
+# 全局
+[[d]]
+scope = ""
+[d.d]
+BigInt = "大整数类"
+BigInt64Array = "i64数组"
+BigUint64Array = "u64数组"
+
+
+[[d]]
+scope = "BigIntToLocaleStringOptions"
+to = "大整数至本地串选项"
+[d.d]
+localeMatcher = "本地匹配"
+style = "样式"
+numberingSystem = "编号系统"
+unit = "单位"
+unitDisplay = "单位显示"
+currency = "货币"
+currencyDisplay = "货币显示"
+useGrouping = "用分组"
+minimumIntegerDigites = "最小整数位数"
+minimumFractionDigits = "最小分数位数"
+maximumFractionDigits = "最大分数位数"
+minimumSignificantDigits = "最小有效位数"
+maximumSignificantDigits = "最大有效位数"
+notation = "记号"
+compactDisplay = "紧凑显示"
+
+[[d]]
+scope = "BigInt"
+to = "大整数类"
+[d.d]
+"toString()" = "至串()"
+"toLocaleString()" = "本地串()"
+"valueOf()" = "原始值()"
+
+[[d]]
+scope = "BigIntConstructor"
+to = "大整数构造器"
+[d.d]
+prototype = "原型"
+# 此处翻译困难
+"asIntN()" = "作iN()"
+"asUintN()" = "作uN()"
+
+[[d]]
+scope = ["BigInt64Array", "BigUint64Array"]
+to = ["i64数组", "u64数组"]
+[d.d]
+BYTES_PER_ELEMENT = "元素字节数"
+buffer = "存储"
+byteLength = "字节长度"
+byteOffset = "字节偏移"
+"copyWithin()" = "内部复制()"
+"entries()" = "条目()"
+"every()" = "所有()"
+"fill()" = "填充()"
+"filter()" = "过滤()"
+"find()" = "查找()"
+"findIndex()" = "查找下标()"
+"forEach()" = "每个()"
+"includes()" = "包含()"
+"indexOf()" = "找下标()"
+"join()" = "拼接()"
+"keys()" = "键们()"
+"lastIndexOf()" = "反找下标()"
+length = "长度"
+"map()" = "映射()"
+"reduce()" = "缩减()"
+"reduceRight()" = "右缩减()"
+"reverse()" = "逆序()"
+"set()" = "设()"
+"slice()" = "切片()"
+"some()" = "某些()"
+"sort()" = "排序()"
+"subarray()" = "下级()"
+"toLocaleString()" = "本地串()"
+"toString()" = "至串()"
+"valueOf()" = "原始值()"
+"values()" = "值们()"
+index = "下标"
+
+[[d]]
+scope = ["BigInt64ArrayConstructor", "BigUint64ArrayConstructor"]
+to = ["i64数组构造器", "u64数组构造器"]
+[d.d]
+prototype = "原型"
+"new()" = "新()"
+BYTES_PER_ELEMENT = "元素字节数"
+"of()" = "于()"
+"from()" = "从()"
+
+[[d]]
+scope = "DataView"
+to = "数据视图"
+[d.d]
+"getBigInt64()" = "取i64()"
+"getBigUint64()" = "取u64()"
+"setBigInt64()" = "设i64()"
+"setBigUint64()" = "设u64()"
+
+[[d]]
+scope = "Intl.NumberFormat"
+# TODO
+to = "数字格式"
+[d.d]
+"format()" = "格式化()"
+"resolvedOptions()" = "已解决选项()"

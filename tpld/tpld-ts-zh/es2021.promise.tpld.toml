@@ -1,0 +1,34 @@
+# es2021.promise.tpld.toml
+tpl-spec = "0.1.0"
+from = "ts"
+to = "zh_CN"
+
+type = "lib"
+# lib.es2021.promise.d.ts
+
+
+# 全局
+[[d]]
+scope = ""
+[d.d]
+AggregateError = "聚合错误"
+
+
+[[d]]
+scope = "AggregateError"
+to = "聚合错误"
+[d.d]
+errors = "错误"
+
+[[d]]
+scope = "AggregateErrorConstructor"
+to = "聚合错误构造器"
+[d.d]
+"new()" = "新()"
+prototype = "原型"
+
+[[d]]
+scope = "PromiseConstructor"
+to = "许诺构造器"
+[d.d]
+"any()" = "任意()"

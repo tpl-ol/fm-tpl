@@ -1,0 +1,242 @@
+# child_process.tpld.toml
+tpl-spec = "0.1.0"
+from = "ts"
+to = "zh_CN"
+
+type = "lib:node"
+# child_process.d.ts
+scope = "module:child_process"
+scope_to = "下级进程"
+
+# 全局
+[[d]]
+scope = ""
+[d.d]
+"spawn()" = "启动()"
+"exec()" = "执行()"
+"execFile()" = "执行文件()"
+"fork()" = "分叉()"
+"spawnSync()" = "同步启动()"
+"execSync()" = "同步执行()"
+"execFileSync()" = "同步执行文件()"
+
+[[d]]
+scope = "type:"
+[d.d]
+Serializable = "可序列化"
+SendHandle = "发送柄"
+IOType = "入出类型"
+StdioOptions = "标准入出选项"
+SerializationType = "序列化选项"
+StdioNull = "标准入出空"
+StdioPipeNamed = "标准入出命名管道"
+StdioPipe = "标准入出管道"
+ExecFileException = "执行文件例外"
+
+[[d]]
+scope = "ChildProcess"
+to = "下级进程类"
+[d.d]
+stdin = "标准输入"
+stdout = "标准输出"
+stderr = "标准错误"
+channel = "通道"
+stdio = "标准入出"
+killed = "已死"
+pid = "进程id"
+connected = "已连接"
+exitCode = "退出码"
+signalCode = "信号码"
+spawnargs = "启动参数"
+spawnfile = "启动文件"
+"kill()" = "杀()"
+"send()" = "发送()"
+"disconnect()" = "断开()"
+"unref()" = "消引用()"
+"ref()" = "引用()"
+"addListener()" = "加监听器"
+"emit()" = "发出()"
+"on()" = "之时()"
+"once()" = "一次()"
+"prependListener()" = "前置监听器()"
+"prependOnceListener()" = "前置一次监听器()"
+
+[[d]]
+scope = ["arg:ChildProcess.addListener:event", "arg:ChildProcess.emit:event", "arg:ChildProcess.on:event", "arg:ChildProcess.once:event", "arg:ChildProcess.prependListener:event", "arg:ChildProcess.prependOnceListener:event"]
+[d.d]
+close = "关闭"
+disconnect = "断开"
+error = "错误"
+exit = "退出"
+message = "消息"
+spawn = "启动"
+
+[[d]]
+scope = ["ChildProcessWithoutNullStreams", "ChildProcessByStdio"]
+to = ["下级进程无空流", "下级进程用标准入出"]
+[d.d]
+stdin = "标准输入"
+stdout = "标准输出"
+stderr = "标准错误"
+stdio = "标准入出"
+
+[[d]]
+scope = "MessageOptions"
+to = "消息选项"
+[d.d]
+keepOpen = "保持开"
+
+[[d]]
+scope = "MessagingOptions"
+to = "发消息选项"
+[d.d]
+serialization = "序列化"
+killSignal = "杀信号"
+timeout = "超时"
+
+[[d]]
+scope = "ProcessEnvOptions"
+to = "进程环境选项"
+[d.d]
+uid = "用户id"
+gid = "组id"
+cwd = "工作目录"
+env = "环境"
+
+[[d]]
+scope = "CommonOptions"
+to = "共用选项"
+[d.d]
+windowsHide = "windows隐藏"
+timeout = "超时"
+
+[[d]]
+scope = "CommonSpawnOptions"
+to = "共用启动选项"
+[d.d]
+argv0 = "参数0"
+stdio = "标准入出"
+shell = "壳"
+windowsVerbatimArguments = "windows逐字参数"
+
+[[d]]
+scope = "SpawnOptions"
+to = "启动选项"
+[d.d]
+detached = "分离"
+
+[[d]]
+scope = ["SpawnOptionsWithoutStdio", "SpawnOptionsWithStdioTuple"]
+to = ["启动选项无标准入出", "启动选项带标准入出元组"]
+[d.d]
+stdio = "标准入出"
+
+[[d]]
+scope = "ExecOptions"
+to = "执行选项"
+[d.d]
+shell = "壳"
+maxBuffer = "最大存储"
+killSignal = "杀信号"
+
+[[d]]
+scope = ["ExecOptionsWithStringEncoding", "ExecOptionsWithBufferEncoding"]
+to = ["执行选项带串编码", "执行选项带存储编码"]
+[d.d]
+encoding = "编码"
+
+[[d]]
+scope = "ExecException"
+to = "执行例外"
+[d.d]
+cmd = "命令"
+killed = "已死"
+code = "码"
+signal = "信号"
+
+[[d]]
+scope = "PromiseWithChild"
+to = "许诺带下级"
+[d.d]
+child = "下级"
+
+[[d]]
+scope = "ExecFileOptions"
+to = "执行文件选项"
+[d.d]
+maxBuffer = "最大存储"
+killSignal = "杀信号"
+windowsVerbatimArguments = "windows逐字参数"
+shell = "壳"
+signal = "信号"
+
+[[d]]
+scope = ["ExecFileOptionsWithStringEncoding", "ExecFileOptionsWithBufferEncoding", "ExecFileOptionsWithOtherEncoding"]
+to = ["执行文件选项带串编码", "执行文件选项带存储编码", "执行文件选项带别的编码"]
+[d.d]
+encoding = "编码"
+
+[[d]]
+scope = ["namespace:exec", "namespace:execFile"]
+to = ["执行", "执行文件"]
+[d.d]
+"__promisify__()" = "__许诺化__()"
+
+[[d]]
+scope = "ForkOptions"
+to = "分叉选项"
+[d.d]
+execPath = "执行路径"
+execArgv = "执行参数"
+silent = "静默"
+stdio = "标准入出"
+detached = "分离"
+windowsVerbatimArguments = "windows逐字参数"
+
+[[d]]
+scope = "SpawnSyncOptions"
+to = "启动同步选项"
+[d.d]
+input = "输入"
+maxBuffer = "最大存储"
+encoding = "编码"
+
+[[d]]
+scope = ["SpawnSyncOptionsWithStringEncoding", "SpawnSyncOptionsWithBufferEncoding"]
+to = ["启动同步选项带串编码", "启动同步选项带存储编码"]
+[d.d]
+encoding = "编码"
+
+[[d]]
+scope = "SpawnSyncReturns"
+to = "启动同步返回"
+[d.d]
+pid = "进程id"
+output = "输出"
+stdout = "标准输出"
+stderr = "标准错误"
+status = "状态"
+signal = "信号"
+error = "错误"
+
+[[d]]
+scope = "CommonExecOptions"
+to = "共用执行选项"
+[d.d]
+input = "输入"
+stdio = "标准入出"
+killSignal = "杀信号"
+maxBuffer = "最大存储"
+encoding = "编码"
+
+[[d]]
+scope = ["ExecSyncOptions", "ExecFileSyncOptions"]
+to = ["执行同步选项", "执行文件同步选项"]
+[d.d]
+shell = "壳"
+
+[[d]]
+scope = ["ExecSyncOptionsWithStringEncoding", "ExecSyncOptionsWithBufferEncoding", "ExecFileSyncOptionsWithStringEncoding", "ExecFileSyncOptionsWithBufferEncoding"]
+to = ["执行同步选项带串编码", "执行同步选项带存储编码", "执行文件同步选项带串编码", "执行文件同步选项带存储编码"]
+[d.d]
+encoding = "编码"

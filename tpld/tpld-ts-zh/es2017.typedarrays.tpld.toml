@@ -1,0 +1,12 @@
+# es2017.typedarrays.tpld.toml
+tpl-spec = "0.1.0"
+from = "ts"
+to = "zh_CN"
+
+type = "lib"
+# lib.es2017.typedarrays.d.ts
+
+#[[d]]
+#scope = ["Int8ArrayConstructor", "Uint8ArrayConstructor", "Uint8ClampedArrayConstructor", "Int16ArrayConstructor", "Uint16ArrayConstructor", "Int32ArrayConstructor", "Uint32ArrayConstructor", "Float32ArrayConstructor", "Float64ArrayCostructor"]
+#[d.d]
+#"new()" = "新()"

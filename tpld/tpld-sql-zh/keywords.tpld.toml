@@ -1,0 +1,23 @@
+# keywords.tpld.toml
+tpl-spec = "0.1.0"
+from = "sql"
+to = "zh_CN"
+
+type = "lib"
+
+# 多关键字缩写
+[[d]]
+scope = "keywords:"
+[d.d]
+"CREATE TABLE" = "创建表"
+"DELETE FROM" = "删除"
+"DROP TABLE" = "丢弃表"
+"FOREIGN KEY" = "外键"
+"GROUP BY" = "分组"
+"INSERT INTO" = "插入"
+"NOT NULL" = "非空"
+"ORDER BY" = "排序"
+"PRIMARY KEY" = "主键"
+
+
+# TODO

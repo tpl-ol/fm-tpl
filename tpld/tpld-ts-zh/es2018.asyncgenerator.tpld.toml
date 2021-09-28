@@ -1,0 +1,29 @@
+# es2018.asyncgenerator.tpld.toml
+tpl-spec = "0.1.0"
+from = "ts"
+to = "zh_CN"
+
+type = "lib"
+# lib.es2018.asyncgenerator.d.ts
+
+dep = [
+  "./es2018.asynciterable",
+]
+
+
+[[d]]
+scope = "AsyncGenerator"
+to = "异步生成器"
+[d.d]
+"next()" = "下个()"
+"return()" = "返回()"
+"throw()" = "扔()"
+
+[[d]]
+scope = ["AsyncGeneratorFunction", "AsyncGeneratorFunctionConstructor"]
+to = ["异步生成器函数", "异步生成器函数构造器"]
+[d.d]
+"new()" = "新()"
+length = "长度"
+name = "名称"
+prototype = "原型"

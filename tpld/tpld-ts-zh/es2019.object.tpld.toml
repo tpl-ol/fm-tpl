@@ -1,0 +1,18 @@
+# es2019.object.tpld.toml
+tpl-spec = "0.1.0"
+from = "ts"
+to = "zh_CN"
+
+type = "lib"
+# lib.es2019.object.d.ts
+
+dep = [
+  "./es2015.iterable",
+]
+
+
+[[d]]
+scope = "ObjectConstructor"
+to = "物构造器"
+[d.d]
+"fromEntries()" = "从条目()"

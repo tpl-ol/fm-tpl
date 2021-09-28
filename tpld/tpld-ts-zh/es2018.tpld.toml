@@ -1,0 +1,16 @@
+# es2018.tpld.toml
+tpl-spec = "0.1.0"
+from = "ts"
+to = "zh_CN"
+
+type = "lib"
+# lib.es2018.d.ts
+
+dep = [
+  "./es2017",
+  "./es2018.asynciterable",
+  "./es2018.asyncgenerator",
+  "./es2018.promise",
+  "./es2018.regexp",
+  "./intl/es2018.intl",
+]

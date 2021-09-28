@@ -1,0 +1,43 @@
+# es2021.weakref.tpld.toml
+tpl-spec = "0.1.0"
+from = "ts"
+to = "zh_CN"
+
+type = "lib"
+# lib.es2021.weakref.d.ts
+
+
+# 全局
+[[d]]
+scope = ""
+[d.d]
+WeakRef = "弱引用"
+FinalizationRegistry = "终结注册处"
+
+
+[[d]]
+scope = "WeakRef"
+to = "弱引用"
+[d.d]
+"deref()" = "解引用()"
+
+[[d]]
+scope = "WeakRefConstructor"
+to = "弱引用构造器"
+[d.d]
+prototype = "原型"
+"new()" = "新()"
+
+[[d]]
+scope = "FinalizationRegistry"
+to = "终结注册处"
+[d.d]
+"register()" = "注册()"
+"unregister()" = "注销()"
+
+[[d]]
+scope = "FinalizationRegistryConstructor"
+to = "终结注册处构造器"
+[d.d]
+prototype = "原型"
+"new()" = "新()"

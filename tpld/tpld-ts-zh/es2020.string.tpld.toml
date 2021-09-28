@@ -1,0 +1,14 @@
+# es2020.string.tpld.toml
+tpl-spec = "0.1.0"
+from = "ts"
+to = "zh_CN"
+
+type = "lib"
+# lib.es2020.string.d.ts
+
+
+[[d]]
+scope = "String"
+to = "字符串"
+[d.d]
+"matchAll()" = "匹配全()"

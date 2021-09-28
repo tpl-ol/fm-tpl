@@ -1,0 +1,32 @@
+# tpld-ts-node-zh.tpld.toml
+tpl-spec = "0.1.0"
+
+# TypeScript
+from = "ts"
+# 简体中文 (中国)
+to = "zh_CN"
+
+type = "lib:node"
+
+dep = [
+  "tpld-ts-zh",
+  "./buffer",
+  "./child_process",
+  "./console",
+  "./constants",
+  "./events",
+  "./fs",
+  "./globals",
+  "./module",
+  "./os",
+  "./path",
+  "./process",
+  "./readline",
+  "./repl",
+  "./stream",
+  "./string_decoder",
+  "./timers",
+  "./tty",
+  "./wasi",
+  "./worker_threads",
+]

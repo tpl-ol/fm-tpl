@@ -1,0 +1,14 @@
+# es2021.tpld.toml
+tpl-spec = "0.1.0"
+from = "ts"
+to = "zh_CN"
+
+type = "lib"
+# lib.es2021.d.ts
+
+dep = [
+  "./es2020",
+  "./es2021.promise",
+  "./es2021.string",
+  "./es2021.weakref",
+]

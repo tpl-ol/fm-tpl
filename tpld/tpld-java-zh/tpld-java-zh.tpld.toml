@@ -1,0 +1,76 @@
+# tpld-java-zh.tpld.toml
+tpl-spec = "0.1.0"
+
+# Java
+from = "java"
+# 简体中文 (中国)
+to = "zh_CN"
+
+dep = [
+  "./module-info",
+  "./java.base/java.base",
+]
+
+[[d]]
+type = "tpl"
+[d.d]
+tpl = "替"
+filename = "文件名"
+file-ext = ".替"
+
+[[d]]
+type = "keyword"
+[d.d]
+abstract = "抽象"
+assert = "断言"
+boolean = "二"
+break = "断"
+byte = "字节"
+case = "情况"
+catch = "捉"
+char = "字符"
+class = "类"
+const = "常量"
+continue = "继续"
+default = "默认"
+do = "干"
+double = "双精"
+else = "另"
+enum = "枚举"
+extends = "扩展"
+false = "假"
+final = "终"
+finally = "最后"
+float = "单精"
+for = "为"
+goto = "跳转至"
+if = "若"
+implements = "实现"
+import = "导入"
+instanceof = "是实例"
+int = "整"
+interface = "接口"
+long = "长"
+native = "原生"
+new = "新"
+null = "空"
+package = "包"
+private = "私"
+protected = "护"
+public = "公"
+return = "返回"
+short = "短"
+static = "静态"
+strictfp = "严格浮点"
+super = "超"
+switch = "选择"
+synchronized = "同步化"
+this = "这"
+throw = "扔"
+throws = "扔出"
+transient = "瞬态的"
+true = "真"
+try = "试"
+void = "无"
+volatile = "易变的"
+while = "当"

@@ -1,0 +1,74 @@
+# java.base.tpld.toml
+tpl-spec = "0.1.0"
+from = "java"
+to = "zh_CN"
+
+type = "lib"
+
+dep = [
+  "./java.lang",
+  "./java.io",
+  "./java.nio",
+  "./java.util",
+]
+
+
+[[d]]
+scope = "package:"
+[d.d]
+# 拒绝翻译
+#java = "java"
+"java.io" = "入出"
+"java.lang" = "语言"
+"java.lang.annotation" = "注解"
+"java.lang.constant" = "常量"
+"java.lang.invoke" = "调用"
+"java.lang.module" = "模块"
+"java.lang.ref" = "引用"
+"java.lang.reflect" = "反射"
+"java.lang.runtime" = "运行时"
+"java.math" = "数学"
+"java.net" = "网络"
+"java.net.spi" = "服务接口"
+"java.nio" = "新入出"
+"java.nio.channels" = "通道"
+"java.nio.channels.spi" = "服务接口"
+"java.nio.charset" = "字符集"
+"java.nio.charset.spi" = "服务接口"
+"java.nio.file" = "文件"
+"java.nio.file.attribute" = "属性"
+"java.nio.file.spi" = "服务接口"
+"java.security" = "安全"
+"java.security.interfaces" = "接口们"
+"java.security.spec" = "规范"
+"java.text" = "文本"
+"java.text.spi" = "服务接口"
+"java.time" = "时间"
+"java.time.chrono" = "长期"  # TODO
+"java.time.format" = "格式"
+"java.time.temporal" = "世间"  # TODO
+"java.time.zone" = "区域"
+"java.util" = "工具"
+"java.util.concurrent" = "并行"
+"java.util.concurrent.atomic" = "原子"
+"java.util.concurrent.locks" = "锁"
+"java.util.function" = "函数"
+#"java.util.jar" = "jar"
+"java.util.random" = "随机"
+"java.util.regex" = "正则"
+"java.util.spi" = "服务接口"
+"java.util.stream" = "流"
+#"java.util.zip" = "zip"
+
+#"javax" = "javax"
+"javax.crypto" = "加密"
+"javax.crypto.interfaces" = "接口们"
+"javax.crypto.spec" = "规范"
+"javax.net" = "网络"
+#"javax.net.ssl" = "ssl"
+"javax.security.auth" = "认证"
+"javax.security.auth.callback" = "回调"
+"javax.security.auth.login" = "登录"
+"javax.security.auth.spi" = "服务接口"
+#"javax.security.auth.x500" = "x500"
+"javax.security.cert" = "证书"

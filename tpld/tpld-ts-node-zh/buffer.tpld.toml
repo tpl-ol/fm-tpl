@@ -1,0 +1,133 @@
+# buffer.tpld.toml
+tpl-spec = "0.1.0"
+from = "ts"
+to = "zh_CN"
+
+type = "lib:node"
+# buffer.d.ts
+scope = "module:buffer"
+scope_to = "存储"
+
+# 全局
+[[d]]
+scope = ""
+[d.d]
+INSPECT_MAX_BYTES = "检查最大长度"
+kMaxLength = "k最大长度"
+kStringMaxLength = "k串最大长度"
+"transcode()" = "转码()"
+Buffer = "存储"
+
+[[d]]
+scope = "global:"
+[d.d]
+Buffer = "存储"
+
+[[d]]
+scope = "type:"
+[d.d]
+TranscodeEncoding = "转码编码"
+
+[[d]]
+scope = "type:global:"
+[d.d]
+BufferEncoding = "存储编码"
+# TODO
+WithImplicitCoercion = "隐性强制"
+
+[[d]]
+scope = "constants"
+to = "常量"
+[d.d]
+MAX_LENGTH = "最大长度"
+MAX_STRING_LENGTH = "最大串长度"
+
+[[d]]
+scope = "SlowBuffer"
+to = "慢存储"
+[d.d]
+prototype = "原型"
+
+[[d]]
+scope = "global:BufferConstructor"
+to = "存储构造器"
+[d.d]
+"from()" = "从()"
+"of()" = "于()"
+"isBuffer()" = "是存储()"
+"isEncoding()" = "是编码()"
+"byteLength()" = "字节长度()"
+"concat()" = "拼接()"
+"compare()" = "比()"
+"alloc()" = "分配()"
+"allocUnsafe()" = "不安全的分配()"
+"allocUnsafeSlow()" = "不安全的慢分配()"
+"poolSize" = "池大小()"
+
+[[d]]
+scope = "global:Buffer"
+to = "存储"
+[d.d]
+"write()" = "写()"
+"toString()" = "至串()"
+"toJSON()" = "至JSON()"
+"equals()" = "相等()"
+"compare()" = "比()"
+"copy()" = "复制()"
+"slice()" = "切片()"
+"subarray()" = "下级()"
+"writeBigInt64BE()" = "写i64大尾()"
+"writeBigInt64LE()" = "写i64()"
+"writeBigUInt64BE()" = "写u64大尾()"
+"writeBigUInt64LE()" = "写u64()"
+"writeUIntLE()" = "写u()"
+"writeUIntBE()" = "写u大尾()"
+"writeIntLE()" = "写i()"
+"writeIntBE()" = "写i大尾()"
+"readBigUInt64BE()" = "读u64大尾()"
+"readBigUInt64LE()" = "读u64()"
+"readBigInt64BE()" = "读i64大尾()"
+"readBigInt64LE()" = "读i64()"
+"readUIntLE()" = "读u()"
+"readUIntBE()" = "读u大尾()"
+"readIntLE()" = "读i()"
+"readIntBE()" = "读i大尾()"
+"readUInt8()" = "读u8()"
+"readUInt16LE()" = "读u16()"
+"readUInt16BE()" = "读u16大尾()"
+"readUInt32LE()" = "读u32()"
+"readUInt32BE()" = "读u32大尾()"
+"readInt8()" = "读i8()"
+"readInt16LE()" = "读i16()"
+"readInt16BE()" = "读i16大尾()"
+"readInt32LE()" = "读i32()"
+"readInt32BE()" = "读i32大尾()"
+"readFloatLE()" = "读f32()"
+"readFloatBE()" = "读f32大尾()"
+"readDoubleLE()" = "读f64()"
+"readDoubleBE()" = "读f64大尾()"
+"reverse()" = "逆序()"
+"swap16()" = "交换16()"
+"swap32()" = "交换32()"
+"swap64()" = "交换64()"
+"writeUInt8()" = "写u8()"
+"writeUInt16LE()" = "写u16()"
+"writeUInt16BE()" = "写u16大尾()"
+"writeUInt32LE()" = "写u32()"
+"writeUInt32BE()" = "写u32大尾()"
+"writeInt8()" = "写i8()"
+"writeInt16LE()" = "写i16()"
+"writeInt16BE()" = "写i16大尾()"
+"writeInt32LE()" = "写i32()"
+"writeInt32BE()" = "写i32大尾()"
+"writeFloatLE()" = "写f32()"
+"writeFloatBE()" = "写f32大尾()"
+"writeDoubleLE()" = "写f64()"
+"writeDoubleBE()" = "写f64大尾()"
+"fill()" = "填充()"
+"indexOf()" = "找下标()"
+"lastIndexOf()" = "反找下标()"
+"entries()" = "条目()"
+"includes()" = "包含()"
+"keys()" = "键们()"
+"values()" = "值们()"

@@ -1,0 +1,30 @@
+# wasi.tpld.toml
+tpl-spec = "0.1.0"
+from = "ts"
+to = "zh_CN"
+
+type = "lib:node"
+# wasi.d.ts
+scope = "module:wasi"
+# scope_to 拒绝翻译
+
+[[d]]
+scope = "WASIOptions"
+to = "WASI选项"
+[d.d]
+args = "参数"
+env = "环境"
+preopens = "预打开"
+returnOnExit = "退出时返回"
+stdin = "标准输入"
+stdout = "标准输出"
+stderr = "标准错误"
+
+[[d]]
+scope = "WASI"
+# to 拒绝翻译
+[d.d]
+"constructor()" = "构造()"
+"start()" = "开始()"
+"initialize()" = "初始化()"
+wasiImport = "wasi导入"

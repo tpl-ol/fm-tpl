@@ -1,0 +1,121 @@
+# tpld-ts-zh.tpld.toml
+tpl-spec = "0.1.0"
+
+# TypeScript
+from = "ts"
+# 简体中文 (中国)
+to = "zh_CN"
+
+dep = [
+  "./es2021",
+  #"./es2020",
+  #"./es2019",
+  #"./es2018",
+  #"./es2017",
+  #"./es2016",
+  #"./es2015",
+  "./wasm",
+]
+
+[[d]]
+type = "tpl"
+[d.d]
+tpl = "替"
+filename = "文件名"
+file-ext = ".替"
+
+[[d]]
+type = "keyword"
+[d.d]
+abstract = "抽象"
+any = "任何"
+as = "作"
+asserts = "断言"
+async = "异步"
+await = "待"
+bigint = "大整数"
+boolean = "二"
+break = "断"
+case = "情况"
+catch = "捉"
+class = "类"
+const = "常"
+" constructor" = "构造"
+continue = "继续"
+debugger = "调试器"
+declare = "声明"
+default = "默认"
+delete = "删"
+do = "干"
+else = "另"
+enum = "枚举"
+export = "导出"
+extends = "扩展"
+false = "假"
+finally = "最后"
+for = "为"
+from = "从"
+function = "术"
+get = "取"
+global = "全局"
+if = "若"
+implements = "实现"
+import = "导入"
+in = "在"
+infer = "推断"
+instanceof = "是实例"
+interface = "接口"
+#intrinsic = ""
+is = "是"
+keyof = "其键"
+let = "令"
+module = "模块"
+namespace = "命名空间"
+never = "从不"
+new = "新"
+null = "空"
+number = "数"
+object = "物"
+of = "于"
+override = "重写"
+package = "包"
+private = "私"
+protected = "护"
+public = "公"
+readonly = "只读"
+require = "要求"
+return = "返回"
+set = "设"
+static = "静态"
+string = "串"
+super = "超"
+switch = "选择"
+symbol = "符号"
+this = "这"
+throw = "扔"
+true = "真"
+try = "试"
+type = "类型"
+#typeof = "typeof"
+undefined = "未定义"
+unique = "唯一"
+unknown = "未知"
+var = "变量"
+void = "无"
+while = "当"
+with = "同"
+yield = "产生"
+
+
+# 全局
+[[d]]
+type = "lib"
+scope = ""
+[d.d]
+console = "控制台"
+
+[[d]]
+type = "lib"
+scope = ["console", "Console"]
+[d.d]
+"log()" = "写()"

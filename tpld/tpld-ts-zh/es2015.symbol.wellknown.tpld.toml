@@ -1,0 +1,59 @@
+# es2015.symbol.wellknown.tpld.toml
+tpl-spec = "0.1.0"
+from = "ts"
+to = "zh_CN"
+
+type = "lib"
+# lib.es2015.symbol.wellknown.d.ts
+
+dep = [
+  "./es2015.symbol",
+]
+
+
+[[d]]
+scope = "SymbolConstructor"
+[d.d]
+hasInstance = "有实例"
+isConcatSpreadable = "连接可平铺"
+match = "匹配"
+replace = "替换"
+search = "查找"
+species = "物种"
+split = "分割"
+toPrimitive = "至原始值"
+toStringTag = "至串标签"
+# 拒绝翻译: `with` 关键字已废弃
+#unscopables
+
+#Symbol
+#Array
+#Date
+#Map
+#WeakMap
+#Set
+#WeakSet
+#JSON
+#Function
+#GeneratorFunction
+#Math
+#Promise
+#PromiseConstructor
+#RegExp
+#RegExpConstructor
+#String
+#ArrayBuffer
+#DataView
+#Int8Array
+#Uint8Array
+#Uint8ClampedArray
+#Int16Array
+#Uint16Array
+#Int32Array
+#Uint32Array
+#Float32Array
+#Float64Array
+#ArrayConstructor
+#MapConstructor
+#SetConstructor
+#ArrayBufferConstructor

@@ -1,0 +1,24 @@
+# es2015.promise.tpld.toml
+tpl-spec = "0.1.0"
+from = "ts"
+to = "zh_CN"
+
+type = "lib"
+# lib.es2015.promise.d.ts
+
+# 全局
+[[d]]
+scope = ""
+[d.d]
+Promise = "许诺"
+
+[[d]]
+scope = "PromiseConstructor"
+to = "许诺构造器"
+[d.d]
+prototype = "原型"
+"new()" = "新()"
+"all()" = "全()"
+"race()" = "赛跑()"
+"reject()" = "拒绝()"
+"resolve()" = "解决()"

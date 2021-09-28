@@ -1,0 +1,57 @@
+# tty.tpld.toml
+tpl-spec = "0.1.0"
+from = "ts"
+to = "zh_CN"
+
+type = "lib:node"
+# tty.d.ts
+scope = "module:tty"
+scope_to = "终端"
+
+# 全局
+[[d]]
+scope = ""
+[d.d]
+"isatty()" = "是终端()"
+
+[[d]]
+scope = "type:"
+[d.d]
+Direction = "方向"
+
+[[d]]
+scope = "ReadStream"
+to = "读流"
+[d.d]
+"constructor()" = "构造()"
+isRaw = "原始的"
+"setRawMode()" = "设原始模式()"
+isTTY = "是终端"
+
+[[d]]
+scope = "WriteStream"
+to = "写流"
+[d.d]
+"constructor()" = "构造()"
+"clearLine()" = "清空行()"
+"clearScreenDown()" = "向下清屏()"
+"cursorTo()" = "光标至()"
+"moveCursor()" = "移光标()"
+"getColorDepth()" = "取色深()"
+"hasColors()" = "有色()"
+"getWindowSize()" = "取窗口大小()"
+columns = "列数"
+rows = "行数"
+isTTY = "是终端"
+
+"addListener()" = "加监听器"
+"emit()" = "发出()"
+"on()" = "之时()"
+"once()" = "一次()"
+"prependListener()" = "前置监听器()"
+"prependOnceListener()" = "前置一次监听器()"
+
+[[d]]
+scope = ["arg:WriteStream.addListener:event", "arg:WriteStream.emit:event", "arg:WriteStream.on:event", "arg:WriteStream.once:event", "arg:WriteStream.prependListener:event", "arg:WriteStream.prependOnceListener:event"]
+[d.d]
+resize = "变大小"

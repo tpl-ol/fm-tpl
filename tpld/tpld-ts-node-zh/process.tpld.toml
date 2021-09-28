@@ -1,0 +1,340 @@
+# process.tpld.toml
+tpl-spec = "0.1.0"
+from = "ts"
+to = "zh_CN"
+
+type = "lib:node"
+# process.d.ts
+scope = "namespace:NodeJS"
+
+# 全局
+[[d]]
+scope = "global:"
+[d.d]
+process = "进程"
+
+[[d]]
+scope = "type:"
+[d.d]
+Platform = "平台"
+BeforeExitListener = "退出前监听器"
+DisconnectListener = "断开监听器"
+ExitListener = "退出监听器"
+RejectionHandledListener = "拒绝被处理监听器"
+UncaughtExceptionListener = "未捕捉例外监听器"
+UnhandledRejectionListener = "未处理拒绝监听器"
+WarningListener = "警告监听器"
+MessageListener = "消息监听器"
+SignalsListener = "信号监听器"
+MultipleResolveListener = "多决定监听器"
+WorkerListener = "工人监听器"
+
+[[d]]
+scope = "ReadStream"
+to = "读流"
+
+[[d]]
+scope = "WriteStream"
+to = "写流"
+
+[[d]]
+scope = "MemoryUsageFn"
+to = "内存使用函数"
+[d.d]
+"rss()" = "居民集大小()"
+
+[[d]]
+scope = "MemoryUsage"
+to = "内存使用"
+[d.d]
+rss = "居民集大小"
+heapTotal = "堆总计"
+heapUsed = "堆使用"
+external = "外部"
+arrayBuffers = "数组存储"
+
+[[d]]
+scope = "CpuUsage"
+to = "处理器使用"
+[d.d]
+user = "用户"
+system = "系统"
+
+[[d]]
+scope = "ProcessRelease"
+to = "进程发布"
+[d.d]
+name = "名"
+sourceUrl = "源URL"
+headersUrl = "头URL"
+libUrl = "库URL"
+lts = "长期支持"
+
+[[d]]
+scope = "ProcessVersions"
+to = "进程版本"
+[d.d]
+# 拒绝翻译
+#http_parser = ""
+#node
+#v8
+#ares
+#uv
+#zlib
+#modules = ""
+#openssl
+
+[[d]]
+scope = "type:Signals"
+to = "信号"
+[d.d]
+# TODO
+SIGABRT = "信号中止"
+SIGALRM = "信号闹钟"
+SIGBUS = "信号总线"
+SIGCHLD = "信号下级"
+SIGCONT = "信号继续"
+#SIGFPE = ""
+#SIGHUP = ""
+SIGILL = "信号非法"
+SIGINT = "信号中断"
+SIGIO = "信号入出"
+#SIGIOT = ""
+SIGKILL = "信号杀"
+SIGPIPE = "信号管道"
+#SIGPOLL = ""
+#SIGPROF = ""
+SIGPWR = "信号电源"
+SIGQUIT = "信号退出"
+SIGSEGV = "信号段"
+#SIGSTKFLT = ""
+SIGSTOP = "信号终止"
+SIGSYS = "信号系统"
+SIGTERM = "信号终结"
+SIGTRAP = "信号陷"
+SIGTSTP = "信号暂停"
+#SIGTTIN = ""
+#SIGTTOU = ""
+SIGUNUSED = "信号未用"
+SIGURG = "信号紧急"
+SIGUSR1 = "信号用户1"
+SIGUSR2 = "信号用户2"
+#SIGVTALRM = ""
+#SIGWINCH = ""
+#SIGXCPU = ""
+#SIGXFSZ = ""
+SIGBREAK = "信号断"
+SIGLOST = "信号失"
+SIGINFO = "信号信息"
+
+[[d]]
+scope = "type:UncaughtExceptionOrigin"
+to = "未捕捉例外源"
+[d.d]
+uncaughtException = "未捕捉例外"
+unhandledRejection = "未处理拒绝"
+
+[[d]]
+scope = "type:MultipleResolveType"
+to = "多决定类型"
+[d.d]
+resolve = "解决"
+reject = "拒绝"
+
+[[d]]
+scope = "Socket"
+to = "插座"
+[d.d]
+isTTY = "是终端"
+
+[[d]]
+scope = "ProcessEnv"
+to = "进程环境"
+[d.d]
+TZ = "时区"
+
+[[d]]
+scope = "HRTime"
+to = "高精时间"
+[d.d]
+"bigint()" = "大整数()"
+
+[[d]]
+scope = "ProcessReport"
+to = "进程报告"
+[d.d]
+directory = "字典"
+filename = "文件名"
+"getReport()" = "取报告()"
+reportOnFatalError = "致命错误时报告"
+reportOnSignal = "信号时报告"
+reportOnUncaughtException = "未捕捉例外时报告"
+signal = "信号"
+"writeReport()" = "写报告()"
+
+[[d]]
+scope = "ResourceUsage"
+to = "资源使用"
+[d.d]
+fsRead = "文件系统读"
+fsWrite = "文件系统写"
+involuntaryContextSwitches = "非自愿语境切换"
+ipcReceived = "进程间通信接收"
+ipcSent = "进程间通信发送"
+majorPageFault = "主页错误"
+maxRSS = "最大居民集大小"
+minorPageFault = "次页错误"
+sharedMemorySize = "共享内存大小"
+signalsCount = "信号计数"
+swappedOut = "换出"
+systemCPUTime = "系统处理器时间"
+unsharedDataSize = "非共享数据大小"
+unsharedStackSize = "非共享栈大小"
+userCPUTime = "用户处理器时间"
+voluntaryContextSwitches = "自愿语境切换"
+
+[[d]]
+scope = "EmitWarningOptions"
+to = "发出警告选项"
+[d.d]
+type = "类型"
+code = "码"
+ctor = "限栈追踪"
+detail = "详情"
+
+[[d]]
+scope = "ProcessConfig"
+to = "进程配置"
+
+[[d]]
+scope = "ProcessConfig.target_defaults"
+to = "目标默认"
+[d.d]
+cflags = "C标志"
+default_configuration = "默认配置"
+defines = "定义"
+include_dirs = "包含目录"
+libraries = "库"
+
+[[d]]
+scope = "ProcessConfig.variables"
+to = "变"
+[d.d]
+# 拒绝翻译
+#clang = "clang"
+host_arch = "宿主架构"
+node_install_npm = "node安装npm"
+# TODO waf ?
+node_install_waf = "node安装waf"
+node_prefix = "node前缀"
+node_shared_openssl = "node共享openssl"
+node_shared_v8 = "node共享v8"
+node_shared_zlib = "node共享zlib"
+node_use_dtrace = "node用dtrace"
+# TODO etw ?
+node_use_etw = "node用etw"
+node_use_openssl = "node用openssl"
+target_arch = "目标架构"
+v8_no_strict_aliasing = "v8不严格别名"
+v8_use_snapshot = "v8用快照"
+visibility = "可见性"
+
+[[d]]
+scope = "Process"
+to = "进程"
+[d.d]
+stdout = "标准输出"
+stderr = "标准错误"
+stdin = "标准输入"
+"openStdin()" = "打开标准输入"
+argv = "参数"
+argv0 = "参数0"
+execArgv = "执行参数"
+execPath = "执行路径"
+"abort()" = "中止()"
+"chdir()" = "切换目录()"
+"cwd()" = "工作目录()"
+debugPort = "调试端口"
+"emitWarning()" = "发出警告()"
+env = "环境"
+"exit()" = "退出()"
+exitCode = "退出码"
+"getgid()" = "取组id()"
+"setgid()" = "设组id()"
+"getuid()" = "取用户id()"
+"setuid()" = "设用户id()"
+"geteuid()" = "取生效用户id()"
+"seteuid()" = "设生效用户id()"
+"getegid()" = "取生效组id()"
+"setegid()" = "设生效组id()"
+"getgroups()" = "取组()"
+"setgroups()" = "设组()"
+"setUncaughtExceptionCaptureCallback()" = "设未捕捉例外捕获回调()"
+"hasUncaughtExceptionCaptureCallback()" = "有未捕捉例外捕获回调()"
+version = "版本"
+versions = "版本们"
+config = "配置"
+"kill()" = "杀()"
+pid = "进程id()"
+ppid = "上级进程id()"
+title = "标题"
+arch = "架构"
+platform = "平台"
+memoryUsage = "内存使用"
+"cpuUsage()" = "处理器使用()"
+"nextTick()" = "下个滴答()"
+release = "发行"
+#features
+"umask()" = "用户掩码()"
+"uptime()" = "运行时长()"
+hrtime = "高精时间"
+# TODO
+"send()" = "发送()"
+"disconnect()" = "断开()"
+connected = "已连接"
+allowedNodeEnvironmentFlags = "允许的node环境标志"
+report = "报告"
+"resourceUsage()" = "资源使用()"
+traceDeprecation = "追踪弃用"
+
+"addListener()" = "加监听器"
+"emit()" = "发出()"
+"on()" = "之时()"
+"once()" = "一次()"
+"prependListener()" = "前置监听器()"
+"prependOnceListener()" = "前置一次监听器()"
+"listeners()" = "监听器()"
+
+[[d]]
+scope = ["arg:Process.addListener:event", "arg:Process.emit:event", "arg:Process.on:event", "arg:Process.once:event", "arg:Process.prependListener:event", "arg:Process.prependOnceListener:event", "arg:Process.listeners:event"]
+[d.d]
+beforeExit = "退出前"
+disconnect = "断开"
+exit = "退出"
+rejectionHandled = "拒绝已处理"
+uncaughtException = "未捕捉例外"
+uncaughtExceptionMonitor = "未捕捉例外监视器"
+unhandledRejection = "未处理拒绝"
+warning = "警告"
+message = "消息"
+multipleResolves = "多决定"
+worker = "工人"
+
+[[d]]
+scope = ["Process.stdout", "Process.stderr", "Process.stdin"]
+[d.d]
+fd = "文件描述符"
+
+[[d]]
+scope = "Process.features"
+to = "特性"
+[d.d]
+inspector = "检查器"
+debug = "调试"
+# 拒绝翻译
+#uv
+#ipv6
+tls_alpn = "tls应用层协议协商"
+tls_sni = "tls服务器名标识"
+tls_ocsp = "tls在线证书状态协议"
+#tls

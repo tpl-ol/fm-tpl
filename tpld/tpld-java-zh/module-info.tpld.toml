@@ -1,0 +1,28 @@
+# module-info.tpld.toml
+tpl-spec = "0.1.0"
+from = "java"
+to = "zh_CN"
+
+
+# module-info.java
+[[d]]
+type = "keyword"
+scope = "module-info:"
+[d.d]
+exports = "导出"
+module = "模块"
+open = "开"
+opens = "打开"
+provides = "提供"
+requires = "要求"
+to = "至"
+transitive = "及物"
+uses = "用"
+with = "同"
+
+[[d]]
+type = "_filename"
+[d.d]
+"module-info" = "模块信息"
+
+# https://www.oracle.com/tr/corporate/features/understanding-java-9-modules.html

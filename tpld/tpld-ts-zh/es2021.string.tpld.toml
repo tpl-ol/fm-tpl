@@ -1,0 +1,14 @@
+# es2021.string.tpld.toml
+tpl-spec = "0.1.0"
+from = "ts"
+to = "zh_CN"
+
+type = "lib"
+# lib.es2021.string.d.ts
+
+
+[[d]]
+scope = "String"
+to = "字符串"
+[d.d]
+"replaceAll()" = "替换全()"

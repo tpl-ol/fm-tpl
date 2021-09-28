@@ -1,0 +1,175 @@
+# wasm.tpld.toml
+tpl-spec = "0.1.0"
+from = "ts"
+to = "zh_CN"
+
+# WebAssembly v8
+type = "lib"
+# lib.dom.d.ts
+scope = "namespace:WebAssembly"
+# scope_to 拒绝翻译
+
+# 全局
+[[d]]
+scope = ""
+[d.d]
+CompileError = "编译错误"
+Global = "全局"
+Instance = "实例"
+LinkError = "链接错误"
+Memory = "内存"
+Module = "模块类"
+RuntimeError = "运行时错误"
+Table = "表"
+"compile()" = "编译()"
+"compileStreaming()" = "编译流()"
+"instantiate()" = "实例化()"
+"instantiateStreaming()" = "实例化流()"
+"validate()" = "验证()"
+
+[[d]]
+scope = "type:"
+[d.d]
+ExportValue = "导出值"
+Exports = "导出的"
+ImportValue = "导入值"
+ModuleImports = "模块导入"
+Imports = "导入的"
+
+[[d]]
+scope = "CompileError"
+to = "编译错误"
+[d.d]
+prototype = "原型"
+"new()" = "新()"
+
+[[d]]
+scope = "Global"
+to = "全局"
+[d.d]
+value = "值"
+"valueOf()" = "原始值()"
+prototype = "原型"
+"new()" = "新()"
+
+[[d]]
+scope = "Instance"
+to = "实例"
+[d.d]
+exports = "导出"
+prototype = "原型"
+"new()" = "新()"
+
+[[d]]
+scope = "LinkError"
+to = "链接错误"
+[d.d]
+prototype = "原型"
+"new()" = "新()"
+
+[[d]]
+scope = "Memory"
+to = "内存"
+[d.d]
+buffer = "存储"
+"grow()" = "增长()"
+prototype = "原型"
+"new()" = "新()"
+
+[[d]]
+scope = "Module"
+to = "模块类"
+[d.d]
+prototype = "原型"
+"new()" = "新()"
+"customSections()" = "自定义节()"
+"exports()" = "导出的()"
+"imports()" = "导入的()"
+
+[[d]]
+scope = "RuntimeError"
+to = "运行时错误"
+[d.d]
+prototype = "原型"
+"new()" = "新()"
+
+[[d]]
+scope = "Table"
+to = "表"
+[d.d]
+length = "长度"
+"get()" = "取()"
+"grow()" = "增长()"
+"set()" = "设()"
+prototype = "原型"
+"new()" = "新()"
+
+[[d]]
+scope = "GlobalDescriptor"
+to = "全局描述符"
+[d.d]
+mutable = "可变"
+value = "值"
+
+[[d]]
+scope = "MemoryDescriptor"
+to = "内存描述符"
+[d.d]
+initial = "初始"
+maximum = "最大"
+shared = "共享"
+
+[[d]]
+scope = "ModuleExportDescriptor"
+to = "模块导出描述符"
+[d.d]
+kind = "种类"
+name = "名"
+
+[[d]]
+scope = "ModuleImportDescriptor"
+to = "模块导入描述符"
+[d.d]
+kind = "种类"
+module = "模块"
+name = "名"
+
+[[d]]
+scope = "TableDescriptor"
+to = "表描述符"
+[d.d]
+element = "元素"
+initial = "初始"
+maximum = "最大"
+
+[[d]]
+scope = "WebAssemblyInstantiatedSource"
+to = "WebAssembly实例化的源"
+[d.d]
+instance = "实例"
+module = "模块"
+
+[[d]]
+scope = "type:ImportExportKind"
+to = "导入导出种类"
+[d.d]
+function = "函数"
+global = "全局"
+memory = "内存"
+table = "表"
+
+[[d]]
+scope = "TableKind"
+to = "表种类"
+[d.d]
+anyfunc = "任意函数"
+
+[[d]]
+scope = "ValueType"
+to = "值类型"
+[d.d]
+# 拒绝翻译
+#f32
+#f64
+#i32
+#i64

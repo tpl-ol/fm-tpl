@@ -1,0 +1,140 @@
+# worker_threads.tpld.toml
+tpl-spec = "0.1.0"
+from = "ts"
+to = "zh_CN"
+
+type = "lib:node"
+# worker_threads.d.ts
+scope = "module:worker_threads"
+scope_to = "工人线程"
+
+# 全局
+[[d]]
+scope = ""
+[d.d]
+isMainThread = "是主线程"
+parentPort = "上级端口"
+resourceLimits = "资源限制"
+SHARE_ENV = "共享环境"
+threadId = "线程id"
+workerData = "工人数据"
+"markAsUntransferable()" = "标记不可转移()"
+"moveMessagePortToContext()" = "移动消息端口至语境()"
+"receiveMessageOnPort()" = "在端口收消息()"
+"getEnvironmentData()" = "取环境数据()"
+"setEnvironmentData()" = "设环境数据()"
+
+[[d]]
+scope = "type:"
+[d.d]
+TransferListItem = "转移列表项"
+Serializable = "可序列化"
+
+[[d]]
+scope = "MessageChannel"
+to = "消息通道"
+[d.d]
+port1 = "端口1"
+port2 = "端口2"
+
+[[d]]
+scope = "WorkerPerformance"
+to = "工人性能"
+[d.d]
+eventLoopUtilization = "事件循环利用"
+
+[[d]]
+scope = "MessagePort"
+to = "消息端口"
+[d.d]
+"close()" = "关闭()"
+"postMessage()" = "发消息()"
+"ref()" = "引用()"
+"unref()" = "消引用()"
+"start()" = "开始()"
+
+"addListener()" = "加监听器"
+"emit()" = "发出()"
+"on()" = "之时()"
+"once()" = "一次()"
+"prependListener()" = "前置监听器()"
+"prependOnceListener()" = "前置一次监听器()"
+"removeListener()" = "移除监听器()"
+"off()" = "关()"
+
+[[d]]
+scope = ["arg:MessagePort.addListener:event", "arg:MessagePort.emit:event", "arg:MessagePort.on:event", "arg:MessagePort.once:event", "arg:MessagePort.prependListener:event", "arg:MessagePort.prependOnceListener:event", "arg:MessagePort.removeListener:event", "arg:MessagePort.off:event"]
+[d.d]
+close = "关闭"
+message = "消息"
+messageerror = "消息错误"
+
+[[d]]
+scope = "WorkerOptions"
+to = "工人选项"
+[d.d]
+argv = "参数"
+env = "环境"
+eval = "执行"
+workerData = "工人数据"
+stdin = "标准输入"
+stdout = "标准输出"
+stderr = "标准错误"
+execArgv = "执行参数"
+resourceLimits = "资源限制"
+transferList = "转移列表"
+trackUnmanagedFds = "追踪未管理的文件描述符"
+
+[[d]]
+scope = "ResourceLimits"
+to = "资源限制"
+[d.d]
+maxYoungGenerationSizeMb = "最大年轻代大小MB"
+maxOldGenerationSizeMb = "最大老代大小MB"
+codeRangeSizeMb = "代码区域大小MB"
+stackSizeMb = "栈大小MB"
+
+[[d]]
+scope = "Worker"
+to = "工人"
+[d.d]
+stdin = "标准输入"
+stdout = "标准输出"
+stderr = "标准错误"
+threadId = "线程id"
+resourceLimits = "资源限制"
+performance = "性能"
+"constructor()" = "构造()"
+"postMessage()" = "发消息()"
+"ref()" = "引用()"
+"unref()" = "消引用()"
+"terminate()" = "终结()"
+"getHeapSnapshot()" = "取堆快照()"
+
+"addListener()" = "加监听器"
+"emit()" = "发出()"
+"on()" = "之时()"
+"once()" = "一次()"
+"prependListener()" = "前置监听器()"
+"prependOnceListener()" = "前置一次监听器()"
+"removeListener()" = "移除监听器()"
+"off()" = "关()"
+
+[[d]]
+scope = ["arg:Worker.addListener:event", "arg:Worker.emit:event", "arg:Worker.on:event", "arg:Worker.once:event", "arg:Worker.prependListener:event", "arg:Worker.prependOnceListener:event", "arg:Worker.removeListener:event", "arg:Worker.off:event"]
+[d.d]
+error = "错误"
+exit = "退出"
+message = "消息"
+messageerror = "消息错误"
+online = "在线"
+
+[[d]]
+scope = "BroadcastChannel"
+to = "广播通道"
+[d.d]
+name = "名"
+"onmessage()" = "消息时()"
+"onmessageerror()" = "消息错误时()"
+"close()" = "关闭()"
+"postMessage()" = "发消息()"

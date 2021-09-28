@@ -1,0 +1,20 @@
+# es2018.regexp.tpld.toml
+tpl-spec = "0.1.0"
+from = "ts"
+to = "zh_CN"
+
+type = "lib"
+# lib.es2018.regexp.d.ts
+
+
+[[d]]
+scope = ["RegExpMatchArray", "RegExpExecArray"]
+to = ["正则表达式匹配数组", "正则表达式执行数组"]
+[d.d]
+groups = "组"
+
+[[d]]
+scope = "RegExp"
+to = "正则表达式"
+[d.d]
+dotAll = "点全"

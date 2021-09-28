@@ -1,0 +1,298 @@
+# stream.tpld.toml
+tpl-spec = "0.1.0"
+from = "ts"
+to = "zh_CN"
+
+type = "lib:node"
+# stream.d.ts
+scope = "module:stream\n namespace:internal"
+scope_to = "流\n 内部"
+
+# 全局
+[[d]]
+scope = ""
+[d.d]
+"addAbortSignal()" = "加中止信号()"
+"finished()" = "完成()"
+"pipeline()" = "管线()"
+promises = "许诺的"
+consumers = "消费者"
+
+[[d]]
+scope = "type:"
+[d.d]
+TransformCallback = "转换回调"
+PipelineSourceFunction = "管线源函数"
+PipelineSource = "管线源"
+PipelineTransform = "管线转换"
+PipelineTransformSource = "管线转换源"
+PipelineDestinationIterableFunction = "管线目的可迭代函数"
+PipelineDestinationPromiseFunction = "管线目的许诺函数"
+PipelineDestination = "管线目的"
+PipelineCallback = "管线回调"
+PipelinePromise = "管线许诺"
+
+[[d]]
+scope = "global:module:stream\n internal"
+to = "内部"
+[d.d]
+"pipe()" = "输送()"
+
+[[d]]
+scope = "Stream"
+to = "流"
+[d.d]
+"constructor()" = "构造()"
+
+[[d]]
+scope = "StreamOptions"
+to = "流选项"
+[d.d]
+emitClose = "发出关闭"
+highWaterMark = "高水位"
+objectMode = "物模式"
+"construct()" = "构建()"
+"destroy()" = "销毁()"
+autoDestroy = "自动销毁()"
+
+[[d]]
+scope = "ReadableOptions"
+to = "可读选项"
+[d.d]
+encoding = "编码"
+"read()" = "读()"
+
+[[d]]
+scope = "Readable"
+to = "可读"
+[d.d]
+"from()" = "从()"
+readable = "可读"
+readableEncoding = "可读编码"
+readableEnded = "可读结束"
+readableFlowing = "可读流动"
+readableHighWaterMark = "可读高水位"
+readableLength = "可读长度"
+readableObjectMode = "可读物模式"
+destroyed = "已销毁"
+"constructor()" = "构造()"
+"_construct()" = "_构建()"
+"_read()" = "_读()"
+"read()" = "读()"
+"setEncoding()" = "设编码()"
+"pause()" = "暂停()"
+"resume()" = "恢复()"
+"isPaused()" = "已暂停()"
+"unpipe()" = "取消输送()"
+"unshift()" = "加头()"
+"wrap()" = "包装()"
+"push()" = "入()"
+"_destroy()" = "_销毁()"
+"destroy()" = "销毁()"
+
+"addListener()" = "加监听器"
+"emit()" = "发出()"
+"on()" = "之时()"
+"once()" = "一次()"
+"prependListener()" = "前置监听器()"
+"prependOnceListener()" = "前置一次监听器()"
+"removeListener" = "移除监听器()"
+
+[[d]]
+scope = ["arg:Readable.addListener:event", "arg:Readable.emit:event", "arg:Readable.on:event", "arg:Readable.once:event", "arg:Readable.prependListener:event", "arg:Readable.prependOnceListener:event", "arg:Readable.removeListener:event"]
+[d.d]
+close = "关闭"
+data = "数据"
+end = "结束"
+error = "错误"
+pause = "暂停"
+readable = "可读"
+resume = "恢复"
+
+[[d]]
+scope = "WritableOptions"
+to = "可写选项"
+[d.d]
+decodeStrings = "解码字符串"
+defaultEncoding = "默认编码"
+"write()" = "写()"
+"writev()" = "写多()"
+"final()" = "终()"
+
+[[d]]
+scope = "Writable"
+to = "可写"
+[d.d]
+writable = "可写"
+writableEnded = "可写结束"
+writableFinished = "可写完成"
+writableHighWaterMark = "可写高水位"
+writableLength = "可写长度"
+writableObjectMode = "可写物模式"
+writableCorked = "可写塞"
+destroyed = "已销毁"
+"constructor()" = "构造()"
+"_write()" = "_写()"
+"_writev()" = "_写多()"
+"_construct()" = "_构建()"
+"_destroy()" = "_销毁()"
+"_final()" = "_终()"
+"write()" = "写()"
+"setDefautEncoding()" = "设默认编码()"
+"end()" = "结束()"
+"cork()" = "塞()"
+"uncork()" = "消塞()"
+"destroy()" = "销毁()"
+
+"addListener()" = "加监听器"
+"emit()" = "发出()"
+"on()" = "之时()"
+"once()" = "一次()"
+"prependListener()" = "前置监听器()"
+"prependOnceListener()" = "前置一次监听器()"
+"removeListener" = "移除监听器()"
+
+[[d]]
+scope = ["arg:Writable.addListener:event", "arg:Writable.emit:event", "arg:Writable.on:event", "arg:Writable.once:event", "arg:Writable.prependListener:event", "arg:Writable.prependOnceListener:event", "arg:Writable.removeListener:event"]
+[d.d]
+close = "关闭"
+drain = "排空"
+error = "错误"
+finish = "完成"
+pipe = "输送"
+unpipe = "取消输送"
+
+[[d]]
+scope = "DuplexOptions"
+to = "双向选项"
+[d.d]
+allowHalfOpen = "允许半开"
+readableObjectMode = "可读物模式"
+writableObjectMode = "可写物模式"
+readableHighWaterMark = "可读高水位"
+writableHighWaterMark = "可写高水位"
+writableCorked = "可写塞"
+"construct()" = "构建()"
+"read()" = "读()"
+"write()" = "写()"
+"writev()" = "写多()"
+"final()" = "终()"
+"destroy()" = "销毁()"
+
+[[d]]
+scope = "Duplex"
+to = "双向"
+[d.d]
+writable = "可写"
+writableEnded = "可写结束"
+writableFinished = "可写完成"
+writableHighWaterMark = "可写高水位"
+writableLength = "可写长度"
+writableObjectMode = "可写物模式"
+writableCorked = "可写塞"
+"constructor()" = "构造()"
+"_write()" = "_写()"
+"_writev()" = "_写多()"
+"_destroy()" = "_销毁()"
+"_final()" = "_终()"
+"write()" = "写()"
+"setDefaultEncoding()" = "设默认编码()"
+"end()" = "结束()"
+"cork()" = "塞()"
+"uncork()" = "消塞()"
+
+[[d]]
+scope = "TransformOptions"
+to = "转换选项"
+[d.d]
+"construct()" = "构建()"
+"read()" = "读()"
+"write()" = "写()"
+"writev()" = "写多()"
+"final()" = "终()"
+"destroy()" = "销毁()"
+"transform()" = "转换()"
+"flush()" = "刷()"
+
+[[d]]
+scope = "Transform"
+to = "转换"
+[d.d]
+"constructor()" = "构造()"
+"_transform()" = "_转换()"
+"_flush()" = "_刷()"
+
+[[d]]
+scope = "PassThrough"
+to = "透传"
+
+[[d]]
+scope = "FinishedOptions"
+to = "完成选项"
+[d.d]
+error = "错误"
+readable = "可读"
+writable = "可写"
+
+[[d]]
+scope = "namespace:finished"
+to = "完成"
+[d.d]
+"__promisify__()" = "__许诺化__()"
+
+[[d]]
+scope = "PipelineOptions"
+to = "管线选项"
+[d.d]
+signal = "信号"
+
+[[d]]
+scope = "namespace:pipeline"
+to = "管线"
+[d.d]
+"__promisify__()" = "__许诺化__()"
+
+[[d]]
+scope = "Pipe"
+to = "管道"
+[d.d]
+"close()" = "关闭()"
+"hasRef()" = "有引用()"
+"ref()" = "引用()"
+"unref()" = "消引用()"
+
+
+# stream/promises.d.ts
+[[d]]
+scope = "global:module:stream/promises"
+to = "许诺"
+[d.d]
+"finished()" = "完成()"
+"pipeline()" = "管线()"
+
+# stream/consumers.d.ts
+[[d]]
+scope = "global:module:stream/consumers"
+to = "消费者"
+[d.d]
+"buffer()" = "存储()"
+"text()" = "文本()"
+"arrayBuffer()" = "数组存储()"
+"blob()" = "大块()"
+# 拒绝翻译
+#"json()" = "json()"
+
+[[d]]
+scope = "global:module:stream/consumers\n Blob"
+to = "大块"
+[d.d]
+size = "大小"
+type = "类型"
+"arrayBuffer()" = "数组存储()"
+"slice()" = "切片()"
+"stream()" = "流()"
+"text()" = "文本()"
+
+# stream/web.d.ts
+[[d]]
+scope = "global:module:stream/web"

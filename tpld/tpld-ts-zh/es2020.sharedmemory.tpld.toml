@@ -1,0 +1,24 @@
+# es2020.sharedmemory.tpld.toml
+tpl-spec = "0.1.0"
+from = "ts"
+to = "zh_CN"
+
+type = "lib"
+# lib.es2020.sharedmemory.d.ts
+
+
+[[d]]
+scope = "Atomics"
+to = "原子"
+[d.d]
+"add()" = "加()"
+"and()" = "与()"
+"compareExchange()" = "比交换()"
+"exchange()" = "交换()"
+"load()" = "加载()"
+"or()" = "或()"
+"store()" = "存储()"
+"sub()" = "减()"
+"wait()" = "等()"
+"notify()" = "通知()"
+"xor()" = "异或()"

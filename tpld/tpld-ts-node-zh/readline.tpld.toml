@@ -1,0 +1,100 @@
+# readline.tpld.toml
+tpl-spec = "0.1.0"
+from = "ts"
+to = "zh_CN"
+
+type = "lib:node"
+# readline.d.ts
+scope = "module:readline"
+scope_to = "读行"
+
+# 全局
+[[d]]
+scope = ""
+[d.d]
+"createInterface()" = "创建接口()"
+"emitKeypressEvents()" = "发出按键事件()"
+"clearLine()" = "清除行()"
+"clearScreenDown()" = "向下清屏()"
+"cursorTo()" = "光标至()"
+"moveCursor()" = "移光标()"
+
+[[d]]
+scope = "type:"
+[d.d]
+ReadLine = "读行"
+Completer = "补全器"
+AsyncCompleter = "异步补全器"
+CompleterResult = "补全器结果"
+Direction = "方向"
+
+[[d]]
+scope = "Key"
+to = "键"
+[d.d]
+sequence = "序列"
+name = "名"
+# 拒绝翻译
+#ctrl = ""
+#meta = ""
+#shift = ""
+
+[[d]]
+scope = "Interface"
+to = "接口类"
+[d.d]
+terminal = "终端"
+line = "行"
+cursor = "光标"
+"constructor()" = "构造()"
+"getPrompt()" = "取提示符()"
+"setPrompt()" = "设提示符()"
+"prompt()" = "提示()"
+"question()" = "问()"
+"pause()" = "暂停()"
+"resume()" = "恢复()"
+"close()" = "关()"
+"write()" = "写()"
+"getCursorPos()" = "取光标位置()"
+
+"addListener()" = "加监听器"
+"emit()" = "发出()"
+"on()" = "之时()"
+"once()" = "一次()"
+"prependListener()" = "前置监听器()"
+"prependOnceListener()" = "前置一次监听器()"
+
+[[d]]
+scope = ["arg:Interface.addListener:event", "arg:Interface.emit:event", "arg:Interface.on:event", "arg:Interface.once:event", "arg:Interface.prependListener:event", "arg:Interface.prependOnceListener:event"]
+[d.d]
+close = "关闭"
+line = "行"
+pause = "暂停"
+resume = "恢复"
+SIGCONT = "信号继续"
+SIGINT = "信号中断"
+SIGTSTP = "信号暂停"
+history = "历史"
+
+[[d]]
+scope = "ReadLineOptions"
+to = "读行选项"
+[d.d]
+input = "输入"
+output = "输出"
+completer = "补全器"
+terminal = "终端"
+history = "历史"
+historySize = "历史大小"
+prompt = "提示符"
+crlfDelay = "换行延迟"
+removeHistoryDuplicates = "移除重复历史"
+escapeCodeTimeout = "转义码超时"
+tabSize = "制表大小"
+
+[[d]]
+scope = "CursorPos"
+to = "光标位置"
+[d.d]
+rows = "行"
+cols = "列"

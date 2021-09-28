@@ -1,0 +1,63 @@
+# console.tpld.toml
+tpl-spec = "0.1.0"
+from = "ts"
+to = "zh_CN"
+
+type = "lib:node"
+# console.d.ts
+# scope: global
+
+# 全局
+[[d]]
+scope = ""
+[d.d]
+console = "控制台"
+
+[[d]]
+scope = "Console"
+to = "控制台类"
+[d.d]
+Console = "控制台"
+"assert()" = "断言()"
+"clear()" = "清空()"
+"count()" = "计数()"
+"countReset()" = "计数重置()"
+"debug()" = "调试()"
+"dir()" = "检查()"
+"dirxml()" = "检查xml()"
+"error()" = "错误()"
+"group()" = "组()"
+"groupCollapsed()" = "组折叠()"
+"groupEnd()" = "组结束()"
+"info()" = "信息()"
+"log()" = "写()"
+"table()" = "表()"
+"time()" = "时间()"
+"timeEnd()" = "时间结束()"
+"timeLog()" = "时间写()"
+"trace()" = "跟踪()"
+"warn()" = "警告()"
+"profile()" = "采集()"
+"profileEnd()" = "采集结束()"
+"timeStamp()" = "时间戳()"
+
+[[d]]
+scope = "namespace:console"
+to = "控制台"
+
+[[d]]
+scope = "namespace:console\n ConsoleConstructorOptions"
+to = "控制台构造器选项"
+[d.d]
+stdout = "标准输出"
+stderr = "标准错误"
+ignoreErrors = "忽略错误"
+colorMode = "颜色模式"
+inspectOptions = "检查选项"
+
+[[d]]
+scope = "namespace:console\n ConsoleConstructor"
+to = "控制台构造器"
+[d.d]
+prototype = "原型"
+"new()" = "新()"

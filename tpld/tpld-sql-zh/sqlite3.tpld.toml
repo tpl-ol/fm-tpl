@@ -1,0 +1,112 @@
+# sqlite3.tpld.toml
+tpl-spec = "0.1.0"
+from = "sql"
+to = "zh_CN"
+
+type = "lib"
+
+# 数据类型
+[[d]]
+type = "type"
+[d.d]
+NULL = "空"
+INTEGER = "整数"
+REAL = "实数"
+TEXT = "文本"
+BLOB = "大块"
+NUMERIC = "数字"
+
+[[d]]
+scope = ""
+[d.d]
+# 函数
+
+# Built-in Aggregate Functions
+# https://sqlite.org/lang_aggfunc.html
+# 聚合函数
+"avg()" = "平均()"
+"count()" = "计数()"
+"group_concat()" = "组连接()"
+"max()" = "最大()"
+"min()" = "最小()"
+"sum()" = "求和()"
+"total()" = "总计()"
+
+# Date And Time Functions
+# https://sqlite.org/lang_datefunc.html
+# 日期时间函数
+"date()" = "日期()"
+"time()" = "时间()"
+"datetime()" = "日期时间()"
+"julianday()" = "儒略日"
+"strftime()" = "格式化时间()"
+
+# Built-in Window Functions
+# https://sqlite.org/windowfunctions.html
+# 窗口函数
+"row_number()" = "行号()"
+"rank()" = "等级()"
+"dense_rank()" = "密等级()"
+"percent_rank()" = "比例等级()"
+"cume_dist()" = "累积分布()"
+"ntile()" = "分片()"
+"lag()" = "滞后()"
+"lead()" = "超前()"
+"first_value()" = "首个值()"
+"last_value()" = "最后值()"
+"nth_value()" = "第几值()"
+
+# Built-In Scalar SQL Functions
+# https://sqlite.org/lang_corefunc.html
+# 标量函数
+"abs()" = "绝对值()"
+"changes()" = "变更()"
+"char()" = "字符()"
+"coalesce()" = "合并()"
+"glob()" = "通配符()"
+"hex()" = "进制16()"
+"ifnull()" = "若空()"
+# 翻译困难
+"iif()" = "i若()"
+"instr()" = "在串()"
+"last_insert_rowid()" = "最后插入行号()"
+"length()" = "长度()"
+"like()" = "像()"
+"likelihood()" = "可能性()"
+"likely()" = "可能()"
+"load_extension()" = "加载扩展()"
+"lower()" = "小写()"
+"ltrim()" = "左修剪()"
+#"max()" = ""
+#"min()" = ""
+"nullif()" = "空若()"
+"printf()" = "打印()"
+"quote()" = "引用()"
+"random()" = "随机()"
+"randomblob()" = "随机块()"
+"replace()" = "替换()"
+"round()" = "取整()"
+"rtrim()" = "右修剪()"
+"sign()" = "符号()"
+# 翻译困难
+#"soundex()" = ""
+#"sqlite_compileoption_get()" = ""
+#"sqlite_compileoption_used()" = ""
+"sqlite_offset()" = "sqlite偏移()"
+"sqlite_source_id()" = "sqlite源标()"
+"sqlite_version()" = "sqlite版本()"
+"substr()" = "切串()"
+"substring()" = "切字符串()"
+"total_changes()" = "总变更()"
+"trim()" = "修剪()"
+#"typeof()" = ""
+#"unicode()" = ""
+"unlikely()" = "不太可能()"
+"upper()" = "大写()"
+"zeroblob()" = "大块0()"
+
+[[d]]
+scope = "pragma:"
+# https://sqlite.org/pragma.html
+[d.d]
+# TODO

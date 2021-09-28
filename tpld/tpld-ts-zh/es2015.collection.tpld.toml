@@ -1,0 +1,102 @@
+# es2015.collection.tpld.toml
+tpl-spec = "0.1.0"
+from = "ts"
+to = "zh_CN"
+
+type = "lib"
+# lib.es2015.collection.d.ts
+
+# 全局
+[[d]]
+scope = ""
+[d.d]
+Map = "映射"
+WeakMap = "弱映射"
+Set = "集合"
+WeakSet = "弱集合"
+
+
+[[d]]
+scope = "Map"
+to = "映射"
+[d.d]
+"clear()" = "清空()"
+"delete()" = "删()"
+"forEach()" = "每个()"
+"get()" = "取()"
+"has()" = "有()"
+"set()" = "设()"
+size = "大小"
+
+[[d]]
+scope = "MapConstructor"
+to = "映射构造器"
+[d.d]
+"new()" = "新()"
+prototype = "原型"
+
+[[d]]
+scope = "ReadonlyMap"
+to = "只读映射"
+[d.d]
+"forEach()" = "每个()"
+"get()" = "取()"
+"has()" = "有()"
+size = "大小"
+
+[[d]]
+scope = "WeakMap"
+to = "弱映射"
+[d.d]
+"delete()" = "删()"
+"get()" = "取()"
+"has()" = "有()"
+"set()" = "设()"
+
+[[d]]
+scope = "WeakMapConstructor"
+to = "弱映射构造器"
+[d.d]
+"new()" = "新()"
+prototype = "原型"
+
+[[d]]
+scope = "Set"
+to = "集合"
+[d.d]
+"add()" = "加()"
+"clear()" = "清空()"
+"delete()" = "删()"
+"forEach()" = "每个()"
+"has()" = "有()"
+size = "大小"
+
+[[d]]
+scope = "SetConstructor"
+to = "集合构造器"
+[d.d]
+"new()" = "新()"
+prototype = "原型"
+
+[[d]]
+scope = "ReadonlySet"
+to = "只读集合"
+[d.d]
+"forEach()" = "每个()"
+"has()" = "有()"
+size = "大小"
+
+[[d]]
+scope = "WeakSet"
+to = "弱集合"
+[d.d]
+"add()" = "加()"
+"delete()" = "删()"
+"has()" = "有()"
+
+[[d]]
+scope = "WeakSetConstructor"
+to = "弱集合构造器"
+[d.d]
+"new()" = "新()"
+prototype = "原型"

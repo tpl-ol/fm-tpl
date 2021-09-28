@@ -1,0 +1,26 @@
+# es2015.reflect.tpld.toml
+tpl-spec = "0.1.0"
+from = "ts"
+to = "zh_CN"
+
+type = "lib"
+# lib.es2015.reflect.d.ts
+
+
+[[d]]
+scope = "namespace:Reflect"
+to = "反射"
+[d.d]
+"apply()" = "施用()"
+"construct()" = "构造()"
+"defineProperty()" = "定义属性()"
+"deleteProperty()" = "删除属性()"
+"get()" = "取()"
+"getOwnPropertyDescriptor()" = "取自属性描述符()"
+"getPrototypeOf()" = "取其原型()"
+"has()" = "有()"
+"isExtensible()" = "可扩展()"
+"ownKeys()" = "自键们()"
+"preventExtensions()" = "阻止扩展()"
+"set()" = "设()"
+"setPrototypeOf()" = "设其原型()"

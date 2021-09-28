@@ -1,0 +1,11 @@
+# constants.tpld.toml
+tpl-spec = "0.1.0"
+from = "ts"
+to = "zh_CN"
+
+type = "lib:node"
+# constants.d.ts
+scope = "module:constants"
+scope_to = "常量"
+
+# TODO

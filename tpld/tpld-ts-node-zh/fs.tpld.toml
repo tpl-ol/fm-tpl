@@ -1,0 +1,536 @@
+# fs.tpld.toml
+tpl-spec = "0.1.0"
+from = "ts"
+to = "zh_CN"
+
+type = "lib:node"
+# fs.d.ts
+scope = "module:fs"
+scope_to = "文件操作"
+
+dep = [
+  "./fs_promises",
+]
+
+# 全局
+[[d]]
+scope = ""
+[d.d]
+promises = "许诺"
+"rename()" = "重命名()"
+"renameSync()" = "同步重命名()"
+"truncate()" = "截断()"
+"truncateSync()" = "同步截断()"
+"ftruncate()" = "文件截断()"
+"ftruncateSync()" = "同步文件截断()"
+"chown()" = "改所有者()"
+"chownSync()" = "同步改所有者()"
+"fchown()" = "文件改所有者()"
+"fchownSync()" = "同步文件改所有者()"
+"lchown()" = "链接改所有者()"
+"lchownSync()" = "同步链接改所有者()"
+"lutimes()" = "链接改时间()"
+"lutimesSync()" = "同步链接改时间()"
+"chmod()" = "改模式()"
+"chmodSync()" = "同步改模式()"
+"fchmod()" = "文件改模式()"
+"fchmodSync()" = "同步文件改模式()"
+"lchmod()" = "链接改模式()"
+"lchmodSync()" = "同步链接改模式()"
+"stat()" = "取状态()"
+statSync = "同步取状态"
+"fstat()" = "文件取状态()"
+fstatSync = "同步文件取状态()"
+"lstat()" = "链接取状态()"
+lstatSync = "同步链接取状态"
+"link()" = "链接()"
+"linkSync()" = "同步链接()"
+"symlink()" = "符号链接()"
+"symlinkSync()" = "同步符号链接()"
+"readlink()" = "读链接()"
+"readlinkSync()" = "同步读链接()"
+"realpath()" = "真路径()"
+"realpathSync()" = "同步真路径()"
+"unlink()" = "移除()"
+"unlinkSync()" = "同步移除()"
+"rmdir()" = "删目录()"
+"rmdirSync()" = "同步删目录()"
+"rm()" = "删()"
+"rmSync()" = "同步删()"
+"mkdir()" = "建目录()"
+"mkdirSync()" = "同步建目录()"
+"mkdtemp()" = "建临时目录()"
+"mkdtempSync()" = "同步建临时目录()"
+"readdir()" = "读目录()"
+"readdirSync()" = "同步读链接()"
+"close()" = "关闭()"
+"closeSync()" = "同步关闭()"
+"open()" = "打开()"
+"openSync()" = "同步打开"
+"utimes()" = "改时间()"
+"utimesSync()" = "同步改时间()"
+"futimes()" = "文件改时间()"
+"futimesSync()" = "同步文件改时间()"
+"fsync()" = "文件同步()"
+"fsyncSync()" = "同步文件同步()"
+"write()" = "写()"
+"writeSync()" = "同步写()"
+"read()" = "读()"
+"readSync()" = "同步读()"
+"readFile()" = "读文件()"
+"readFileSync()" = "同步读文件()"
+"writeFlie()" = "写文件()"
+"writeFileSync()" = "同步写文件()"
+"appendFile()" = "追加文件()"
+"appendFileSync()" = "同步追加文件()"
+"watchFile()" = "监视文件()"
+"unwatchFile()" = "取消监视文件()"
+"watch()" = "监视()"
+"exists()" = "存在()"
+"existsSync()" = "同步存在()"
+"access()" = "访问()"
+"accessSync()" = "同步访问()"
+"createReadStream()" = "创建读流()"
+"createWriteStream()" = "创建写流()"
+"fdatasync()" = "文件数据同步()"
+"fdatasyncSync()" = "同步文件数据同步()"
+"copyFile()" = "复制文件()"
+"copyFileSync()" = "同步复制文件()"
+"writev()" = "写多()"
+"writevSync()" = "同步写多()"
+"readv()" = "读多()"
+"readvSync()" = "同步读多()"
+"opendirSync()" = "同步打开目录()"
+"opendir()" = "打开目录()"
+"cp()" = "复制()"
+"cpSync()" = "同步复制()"
+
+[[d]]
+scope = ["namespace:rename", "namespace:truncate", "namespace:ftruncate", "namespace:chown", "namespace:fchown", "namespace:lchown", "namespace:lutimes", "namespace:chmod", "namespace:fchmod", "namespace:lchmod", "namespace:stat", "namespace:fstat", "namespace:lstat", "namespace:link", "namespace:symlink", "namespace:readlink", "namespace:realpath", "namespace:unlink", "namespace:rmdir", "namespace:rm", "namespace:mkdir", "namespace:mkdtemp", "namespace:readdir", "namespace:close", "namespace:open", "namespace:utimes", "namespace:futimes", "namespace:fsync", "namespace:write", "namespace:read", "namespace:readFile", "namespace:writeFile", "namespace:appendFile", "namespace:exists", "namespace:access", "namespace:fdatasync", "namespace:copyFile", "namespace:writev", "namespace:readv", "namespace:opendir"]
+to = ["重命名", "截断", "文件截断", "改所有者", "文件改所有者", "链接改所有者", "链接改时间", "改模式", "文件改模式", "链接改模式", "取状态", "文件取状态", "链接取状态", "链接", "符号链接", "读链接", "真路径", "移除", "删目录", "删", "建目录", "建临时目录", "读目录", "关闭", "打开", "改时间", "文件改时间", "文件同步", "写", "读", "读文件", "写文件", "追加文件", "存在", "访问", "文件数据同步", "复制文件", "写多", "读多", "打开目录"]
+[d.d]
+"__promisify__()" = "__许诺化__()"
+
+[[d]]
+scope = ["arg:stat:options", "namespace:stat\n arg:__promisify__:options", "arg:fstat:options", "namespace:fstat\n arg:__promisify__:options", "arg:lstat:options", "namespace:lstat\n arg:__promisify__:options"]
+to = "选项"
+[d.d]
+bigint = "大整数"
+
+[[d]]
+scope = "namespace:symlink\n type:Type"
+to = "链接类型"
+[d.d]
+dir = "目录"
+file = "文件"
+junction = "接合"
+
+[[d]]
+scope = ["namespace:realpath", "namespace:realpathSync"]
+to = ["真路径", "同步真路径"]
+[d.d]
+"native()" = "原生()"
+
+[[d]]
+scope = ["arg:mkdir:options", "namespace:mkdir\n arg:__promisify__:options", "arg:mkdirSync:options"]
+to = "选项"
+[d.d]
+recursive = "递归"
+
+[[d]]
+scope = "arg:mkdtemp:options"
+to = "选项"
+[d.d]
+encoding = "编码"
+buffer = "存储"
+
+[[d]]
+scope = ["arg:readdir:options", "namespace:readdir\n arg:__promisify__:options", "arg:readdirSync:options"]
+to = "选项"
+[d.d]
+encoding = "编码"
+withFileTypes = "文件类型"
+buffer = "存储"
+
+[[d]]
+scope = "namespace:write\n arg:__promisify__:"
+[d.d]
+bytesWritten = "写字节数"
+buffer = "存储"
+
+[[d]]
+scope = "namespace:read\n arg:__promisify__:"
+[d.d]
+bytesRead = "读字节数"
+buffer = "存储"
+
+[[d]]
+scope = ["arg:readFile:options", "namespace:readFile\n arg:__promisify__:options", "arg:readFileSync:options"]
+to = "选项"
+[d.d]
+encoding = "编码"
+flag = "标志"
+
+[[d]]
+scope = "arg:watchFile:options"
+to = "选项"
+[d.d]
+persistent = "持久"
+interval = "间隔"
+
+[[d]]
+scope = "arg:watch:options"
+to = "选项"
+[d.d]
+encoding = "编码"
+buffer = "存储"
+
+
+# 全局类型
+[[d]]
+scope = "type:"
+[d.d]
+PathLike = "似路径"
+PathOrFileDescriptor = "路径或文件描述符"
+TimeLike = "似时间"
+NoParamCallback = "无参回调"
+EncodingOption = "编码选项"
+OpenMode = "打开模式"
+Mode = "模式"
+ReadPosition = "读位置"
+WatchListener = "监视监听器"
+
+[[d]]
+scope = "type:BufferEncodingOption"
+to = "存储编码选项"
+[d.d]
+encoding = "编码"
+buffer = "存储"
+
+[[d]]
+scope = "ObjectEncodingOptions"
+to = "物编码选项"
+[d.d]
+encoding = "编码"
+
+[[d]]
+scope = "StatsBase"
+to = "状态基"
+[d.d]
+"isFile()" = "是文件()"
+"isDirectory()" = "是目录()"
+"isBlockDevice()" = "是块设备()"
+"isCharacterDevice()" = "是字符设备()"
+"isSymbolicLink()" = "是符号链接()"
+"isFIFO()" = "是先入先出()"
+"isSocket()" = "是插座()"
+dev = "设备"
+ino = "索引节点号"
+mode = "模式"
+nlink = "链接数"
+uid = "用户id"
+gid = "组id"
+# TODO rdev ?
+rdev = "真设备"
+size = "大小"
+blksize = "块大小"
+blocks = "块数"
+atimeMs = "访问时间毫秒"
+mtimeMs = "修改时间毫秒"
+ctimeMs = "创建时间毫秒"
+birthtimeMs = "出生时间毫秒"
+atime = "访问时间"
+mtime = "修改时间"
+ctime = "创建时间"
+birthtime = "出生时间"
+
+[[d]]
+scope = "Stats"
+to = "状态"
+
+[[d]]
+scope = "Dirent"
+to = "目录项"
+[d.d]
+"isFile()" = "是文件()"
+"isDirectory()" = "是目录()"
+"isBlockDevice()" = "是块设备()"
+"isCharacterDevice()" = "是字符设备()"
+"isSymbolicLink()" = "是符号链接()"
+"isFIFO()" = "是先入先出()"
+"isSocket()" = "是插座()"
+name = "名"
+
+[[d]]
+scope = "Dir"
+to = "目录"
+[d.d]
+path = "路径"
+"close()" = "关闭()"
+"closeSync()" = "同步关闭()"
+"read()" = "读()"
+"readSync()" = "同步读()"
+
+[[d]]
+scope = "FSWatcher"
+to = "文件监视器"
+[d.d]
+"close()" = "关闭()"
+
+"addListener()" = "加监听器"
+"on()" = "之时()"
+"once()" = "一次()"
+"prependListener()" = "前置监听器()"
+"prependOnceListener()" = "前置一次监听器()"
+
+[[d]]
+scope = ["arg:FSWatcher.addListener:event", "arg:FSWatcher.on:event", "arg:FSWatcher.once:event", "arg:FSWatcher.prependListener:event", "arg:FSWatcher.prependOnceListener:event"]
+[d.d]
+change = "改变"
+error = "错误"
+close = "关闭"
+
+[[d]]
+scope = "ReadStream"
+to = "读流"
+[d.d]
+"close()" = "关闭()"
+bytesRead = "读字节数"
+path = "路径"
+pending = "待定"
+
+"addListener()" = "加监听器"
+"on()" = "之时()"
+"once()" = "一次()"
+"prependListener()" = "前置监听器()"
+"prependOnceListener()" = "前置一次监听器()"
+
+[[d]]
+scope = ["arg:ReadStream.addListener:event", "arg:ReadStream.on:event", "arg:ReadStream.once:event", "arg:ReadStream.prependListener:event", "arg:ReadStream.prependOnceListener:event"]
+[d.d]
+close = "关闭"
+data = "数据"
+end = "结束"
+error = "错误"
+open = "打开"
+pause = "暂停"
+readable = "可读"
+ready = "就绪"
+resume = "恢复"
+
+[[d]]
+scope = "WriteStream"
+to = "写流"
+[d.d]
+"close()" = "关闭()"
+bytesWritten = "写字节数"
+path = "路径"
+pending = "待定"
+
+"addListener()" = "加监听器"
+"on()" = "之时()"
+"once()" = "一次()"
+"prependListener()" = "前置监听器()"
+"prependOnceListener()" = "前置一次监听器()"
+
+[[d]]
+scope = ["arg:WriteStream.addListener:event", "arg:WriteStream.on:event", "arg:WriteStream.once:event", "arg:WriteStream.prependListener:event", "arg:WriteStream.prependOnceListener:event"]
+[d.d]
+close = "关闭"
+drain = "排空"
+error = "错误"
+finish = "完成"
+open = "打开"
+pipe = "输送"
+ready = "就绪"
+unpipe = "取消输送"
+
+[[d]]
+scope = "StatSyncFn"
+to = "取状态同步函数"
+
+[[d]]
+scope = "arg:StatSyncFn:options"
+to = "选项"
+[d.d]
+bigint = "大整数"
+throwIfNoEntry = "没入口就扔"
+
+[[d]]
+scope = "RmDirOptions"
+to = "删目录选项"
+[d.d]
+maxRetries = "最大重试"
+recursive = "递归"
+retryDelay = "重试延迟"
+
+[[d]]
+scope = "RmOptions"
+to = "删选项"
+[d.d]
+force = "强制"
+maxRetries = "最大重试"
+recursive = "递归"
+retryDelay = "重试延迟"
+
+[[d]]
+scope = "MakeDirectoryOptions"
+to = "建目录选项"
+[d.d]
+recursive = "递归"
+mode = "模式"
+
+[[d]]
+scope = "ReadSyncOptions"
+to = "读同步选项"
+[d.d]
+offset = "偏移"
+length = "长度"
+position = "位置"
+
+[[d]]
+scope = "type:WriteFileOptions"
+to = "写文件选项"
+[d.d]
+mode = "模式"
+flag = "标志"
+
+[[d]]
+scope = "WatchOptions"
+to = "监视选项"
+[d.d]
+encoding = "编码"
+persistent = "持久"
+recursive = "递归"
+
+[[d]]
+scope = "WatchEventType"
+to = "监视事件类型"
+[d.d]
+rename = "重命名"
+change = "改变"
+
+[[d]]
+scope = "StreamOptions"
+to = "流选项"
+[d.d]
+flags = "标志"
+encoding = "编码"
+fd = "文件描述符"
+mode = "模式"
+autoClose = "自动关闭"
+emitClose = "发出关闭"
+start = "开始"
+highWaterMark = "高水位"
+
+[[d]]
+scope = "ReadStreamOptions"
+to = "读流选项"
+[d.d]
+end = "结束"
+
+[[d]]
+scope = "WriteVResult"
+to = "写多结果"
+[d.d]
+bytesWritten = "写字节数"
+buffers = "存储"
+
+[[d]]
+scope = "ReadVResult"
+to = "读多结果"
+[d.d]
+bytesRead = "读字节数"
+buffers = "存储"
+
+[[d]]
+scope = "OpenDirOptions"
+to = "打开目录选项"
+[d.d]
+encoding = "编码"
+bufferSize = "存储大小"
+
+[[d]]
+scope = "BigIntStats"
+to = "大整数状态"
+[d.d]
+atimeNs = "访问时间纳秒"
+mtimeNs = "修改时间纳秒"
+ctimeNs = "创建时间纳秒"
+birthtimeNs = "出生时间纳秒"
+
+[[d]]
+scope = "BigIntOptions"
+to = "大整数选项"
+[d.d]
+bigint = "大整数"
+
+[[d]]
+scope = "StatOptions"
+to = "状态选项"
+[d.d]
+bigint = "大整数"
+throwIfNoEntry = "没入口就扔"
+
+[[d]]
+scope = "CopyOptions"
+to = "复制选项"
+[d.d]
+dereference = "解引用"
+errorOnExist = "存在就错误"
+"filter()" = "过滤()"
+force = "强制"
+preserveTimestamps = "保留时间戳"
+recursive = "递归"
+
+
+[[d]]
+scope = "constants"
+to = "常量"
+[d.d]
+F_OK = "文件好"
+R_OK = "读好"
+W_OK = "写好"
+X_OK = "执行好"
+COPYFILE_EXCL = "复制文件排除"
+COPYFILE_FICLONE = "复制文件克隆"
+COPYFILE_FICLONE_FORCE = "复制文件克隆强制"
+O_RDONLY = "打开只读"
+O_WRONLY = "打开只写"
+O_RDWR = "打开读写"
+O_CREAT = "打开创建"
+O_EXCL = "打开排除"
+O_NOCTTY = "打开不控终端"
+O_TRUNC = "打开截断"
+O_APPEND = "打开追加"
+O_DIRECTORY = "打开目录"
+O_NOATIME = "打开无访问时间"
+O_NOFOLLOW = "打开不追"
+O_SYNC = "打开同步"
+O_DSYNC = "打开数据同步"
+O_SYMLINK = "打开符号链接"
+O_DIRECT = "打开直接"
+O_NONBLOCK = "打开非阻塞"
+S_IFMT = "状态类型掩码"
+S_IFREG = "状态类型普通"
+S_IFDIR = "状态类型目录"
+S_IFCHR = "状态类型字符"
+S_IFBLK = "状态类型块"
+S_IFIFO = "状态类型管道"
+S_IFLNK = "状态类型链接"
+S_IFSOCK = "状态类型插座"
+# 完全权限: 读 + 写 + 执行
+S_IRWXU = "状态权限用户全"
+S_IRUSR = "状态权限用户读"
+S_IWUSR = "状态权限用户写"
+S_IXUSR = "状态权限用户执行"
+S_IRWXG = "状态权限组全"
+S_IRGRP = "状态权限组读"
+S_IWGRP = "状态权限组写"
+S_IXGRP = "状态权限组执行"
+# 别的用户权限
+S_IRWXO = "状态权限别全"
+S_IROTH = "状态权限别读"
+S_IWOTH = "状态权限别写"
+S_IXOTH = "状态权限别执行"
+UV_FS_O_FILEMAP = "UV文件映射"

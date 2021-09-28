@@ -1,0 +1,16 @@
+# es2017.object.tpld.toml
+tpl-spec = "0.1.0"
+from = "ts"
+to = "zh_CN"
+
+type = "lib"
+# lib.es2017.object.d.ts
+
+
+[[d]]
+scope = "ObjectConstructor"
+to = "物构造器"
+[d.d]
+"values()" = "值们()"
+"entries()" = "条目()"
+"getOwnPropertyDescriptors()" = "取自属性描述符们()"

@@ -1,0 +1,23 @@
+# es2019.array.tpld.toml
+tpl-spec = "0.1.0"
+from = "ts"
+to = "zh_CN"
+
+type = "lib"
+# lib.es2019.array.d.ts
+
+
+# TODO
+[[d]]
+scope = "type:FlatArray"
+to = "平铺数组"
+[d.d]
+done = "完成"
+recur = "递归"
+
+[[d]]
+scope = ["ReadonlyArray", "Array"]
+to = ["只读数组", "数组"]
+[d.d]
+"flatMap()" = "平铺映射()"
+"flat()" = "平铺()"

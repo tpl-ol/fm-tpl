@@ -1,0 +1,71 @@
+# module.tpld.toml
+tpl-spec = "0.1.0"
+from = "ts"
+to = "zh_CN"
+
+type = "lib:node"
+# module.d.ts
+scope = "module:module"
+scope_to = "模块"
+
+# 全局
+[[d]]
+scope = ""
+[d.d]
+Module = "模块"
+
+[[d]]
+scope = "namespace:Module"
+to = "模块"
+[d.d]
+"syncBuiltinESMExports()" = "同步内置模块导出()"
+"findSourceMap()" = "找源码映射()"
+
+[[d]]
+scope = "namespace:Module\n SourceMapPayload"
+to = "源码映射载荷"
+[d.d]
+file = "文件"
+version = "版本"
+sources = "源"
+sourcesContent = "源内容"
+names = "名称"
+mappings = "映射"
+sourceRoot = "源根"
+
+[[d]]
+scope = "namespace:Module\n SourceMapping"
+to = "源映射"
+[d.d]
+generatedLine = "生成行"
+generatedColumn = "生成列"
+originalSource = "原源"
+originalLine = "原行"
+originalColumn = "原列"
+
+[[d]]
+scope = "namespace:Module\n SourceMap"
+to = "源映射类"
+[d.d]
+payload = "载荷"
+"constructor()" = "构造()"
+"findEntry()" = "找入口()"
+
+[[d]]
+scope = "Module"
+to = "模块类"
+[d.d]
+"runMain()" = "运行主()"
+"wrap()" = "包装()"
+"createRequire()" = "创建要求()"
+builtinModules = "内置模块"
+Module = "模块"
+"constructor()" = "构造()"
+
+[[d]]
+scope = "global:ImportMeta"
+to = "导入元数据"
+[d.d]
+# 拒绝翻译
+#url
+"resolve()" = "决定()"

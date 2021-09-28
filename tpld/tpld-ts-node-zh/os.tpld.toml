@@ -1,0 +1,190 @@
+# os.tpld.toml
+tpl-spec = "0.1.0"
+from = "ts"
+to = "zh_CN"
+
+type = "lib:node"
+# os.d.ts
+scope = "module:os"
+# scope_to 拒绝翻译
+
+# 全局
+[[d]]
+scope = ""
+[d.d]
+"hostname()" = "主机名()"
+"loadavg()" = "平均负载()"
+"uptime()" = "开机时间()"
+"freemem()" = "空闲内存()"
+"totalmem()" = "总内存()"
+"cpus()" = "处理器()"
+"type()" = "类型()"
+"release()" = "发行()"
+"networkInterfaces()" = "网络接口()"
+"homedir()" = "家目录()"
+"userInfo()" = "用户信息()"
+devNull = "空设备"
+EOL = "换行符"
+"arch()" = "架构()"
+"version()" = "版本()"
+"platform()" = "平台()"
+"tmpdir()" = "临时目录()"
+"endianness(): 'BE' | 'LE'" = "字节序(): '大尾' | '小尾'"
+"getPriority()" = "取优先级()"
+"setPriority()" = "设优先级()"
+
+[[d]]
+scope = "type:"
+[d.d]
+NetworkInterfaceInfo = "网络接口信息"
+SignalConstants = "信号常量"
+
+[[d]]
+scope = "CpuInfo"
+to = "处理器信息"
+[d.d]
+model = "模型"
+speed = "速度"
+times = "时间"
+"times.user" = "用户"
+"times.nice" = "优先"
+"times.sys" = "系统"
+"times.idle" = "空闲"
+"times.irq" = "中断"
+
+[[d]]
+scope = "NetworkInterfaceBase"
+to = "网络接口基"
+[d.d]
+address = "地址"
+netmask = "掩码"
+# 拒绝翻译
+#mac = ""
+internal = "内部"
+cidr = "无类域间路由"
+
+[[d]]
+scope = "NetworkInterfaceInfoIPv4"
+to = "网络接口信息IPv4"
+[d.d]
+family = "类型"
+
+[[d]]
+scope = "NetworkInterfaceInfoIPv6"
+to = "网络接口信息IPv6"
+[d.d]
+family = "类型"
+scopeid = "范围id"
+
+[[d]]
+scope = "UserInfo"
+to = "用户信息"
+[d.d]
+username = "用户名"
+uid = "用户id"
+gid = "组id"
+shell = "壳"
+homedir = "家目录"
+
+[[d]]
+scope = "namespace:constants"
+to = "常量"
+[d.d]
+UV_UDP_REUSEADDR = "UV_UDP_重用地址"
+signals = "信号"
+
+[[d]]
+scope = "namespace:constants\n namespace:errno"
+to = "错误号"
+[d.d]
+E2BIG = "错太大"
+EACCES = "错访问"
+EADDRINUSE = "错地址在用"
+EADDRNOTAVAIL = "错地址不可用"
+#EAFNOSUPPORT = ""
+EAGAIN = "错重试"
+EALREADY = "错已经"
+EBADF = "错坏文件"
+EBADMSG = "错坏消息"
+EBUSY = "错忙"
+ECANCELED = "错已取消"
+ECHILD = "错下级"
+ECONNABORTED = "错连接已中止"
+ECONNREFUSED = "错连接被拒绝"
+ECONNRESET = "错连接重置"
+EDEADLK = "错死锁"
+EDESTADDRREQ = "错目标地址请求"
+#EDOM = ""
+#EDQUOT = ""
+EEXIST = "错存在"
+EFAULT = "错故障"
+EFBIG = "错文件大"
+EHOSTUNREACH = "错主机不可达"
+#EIDRM = ""
+#EILSEQ = ""
+EINPROGRESS = "错进行中"
+EINTR = "错中断"
+EINVAL = "错无效"
+EIO = "错入出"
+EISCONN = "错是连接"
+EISDIR = "错是目录"
+ELOOP = "错循环"
+#EMFILE = ""
+#EMLINK = ""
+EMSGSIZE = "错消息大小"
+EMULTIHOP = "错多跳"
+ENAMETOOLONG = "错名太长"
+ENETDOWN = "错网断"
+ENETRESET = "错网重置"
+ENETUNREACH = "错网不可达"
+#ENFILE = ""
+ENOBUFS = "错无缓冲"
+ENODATA = "错无数据"
+ENODEV = "错无设备"
+ENOENT = "错无实体"
+ENOEXEC = "错不可执行"
+ENOLCK = "错无锁"
+ENOLINK = "错无链接"
+ENOMEM = "错无内存"
+ENOMSG = "错无消息"
+ENOPROTOOPT = "错无协议选项"
+#ENOSPC = ""
+#ENOSR = ""
+ENOSTR = "错无串"
+ENOSYS = "错无系统"
+ENOTCONN = "错未连接"
+ENOTDIR = "错非目录"
+ENOTEMPTY = "错非空"
+ENOTSOCK = "错非插座"
+ENOTSUP = "错不支持"
+#ENOTTY = ""
+#ENXIO = ""
+EOPNOTSUPP = "错操作不支持"
+EOVERFLOW = "错溢出"
+EPERM = "错权限"
+EPIPE = "错管道"
+EPROTO = "错协议"
+EPROTONOSUPPORT = "错协议不支持"
+EPROTOTYPE = "错协议类型"
+ERANGE = "错范围"
+EROFS = "错只读文件系统"
+#ESPIPE = ""
+#ESRCH = ""
+ESTALE = "错陈旧"
+ETIME = "错时间"
+ETIMEDOUT = "错超时"
+#ETXTBSY = ""
+EWOULDBLOCK = "错将锁"
+#EXDEV = ""
+# TODO
+
+[[d]]
+scope = "namespace:constants\n namespace:priority"
+to = "优先级"
+[d.d]
+PRIORITY_LOW = "优先级低"
+PRIORITY_BELOW_NORMAL = "优先级低于普通"
+PRIORITY_NORMAL = "优先级普通"
+PRIORITY_ABOVE_NORMAL = "优先级高于普通"
+PRIORITY_HIGH = "优先级高"
+PRIORITY_HIGHEST = "优先级最高"

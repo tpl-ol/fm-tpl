@@ -1,0 +1,66 @@
+# timers.tpld.toml
+tpl-spec = "0.1.0"
+from = "ts"
+to = "zh_CN"
+
+type = "lib:node"
+# timers.d.ts
+# scope: global
+
+# 全局
+[[d]]
+scope = ""
+[d.d]
+"setTimeout()" = "设超时()"
+"clearTimeout()" = "清超时()"
+"setInterval()" = "设间隔()"
+"clearInterval()" = "清间隔()"
+"setImmediate()" = "设立刻()"
+"clearImmediate()" = "清立刻()"
+"queueMicrotask()" = "排队微任务()"
+
+[[d]]
+scope = "module:timers"
+to = "定时器"
+
+[[d]]
+scope = "module:timers\n TimerOptions"
+to = "定时器选项"
+[d.d]
+ref = "引用"
+
+[[d]]
+scope = "namespace:NodeJS\n Timer"
+to = "定时器"
+[d.d]
+"hasRef()" = "有引用()"
+"refresh()" = "刷新()"
+
+[[d]]
+scope = "namespace:NodeJS\n Immediate"
+to = "立刻"
+[d.d]
+"hasRef()" = "有引用()"
+_onImmediate = "_立刻之时"
+
+[[d]]
+scope = "namespace:NodeJS\n Timeout"
+to = "超时"
+[d.d]
+"hasRef()" = "有引用()"
+"refresh()" = "刷新()"
+
+[[d]]
+scope = ["namespace:setTimeout", "namespace:setInterval", "namespace:setImmediate"]
+to = ["设超时", "设间隔", "设立刻"]
+[d.d]
+__promisify__ = "__许诺化__"
+
+# timers/promises.d.ts
+[[d]]
+scope = "module:timers/promises"
+to = "许诺"
+[d.d]
+"setTimeout()" = "设超时()"
+"setImmediate()" = "设立刻()"
+"setInterval()" = "设间隔()"

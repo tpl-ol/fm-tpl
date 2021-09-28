@@ -1,0 +1,10 @@
+# es2018.intl.tpld.toml
+tpl-spec = "0.1.0"
+from = "ts"
+to = "zh_CN"
+
+type = "lib"
+# lib.es2018.intl.d.ts
+
+
+# TODO

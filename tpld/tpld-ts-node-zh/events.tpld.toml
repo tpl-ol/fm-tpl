@@ -1,0 +1,72 @@
+# events.tpld.toml
+tpl-spec = "0.1.0"
+from = "ts"
+to = "zh_CN"
+
+type = "lib:node"
+# events.d.ts
+scope = "module:events"
+scope_to = "事件"
+
+[[d]]
+scope = "EventEmitterOptions"
+to = "事件发出器选项"
+[d.d]
+captureRejections = "捕获拒绝"
+
+[[d]]
+scope = "NodeEventTarget"
+to = "节点事件目标"
+[d.d]
+"once()" = "一次()"
+
+[[d]]
+scope = "DOMEventTarget"
+to = "DOM事件目标"
+[d.d]
+"addEventListener()" = "加事件监听器()"
+
+[[d]]
+scope = "StaticEventEmitterOptions"
+to = "静态事件发出器选项"
+[d.d]
+signal = "信号"
+
+[[d]]
+scope = "EventEmitter"
+to = "事件发出器"
+[d.d]
+"constructor()" = "构造()"
+"once()" = "一次()"
+"on()" = "之时()"
+"getEventListeners()" = "取事件监听器()"
+errorMonitor = "错误监视器"
+captureRejectionSymbol = "捕获拒绝符号"
+captureRejections = "捕获拒绝()"
+defaultMaxListeners = "默认最多监听器"
+
+[[d]]
+scope = "namespace:EventEmitter\n Abortable"
+to = "可中止"
+[d.d]
+signal = "信号"
+
+[[d]]
+scope = "global:namespace:NodeJS\n EventEmitter"
+to = "事件发出器"
+[d.d]
+"addListener()" = "加监听器()"
+"on()" = "之时()"
+"once()" = "一次()"
+"removeListener()" = "移除监听器()"
+"off()" = "关()"
+"removeAllListeners()" = "移除全部监听器()"
+"setMaxListeners()" = "设最多监听器()"
+"getMaxListeners()" = "取最多监听器()"
+"listeners()" = "监听器()"
+"rawListeners()" = "原始监听器()"
+"emit()" = "发出()"
+"listenerCount()" = "监听器计数()"
+"prependListener()" = "前置监听器()"
+"prependOnceListener()" = "前置一次监听器()"
+"eventNames()" = "事件名()"

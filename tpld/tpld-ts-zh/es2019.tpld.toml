@@ -1,0 +1,15 @@
+# es2019.tpld.toml
+tpl-spec = "0.1.0"
+from = "ts"
+to = "zh_CN"
+
+type = "lib"
+# lib.es2019.d.ts
+
+dep = [
+  "./es2018",
+  "./es2019.array",
+  "./es2019.object",
+  "./es2019.string",
+  "./es2019.symbol",
+]

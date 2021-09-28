@@ -1,0 +1,130 @@
+# es2015.core.tpld.toml
+tpl-spec = "0.1.0"
+from = "ts"
+to = "zh_CN"
+
+type = "lib"
+# lib.es2015.core.d.ts
+
+
+[[d]]
+scope = "Array"
+to = "数组"
+[d.d]
+"find()" = "查找()"
+"findIndex()" = "查找下标()"
+"fill()" = "填充()"
+"copyWithin()" = "内部复制()"
+
+[[d]]
+scope = "ArrayConstructor"
+to = "数组构造器"
+[d.d]
+"from()" = "从()"
+"of()" = "于()"
+
+#DateConstructor
+
+[[d]]
+scope = "Function"
+to = "函数"
+[d.d]
+name = "名称"
+
+[[d]]
+scope = "Math"
+to = "数学"
+[d.d]
+# 此部分翻译困难
+"clz32()" = "计前导032()"
+"imul()" = "i乘()"
+"sign()" = "符号()"
+"log10()" = "对数10()"
+"log2()" = "对数2()"
+"log1p()" = "对数1p()"
+"expm1()" = "指数减1()"
+"cosh()" = "双曲余弦()"
+"sinh()" = "双曲正弦()"
+"tanh()" = "双曲正切()"
+"acosh()" = "双曲反余弦()"
+"asinh()" = "双曲反正弦()"
+"atanh()" = "双曲反正切()"
+"hypot()" = "模()"
+"trunc()" = "截断()"
+"fround()" = "单精度()"
+"cbrt()" = "立方根()"
+
+[[d]]
+scope = "NumberConstructor"
+to = "数字构造器"
+[d.d]
+EPSILON = "最小实数"
+MAX_SAFE_INTEGER = "最大安全整数"
+MIN_SAFE_INTEGER = "最小安全整数"
+"isFinite()" = "有限()"
+"isInteger()" = "整数()"
+"isNaN()" = "非数()"
+"isSafeInteger()" = "安全整数()"
+"parseFloat()" = "解析实数()"
+"parseInt()" = "解析整数()"
+
+[[d]]
+scope = "ObjectConstructor"
+to = "物构造器"
+[d.d]
+"assign()" = "分配()"
+"getOwnPropertySymbols()" = "取自属性符号()"
+"keys()" = "键们()"
+"is()" = "是()"
+"setPrototypeOf()" = "设其原型()"
+
+[[d]]
+scope = "ReadonlyArray"
+to = "只读数组"
+[d.d]
+"find()" = "查找()"
+"findIndex()" = "查找下标()"
+
+[[d]]
+scope = "RegExp"
+to = "正则表达式"
+[d.d]
+flags = "标志"
+sticky = "粘性"
+# 拒绝翻译
+#unicode
+
+#RegExpConstructor
+
+[[d]]
+scope = "String"
+to = "字符串"
+[d.d]
+"codePointAt()" = "码点在()"
+"includes()" = "包含()"
+"endsWith()" = "结尾()"
+# TODO: "NFC" "NFD" "NFKC" "NFKD"
+"normalize()" = "规范化()"
+"repeat()" = "重复()"
+"startsWith()" = "开头()"
+# 拒绝翻译: 生成 HTML 元素
+#anchor() <a>
+#big() <big>
+#blink() <blink>
+#bold() <b>
+#fixed() <tt>
+#fontcolor() <font>
+#fontsize() <font>
+#italics() <i>
+#link() <a>
+#small() <small>
+#strike() <strike>
+#sub() <sub>
+#sup() <sup>
+
+[[d]]
+scope = "StringConstructor"
+to = "字符串构造器"
+[d.d]
+"fromCodePoint()" = "从码点()"
+"raw()" = "原始()"

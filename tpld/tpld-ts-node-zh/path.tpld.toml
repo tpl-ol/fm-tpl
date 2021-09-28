@@ -1,0 +1,46 @@
+# path.tpld.toml
+tpl-spec = "0.1.0"
+from = "ts"
+to = "zh_CN"
+
+type = "lib:node"
+# path.d.ts
+scope = "module:path\n namespace:path"
+scope_to = "路径"
+
+# 全局
+[[d]]
+scope = ""
+[d.d]
+path = "路径"
+
+[[d]]
+scope = ["ParsedPath", "FormatInputPathObject"]
+to = ["解析的路径", "格式化输入路径物"]
+[d.d]
+root = "根"
+dir = "目录"
+base = "基"
+ext = "后缀"
+name = "名"
+
+[[d]]
+scope = "PlatformPath"
+to = "平台路径"
+[d.d]
+"normalize()" = "标准化()"
+"join()" = "拼接()"
+"resolve()" = "决定()"
+"isAbsolute()" = "是绝对()"
+"relative()" = "相对()"
+"dirname()" = "目录名()"
+"basename()" = "基名()"
+"extname()" = "后缀()"
+sep = "分隔"
+delimiter = "定界"
+"parse()" = "解析()"
+"format()" = "格式化()"
+"toNamespacedPath()" = "命名空间路径()"
+# 拒绝翻译
+#posix
+#win32

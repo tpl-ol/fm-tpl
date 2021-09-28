@@ -1,0 +1,17 @@
+# string_decoder.tpld.toml
+tpl-spec = "0.1.0"
+from = "ts"
+to = "zh_CN"
+
+type = "lib:node"
+# string_decoder.d.ts
+scope = "module:string_decoder"
+scope_to = "串解码器"
+
+[[d]]
+scope = "StringDecoder"
+to = "串解码器"
+[d.d]
+"constructor()" = "构造()"
+"write()" = "写()"
+"end()" = "结束()"

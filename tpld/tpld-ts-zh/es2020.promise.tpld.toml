@@ -1,0 +1,35 @@
+# es2020.promise.tpld.toml
+tpl-spec = "0.1.0"
+from = "ts"
+to = "zh_CN"
+
+type = "lib"
+# lib.es2020.promise.d.ts
+
+
+# TODO
+[[d]]
+scope = "PromiseFulfilledResult"
+to = "许诺满足结果"
+[d.d]
+status = "状态"
+value = "值"
+
+# TODO
+[[d]]
+scope = "PromiseRejectedResult"
+to = "许诺拒绝结果"
+[d.d]
+status = "状态"
+reason = "原因"
+
+[[d]]
+scope = "type:"
+[d.d]
+PromiseSettledResult = "许诺落定结果"
+
+[[d]]
+scope = "PromiseConstructor"
+to = "许诺构造器"
+[d.d]
+"allSettled()" = "全落定()"

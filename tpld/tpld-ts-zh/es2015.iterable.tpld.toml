@@ -1,0 +1,86 @@
+# es2015.iterable.tpld.toml
+tpl-spec = "0.1.0"
+from = "ts"
+to = "zh_CN"
+
+type = "lib"
+# lib.es2015.iterable.d.ts
+
+dep = [
+  "./es2015.symbol",
+]
+
+
+# type
+[[d]]
+scope = "type:"
+[d.d]
+IteratorResult = "迭代器结果"
+
+
+[[d]]
+scope = "SymbolConstructor"
+to = "符号构造器"
+[d.d]
+iterator = "迭代器"
+
+[[d]]
+scope = ["IteratorYieldResult", "IteratorReturnResult"]
+to = ["迭代器产生结果", "迭代器返回结果"]
+[d.d]
+done = "完成"
+value = "值"
+
+[[d]]
+scope = "Iterator"
+to = "迭代器"
+[d.d]
+"next()" = "下个()"
+"return()" = "返回()"
+"throw()" = "扔()"
+
+[[d]]
+scope = "Iterable"
+to = "可迭代"
+
+[[d]]
+scope = "IterableIterator"
+to = "可迭代迭代器"
+
+[[d]]
+scope = ["Array", "ReadonlyArray"]
+[d.d]
+"entries()" = "条目()"
+"keys()" = "键们()"
+"values()" = "值们()"
+
+#ArrayConstructor
+#IArguments
+
+[[d]]
+scope = ["Map", "ReadonlyMap", "Set", "ReadonlySet", "Int8Array", "Uint8Array", "Uint8ClampedArray", "Int16Array", "Uint16Array", "Int32Array", "Uint32Array", "Float32Array", "Float64Array"]
+[d.d]
+"entries()" = "条目()"
+"keys()" = "键们()"
+"values()" = "值们()"
+
+#MapConstructor
+#WeakMap
+#WeakMapConstructor
+#SetConstructor
+#WeakSet
+#WeakSetConstructor
+#Promise
+#PromiseConstructor
+# all()
+# race()
+#String
+#Int8ArrayConstructor
+#Uint8ArrayConstructor
+#Uint8ClampedArrayConstructor
+#Int16ArrayConstructor
+#Uint16ArrayConstructor
+#Int32ArrayConstructor
+#Uint32ArrayConstructor
+#Float32ArrayConstructor
+#Float64ArrayConstructor
