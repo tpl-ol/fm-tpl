@@ -21,6 +21,9 @@
     "build": "bash ./build.sh && npm pack",
     "test": "npm run fmt:check"
   },
+  "files": [
+    "/fm-tpl"
+  ],
   "devDependencies": {
     "prettier": "^2.4.1"
   }

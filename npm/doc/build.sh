@@ -7,15 +7,11 @@ rm -r fm-tpl
 
 # 复制文件
 mkdir -p fm-tpl
-cd fm-tpl
-cp ../../doc .
-cp ../../logo .
-cp ../../tpl-spec .
-cp ../../tpl-tool .
-cp ../../tpld .
-cp ../../README.md .
-cp ../../LICENSE .
-cp ../../LICENSE ..
+cd ../..
+cp -r doc logo tpl-spec tpl-tool tpld README.md npm/doc/fm-tpl
+cp LICENSE npm/doc/
+cp LICENSE npm/doc/fm-tpl
+cd npm/doc/fm-tpl
 
 # 移除空文件
 find . -type f -empty -print -delete

@@ -3,7 +3,7 @@ on: [push, pull_request]
 
 env:
   # npm pack
-  PACK_FILENAME: tpl-ol-doc-0.1.0.tgz
+  PACK_FILENAME: tpl-ol-doc-0.1.0-a0.tgz
 
 jobs:
   build:
