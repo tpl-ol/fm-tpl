@@ -1,0 +1,28 @@
+name: CI
+on: [push, pull_request]
+
+env:
+  # npm pack
+  PACK_FILENAME: tpl-ol-doc-0.1.0.tgz
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "16"
+          cache: "npm"
+      - run: npm ci
+
+      - run: npm test
+      - run: cd npm/doc && npm run build
+
+      - run: npm install --no-save ./npm/doc/${{ env.PACK_FILENAME }}
+      # 保存 npm pack
+      - uses: actions/upload-artifact@v2
+        with:
+          name: ${{ env.PACK_FILENAME }}
+          path: ./npm/doc/${{ env.PACK_FILENAME }}

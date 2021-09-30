@@ -1,40 +1,39 @@
 # 替语言对原语言的支持级别
 
-
 ## 五级支持体系
 
-+ 负一级: **不考虑支持** `-1`
+- 负一级: **不考虑支持** `-1`
 
   原语言不支持 Unicode 标识符 (也就是不支持中文标识符),
   或者原语言自身 (编译器, 标准库, 运行环境, 语言规范等关键部分) 不开源.
 
   替语言不考虑支持这种语言.
 
-+ 零级: **尚未支持** `L0`
+- 零级: **尚未支持** `L0`
 
   原语言已经支持 Unicode 标识符, 且自身已经开源,
   但是替语言对其没有任何支持.
 
-+ 一级: **原始支持** `L1`
+- 一级: **原始支持** `L1`
 
   替语言具有对应的支持工具 (tpl-ast-LANG),
   能够实现部分关键字, 内置数据类型, 以及标识符的替换.
 
-+ 二级: **基础支持** `L2`
+- 二级: **基础支持** `L2`
 
   替语言工具 (tpl-ast-LANG) 能够替换原语言的全部关键字 (包括保留字, 条件关键字等),
   全部内置数据类型, 以及大部分标识符.
 
   同时完成原语言的全部关键字, 内置数据类型, 以及内置标准库 (标准库中无需手动导入的部分) 的翻译 (tpld).
 
-+ 三级: **核心支持** `L3`
+- 三级: **核心支持** `L3`
 
   在二级的基础上, 替语言工具 (tpl-ast-LANG) 能够完成全部标识符的替换.
   同时完成原语言的全部标准库的翻译.
 
   并且有多个第三方软件包 (或运行环境/平台) 完成翻译.
 
-+ 四级: **完善支持** `L4`
+- 四级: **完善支持** `L4`
 
   在三级的基础上, 替语言工具 (tpl-ide-LANG-TOOL) 对多种常用的编辑器 / IDE 等支持良好.
   原语言的常用开发工具 (比如代码格式化工具 (format), 代码查错工具 (lint) 等) 得到支持.
@@ -42,7 +41,7 @@
 
   并且有大量常用的第三方软件包完成翻译.
 
-+ 五级: **繁荣生态** `L5`
+- 五级: **繁荣生态** `L5`
 
   按照四级的标准, 连续及时更新维护一年以上.
 
@@ -51,32 +50,30 @@
 
   中文社区/文档/文章/资料/教程等发展完善, 日常编程可以完全脱离英文环境.
 
-
 ## 原语言支持列表
 
-| 原语言 | 简称 | 支持级别 | 说明 |
-| :---- | :--- | :-----: | :--- |
-| [TypeScript 4.3](https://github.com/microsoft/TypeScript) | `ts` | L0 | |
-| [Java (jdk17u)](https://github.com/openjdk/jdk17u) | `java` | L0 | |
-| [Kotlin 1.5](https://kotlinlang.org/) | `kotlin` | L0 | |
-| [Rust 1.54](https://www.rust-lang.org/) | `rust` | L0 | |
-| [TOML 1.0](https://toml.io/) | `toml` | L0 | (替语言自举) 用于存储数据, 不是编程语言 |
-| SQL ([sqlite 3.36](https://sqlite.org/index.html)) | `sql` | ? | |
-| [Python 3.9](https://www.python.org/) | `py` | L0 | (rt) |
-| JavaScript (es2021) | `js` | L0 | (rt) |
-| HTML (5) | `html` | L0 | |
-| CSS (3) | `css` | L0 | |
-| [Sass 1.35](https://sass-lang.com/) | `sass` | ? | |
-| C# | `cs` | ? | |
-| [AssemblyScript](https://www.assemblyscript.org/) | `assemblyscript` | ? | |
-| [Grain](https://grain-lang.org/) | `grain` | ? | |
-| [Dart 2.13](https://dart.dev/) | `dart` | -1 | [dart-lang/sdk#2608](https://github.com/dart-lang/sdk/issues/2608) |
+| 原语言                                                    | 简称             | 支持级别 | 说明                                                               |
+| :-------------------------------------------------------- | :--------------- | :------: | :----------------------------------------------------------------- |
+| [TypeScript 4.3](https://github.com/microsoft/TypeScript) | `ts`             |    L0    |                                                                    |
+| [Java (jdk17u)](https://github.com/openjdk/jdk17u)        | `java`           |    L0    |                                                                    |
+| [Kotlin 1.5](https://kotlinlang.org/)                     | `kotlin`         |    L0    |                                                                    |
+| [Rust 1.54](https://www.rust-lang.org/)                   | `rust`           |    L0    |                                                                    |
+| [TOML 1.0](https://toml.io/)                              | `toml`           |    L0    | (替语言自举) 用于存储数据, 不是编程语言                            |
+| SQL ([sqlite 3.36](https://sqlite.org/index.html))        | `sql`            |    ?     |                                                                    |
+| [Python 3.9](https://www.python.org/)                     | `py`             |    L0    | (rt)                                                               |
+| JavaScript (es2021)                                       | `js`             |    L0    | (rt)                                                               |
+| HTML (5)                                                  | `html`           |    L0    |                                                                    |
+| CSS (3)                                                   | `css`            |    L0    |                                                                    |
+| [Sass 1.35](https://sass-lang.com/)                       | `sass`           |    ?     |                                                                    |
+| C#                                                        | `cs`             |    ?     |                                                                    |
+| [AssemblyScript](https://www.assemblyscript.org/)         | `assemblyscript` |    ?     |                                                                    |
+| [Grain](https://grain-lang.org/)                          | `grain`          |    ?     |                                                                    |
+| [Dart 2.13](https://dart.dev/)                            | `dart`           |    -1    | [dart-lang/sdk#2608](https://github.com/dart-lang/sdk/issues/2608) |
 
 注: `rt` 表示此编程语言为动态类型 (弱类型) 语言,
-  仅通过静态编译方式无法实现替语言全部功能,
-  需要配合使用运行时 (tpl-rt-LANG) 代码.
+仅通过静态编译方式无法实现替语言全部功能,
+需要配合使用运行时 (tpl-rt-LANG) 代码.
 
 注: 级别 `-1` 的语言不加入这个列表 (一般情况).
-
 
 (2021-09-04)

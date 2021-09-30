@@ -6,8 +6,7 @@
 接口版本号 `0.1.0-a1`
 使用 [语义化版本 (SEMVER 2.0.0)](https://semver.org/lang/zh-CN/)
 
-
-```ts
+````ts
 // jsonrpc_ast.d.ts
 // 引用: jsonrpc_toml.d.ts
 
@@ -57,7 +56,6 @@ interface 替语言服务 {
   /// 如果扔出错误, 意味着监视失败, 需要重新枚举代码文件
   监视(选项: 监视选项): Promise<Array<检查结果>>;
 }
-```
-
+````
 
 TODO

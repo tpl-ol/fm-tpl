@@ -3,19 +3,25 @@
   "version": "0.1.0-a0",
   "description": "替语言文档  Document for TPL",
   "license": "CC-BY-SA-4.0",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/fm-elpac/fm-tpl.git"
-  },
   "keywords": [
     "tpl"
   ],
   "author": "sceext",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fm-elpac/fm-tpl.git"
+  },
+  "homepage": "https://github.com/fm-elpac/fm-tpl#readme",
   "bugs": {
     "url": "https://github.com/fm-elpac/fm-tpl/issues"
   },
-  "homepage": "https://github.com/fm-elpac/fm-tpl#readme"
+  "scripts": {
+    "fmt": "prettier --write .",
+    "fmt:check": "prettier --check .",
+    "build": "bash ./build.sh && npm pack",
+    "test": "npm run fmt:check"
+  },
+  "devDependencies": {
+    "prettier": "^2.4.1"
+  }
 }

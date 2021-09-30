@@ -4,7 +4,6 @@
 
 但是, 如果对这种编程语言进行改造, 建议如下:
 
-
 ## Unicode 标识符允许的字符
 
 建议与 `ECMAScript` (js) 最新版本保持一致.
@@ -19,17 +18,19 @@
  * unicodeESNextIdentifierStart corresponds to the ID_Start and Other_ID_Start property, and
  * unicodeESNextIdentifierPart corresponds to ID_Continue, Other_ID_Continue, plus ID_Start and Other_ID_Start
  */
-  const unicodeESNextIdentifierStart = [ /* */ ];
-  const unicodeESNextIdentifierPart = [ /* */ ];
+const unicodeESNextIdentifierStart = [
+  /* */
+];
+const unicodeESNextIdentifierPart = [
+  /* */
+];
 ```
 
 把这里的 Unicode 码范围数组直接复制过来, 判断应该用不了几行代码,
 实现比较简单.
 
-
 ## 关键字替换
 
 建议所有符合语法的标识符都可定义为原有关键字的替换.
-
 
 TODO
