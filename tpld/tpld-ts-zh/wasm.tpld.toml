@@ -6,7 +6,7 @@ to = "zh_CN"
 # WebAssembly v8
 type = "lib"
 # lib.dom.d.ts
-scope = "namespace:WebAssembly"
+scope = "WebAssembly"
 # scope_to 拒绝翻译
 
 # 全局
@@ -28,7 +28,7 @@ Table = "表"
 "validate()" = "验证()"
 
 [[d]]
-scope = "type:"
+scope = "t:"
 [d.d]
 ExportValue = "导出值"
 Exports = "导出的"
@@ -150,7 +150,7 @@ instance = "实例"
 module = "模块"
 
 [[d]]
-scope = "type:ImportExportKind"
+scope = "t:ImportExportKind"
 to = "导入导出种类"
 [d.d]
 function = "函数"

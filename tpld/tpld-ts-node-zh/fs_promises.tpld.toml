@@ -5,7 +5,7 @@ to = "zh_CN"
 
 type = "lib:node"
 # fs/promises.d.ts
-scope = "module:fs/promises"
+scope = "m:fs/promises"
 scope_to = "许诺"
 
 # 全局
@@ -43,40 +43,40 @@ scope = ""
 "cp()" = "复制()"
 
 [[d]]
-scope = "arg:mkdir:options"
+scope = "mkdir.options"
 to = "选项"
 [d.d]
 recursive = "递归"
 
 [[d]]
-scope = "arg:readdir:options"
+scope = "readdir.options"
 to = "选项"
 [d.d]
 encoding = "编码"
 withFileTypes = "文件类型"
 
 [[d]]
-scope = ["arg:lstat:opts", "arg:stat:opts"]
+scope = ["lstat.opts", "stat.opts"]
 to = "选项"
 [d.d]
 bigint = "大整数"
 
 [[d]]
-scope = "arg:writeFile:options"
+scope = "writeFile.options"
 to = "选项"
 [d.d]
 mode = "模式"
 flag = "标志"
 
 [[d]]
-scope = "arg:readFile:options"
+scope = "readFile.options"
 to = "选项"
 [d.d]
 encoding = "编码"
 flag = "标志"
 
 [[d]]
-scope = "arg:watch:options"
+scope = "watch.options"
 to = "选项"
 [d.d]
 encoding = "编码"
@@ -135,22 +135,20 @@ fd = "文件描述符"
 "close()" = "关闭()"
 
 [[d]]
-# 函数参数类型
-scope = "arg:FileHandle.readFile:options"
+scope = "FileHandle.readFile.options"
 to = "选项"
 [d.d]
 encoding = "编码"
 flag = "标志"
 
 [[d]]
-scope = "arg:FileHandle.stat:opts"
+scope = "FileHandle.stat.opts"
 to = "选项"
 [d.d]
 bigint = "大整数"
 
 [[d]]
-# 函数返回值类型
-scope = "arg:FileHandle.write:"
+scope = "FileHandle.write."
 [d.d]
 bytesWritten = "写字节数"
 buffer = "存储"

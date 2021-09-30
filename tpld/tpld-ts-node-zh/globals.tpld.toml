@@ -51,13 +51,13 @@ to = "可相对索引"
 "at()" = "位()"
 
 [[d]]
-scope = "namespace:NodeJS\n type:"
+scope = "NodeJS\n t:"
 [d.d]
 TypedArray = "类型数组"
 ArrayBufferView = "数组存储视图"
 
 [[d]]
-scope = "namespace:NodeJS\n CallSite"
+scope = "NodeJS.CallSite"
 to = "调用点"
 [d.d]
 "getThis()" = "取这()"
@@ -75,7 +75,7 @@ to = "调用点"
 "isConstructor()" = "是构造()"
 
 [[d]]
-scope = "namespace:NodeJS\n ErrnoException"
+scope = "NodeJS.ErrnoException"
 to = "错误号例外"
 [d.d]
 errno = "错误号"
@@ -85,7 +85,7 @@ syscall = "系统调用"
 stack = "栈"
 
 [[d]]
-scope = "namespace:NodeJS\n ReadableStream"
+scope = "NodeJS.ReadableStream"
 to = "可读流"
 [d.d]
 readable = "可读"
@@ -100,7 +100,7 @@ readable = "可读"
 "wrap()" = "包装()"
 
 [[d]]
-scope = "namespace:NodeJS\n WritableStream"
+scope = "NodeJS.WritableStream"
 to = "可写流"
 [d.d]
 writable = "可写"
@@ -108,18 +108,18 @@ writable = "可写"
 "end()" = "结束()"
 
 [[d]]
-scope = "namespace:NodeJS\n ReadWriteStream"
+scope = "NodeJS.ReadWriteStream"
 to = "读写流"
 
 [[d]]
-scope = "namespace:NodeJS\n RefCounted"
+scope = "NodeJS.RefCounted"
 to = "引用计数"
 [d.d]
 "ref()" = "引用()"
 "unref()" = "消引用()"
 
 [[d]]
-scope = "namespace:NodeJS\n Require"
+scope = "NodeJS.Require"
 to = "要求"
 [d.d]
 resolve = "决定"
@@ -127,17 +127,17 @@ cache = "缓存"
 main = "主"
 
 [[d]]
-scope = "namespace:NodeJS\n RequireResolve"
+scope = "NodeJS.RequireResolve"
 to = "要求决定"
 [d.d]
 "paths()" = "路径()"
 
 [[d]]
-scope = "namespace:NodeJS\n RequireExtensions"
+scope = "NodeJS.RequireExtensions"
 to = "要求后缀"
 
 [[d]]
-scope = "namespace:NodeJS\n Module"
+scope = "NodeJS.Module"
 to = "模块"
 [d.d]
 isPreloading = "预加载"
@@ -153,7 +153,7 @@ path = "路径"
 paths = "路径们"
 
 [[d]]
-scope = ["namespace:NodeJS\n Dict", "namespace:NodeJS\n ReadOnlyDict"]
+scope = ["NodeJS.Dict", "NodeJS.ReadOnlyDict"]
 to = ["字典", "只读字典"]
 [d.d]
 key = "键"

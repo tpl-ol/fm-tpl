@@ -5,7 +5,7 @@ to = "zh_CN"
 
 type = "lib:node"
 # string_decoder.d.ts
-scope = "module:string_decoder"
+scope = "m:string_decoder"
 scope_to = "串解码器"
 
 [[d]]

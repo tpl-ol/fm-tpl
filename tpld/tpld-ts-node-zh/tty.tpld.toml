@@ -5,7 +5,7 @@ to = "zh_CN"
 
 type = "lib:node"
 # tty.d.ts
-scope = "module:tty"
+scope = "m:tty"
 scope_to = "终端"
 
 # 全局
@@ -15,7 +15,7 @@ scope = ""
 "isatty()" = "是终端()"
 
 [[d]]
-scope = "type:"
+scope = "t:"
 [d.d]
 Direction = "方向"
 
@@ -52,6 +52,6 @@ isTTY = "是终端"
 "prependOnceListener()" = "前置一次监听器()"
 
 [[d]]
-scope = ["arg:WriteStream.addListener:event", "arg:WriteStream.emit:event", "arg:WriteStream.on:event", "arg:WriteStream.once:event", "arg:WriteStream.prependListener:event", "arg:WriteStream.prependOnceListener:event"]
+scope = ["WriteStream.addListener.event", "WriteStream.emit.event", "WriteStream.on.event", "WriteStream.once.event", "WriteStream.prependListener.event", "WriteStream.prependOnceListener.event"]
 [d.d]
 resize = "变大小"

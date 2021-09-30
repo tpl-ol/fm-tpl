@@ -5,7 +5,7 @@ to = "zh_CN"
 
 type = "lib:node"
 # constants.d.ts
-scope = "module:constants"
+scope = "m:constants"
 scope_to = "常量"
 
 # TODO

@@ -5,7 +5,7 @@ to = "zh_CN"
 
 type = "lib:node"
 # stream.d.ts
-scope = "module:stream\n namespace:internal"
+scope = "m:stream\n internal"
 scope_to = "流\n 内部"
 
 # 全局
@@ -19,7 +19,7 @@ promises = "许诺的"
 consumers = "消费者"
 
 [[d]]
-scope = "type:"
+scope = "t:"
 [d.d]
 TransformCallback = "转换回调"
 PipelineSourceFunction = "管线源函数"
@@ -33,7 +33,7 @@ PipelineCallback = "管线回调"
 PipelinePromise = "管线许诺"
 
 [[d]]
-scope = "global:module:stream\n internal"
+scope = "g:m:stream\n internal"
 to = "内部"
 [d.d]
 "pipe()" = "输送()"
@@ -99,7 +99,7 @@ destroyed = "已销毁"
 "removeListener" = "移除监听器()"
 
 [[d]]
-scope = ["arg:Readable.addListener:event", "arg:Readable.emit:event", "arg:Readable.on:event", "arg:Readable.once:event", "arg:Readable.prependListener:event", "arg:Readable.prependOnceListener:event", "arg:Readable.removeListener:event"]
+scope = ["Readable.addListener.event", "Readable.emit.event", "Readable.on.event", "Readable.once.event", "Readable.prependListener.event", "Readable.prependOnceListener.event", "Readable.removeListener.event"]
 [d.d]
 close = "关闭"
 data = "数据"
@@ -153,7 +153,7 @@ destroyed = "已销毁"
 "removeListener" = "移除监听器()"
 
 [[d]]
-scope = ["arg:Writable.addListener:event", "arg:Writable.emit:event", "arg:Writable.on:event", "arg:Writable.once:event", "arg:Writable.prependListener:event", "arg:Writable.prependOnceListener:event", "arg:Writable.removeListener:event"]
+scope = ["Writable.addListener.event", "Writable.emit.event", "Writable.on.event", "Writable.once.event", "Writable.prependListener.event", "Writable.prependOnceListener.event", "Writable.removeListener.event"]
 [d.d]
 close = "关闭"
 drain = "排空"
@@ -235,7 +235,7 @@ readable = "可读"
 writable = "可写"
 
 [[d]]
-scope = "namespace:finished"
+scope = "finished"
 to = "完成"
 [d.d]
 "__promisify__()" = "__许诺化__()"
@@ -247,7 +247,7 @@ to = "管线选项"
 signal = "信号"
 
 [[d]]
-scope = "namespace:pipeline"
+scope = "pipeline"
 to = "管线"
 [d.d]
 "__promisify__()" = "__许诺化__()"
@@ -264,7 +264,7 @@ to = "管道"
 
 # stream/promises.d.ts
 [[d]]
-scope = "global:module:stream/promises"
+scope = "g:m:stream/promises"
 to = "许诺"
 [d.d]
 "finished()" = "完成()"
@@ -272,7 +272,7 @@ to = "许诺"
 
 # stream/consumers.d.ts
 [[d]]
-scope = "global:module:stream/consumers"
+scope = "g:m:stream/consumers"
 to = "消费者"
 [d.d]
 "buffer()" = "存储()"
@@ -283,7 +283,7 @@ to = "消费者"
 #"json()" = "json()"
 
 [[d]]
-scope = "global:module:stream/consumers\n Blob"
+scope = "g:m:stream/consumers\n Blob"
 to = "大块"
 [d.d]
 size = "大小"
@@ -295,4 +295,4 @@ type = "类型"
 
 # stream/web.d.ts
 [[d]]
-scope = "global:module:stream/web"
+scope = "g:m:stream/web"

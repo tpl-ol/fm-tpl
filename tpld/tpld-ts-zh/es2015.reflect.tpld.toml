@@ -8,7 +8,7 @@ type = "lib"
 
 
 [[d]]
-scope = "namespace:Reflect"
+scope = "Reflect"
 to = "反射"
 [d.d]
 "apply()" = "施用()"

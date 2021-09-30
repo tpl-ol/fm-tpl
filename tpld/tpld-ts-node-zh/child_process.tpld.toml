@@ -5,7 +5,7 @@ to = "zh_CN"
 
 type = "lib:node"
 # child_process.d.ts
-scope = "module:child_process"
+scope = "m:child_process"
 scope_to = "下级进程"
 
 # 全局
@@ -21,7 +21,7 @@ scope = ""
 "execFileSync()" = "同步执行文件()"
 
 [[d]]
-scope = "type:"
+scope = "t:"
 [d.d]
 Serializable = "可序列化"
 SendHandle = "发送柄"
@@ -62,7 +62,7 @@ spawnfile = "启动文件"
 "prependOnceListener()" = "前置一次监听器()"
 
 [[d]]
-scope = ["arg:ChildProcess.addListener:event", "arg:ChildProcess.emit:event", "arg:ChildProcess.on:event", "arg:ChildProcess.once:event", "arg:ChildProcess.prependListener:event", "arg:ChildProcess.prependOnceListener:event"]
+scope = ["ChildProcess.addListener.event", "ChildProcess.emit.event", "ChildProcess.on.event", "ChildProcess.once.event", "ChildProcess.prependListener.event", "ChildProcess.prependOnceListener.event"]
 [d.d]
 close = "关闭"
 disconnect = "断开"
@@ -177,7 +177,7 @@ to = ["执行文件选项带串编码", "执行文件选项带存储编码", "�
 encoding = "编码"
 
 [[d]]
-scope = ["namespace:exec", "namespace:execFile"]
+scope = ["exec", "execFile"]
 to = ["执行", "执行文件"]
 [d.d]
 "__promisify__()" = "__许诺化__()"

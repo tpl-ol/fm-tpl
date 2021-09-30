@@ -20,45 +20,45 @@ scope = ""
 "queueMicrotask()" = "排队微任务()"
 
 [[d]]
-scope = "module:timers"
+scope = "m:timers"
 to = "定时器"
 
 [[d]]
-scope = "module:timers\n TimerOptions"
+scope = "m:timers\n TimerOptions"
 to = "定时器选项"
 [d.d]
 ref = "引用"
 
 [[d]]
-scope = "namespace:NodeJS\n Timer"
+scope = "NodeJS.Timer"
 to = "定时器"
 [d.d]
 "hasRef()" = "有引用()"
 "refresh()" = "刷新()"
 
 [[d]]
-scope = "namespace:NodeJS\n Immediate"
+scope = "NodeJS.Immediate"
 to = "立刻"
 [d.d]
 "hasRef()" = "有引用()"
 _onImmediate = "_立刻之时"
 
 [[d]]
-scope = "namespace:NodeJS\n Timeout"
+scope = "NodeJS.Timeout"
 to = "超时"
 [d.d]
 "hasRef()" = "有引用()"
 "refresh()" = "刷新()"
 
 [[d]]
-scope = ["namespace:setTimeout", "namespace:setInterval", "namespace:setImmediate"]
+scope = ["setTimeout", "setInterval", "setImmediate"]
 to = ["设超时", "设间隔", "设立刻"]
 [d.d]
 __promisify__ = "__许诺化__"
 
 # timers/promises.d.ts
 [[d]]
-scope = "module:timers/promises"
+scope = "m:timers/promises"
 to = "许诺"
 [d.d]
 "setTimeout()" = "设超时()"

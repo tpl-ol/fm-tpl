@@ -5,7 +5,7 @@ to = "zh_CN"
 
 type = "lib:node"
 # readline.d.ts
-scope = "module:readline"
+scope = "m:readline"
 scope_to = "读行"
 
 # 全局
@@ -20,7 +20,7 @@ scope = ""
 "moveCursor()" = "移光标()"
 
 [[d]]
-scope = "type:"
+scope = "t:"
 [d.d]
 ReadLine = "读行"
 Completer = "补全器"
@@ -65,7 +65,7 @@ cursor = "光标"
 "prependOnceListener()" = "前置一次监听器()"
 
 [[d]]
-scope = ["arg:Interface.addListener:event", "arg:Interface.emit:event", "arg:Interface.on:event", "arg:Interface.once:event", "arg:Interface.prependListener:event", "arg:Interface.prependOnceListener:event"]
+scope = ["Interface.addListener.event", "Interface.emit.event", "Interface.on.event", "Interface.once.event", "Interface.prependListener.event", "Interface.prependOnceListener.event"]
 [d.d]
 close = "关闭"
 line = "行"

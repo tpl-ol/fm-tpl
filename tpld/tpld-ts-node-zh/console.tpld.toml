@@ -42,11 +42,11 @@ Console = "控制台"
 "timeStamp()" = "时间戳()"
 
 [[d]]
-scope = "namespace:console"
+scope = "console"
 to = "控制台"
 
 [[d]]
-scope = "namespace:console\n ConsoleConstructorOptions"
+scope = "console.ConsoleConstructorOptions"
 to = "控制台构造器选项"
 [d.d]
 stdout = "标准输出"
@@ -56,7 +56,7 @@ colorMode = "颜色模式"
 inspectOptions = "检查选项"
 
 [[d]]
-scope = "namespace:console\n ConsoleConstructor"
+scope = "console.ConsoleConstructor"
 to = "控制台构造器"
 [d.d]
 prototype = "原型"

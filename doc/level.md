@@ -56,11 +56,12 @@
 | :-------------------------------------------------------- | :--------------- | :------: | :----------------------------------------------------------------- |
 | [TypeScript 4.3](https://github.com/microsoft/TypeScript) | `ts`             |    L0    |                                                                    |
 | [Java (jdk17u)](https://github.com/openjdk/jdk17u)        | `java`           |    L0    |                                                                    |
+| [Python 3.9](https://www.python.org/)                     | `py`             |    L0    | (rt)                                                               |
+| [R 4.1](https://www.r-project.org/)                       | `r`              |    ?     | (rt)                                                               |
 | [Kotlin 1.5](https://kotlinlang.org/)                     | `kotlin`         |    L0    |                                                                    |
 | [Rust 1.54](https://www.rust-lang.org/)                   | `rust`           |    L0    |                                                                    |
 | [TOML 1.0](https://toml.io/)                              | `toml`           |    L0    | (替语言自举) 用于存储数据, 不是编程语言                            |
 | SQL ([sqlite 3.36](https://sqlite.org/index.html))        | `sql`            |    ?     |                                                                    |
-| [Python 3.9](https://www.python.org/)                     | `py`             |    L0    | (rt)                                                               |
 | JavaScript (es2021)                                       | `js`             |    L0    | (rt)                                                               |
 | HTML (5)                                                  | `html`           |    L0    |                                                                    |
 | CSS (3)                                                   | `css`            |    L0    |                                                                    |
@@ -76,4 +77,4 @@
 
 注: 级别 `-1` 的语言不加入这个列表 (一般情况).
 
-(2021-09-04)
+(2021-09-30)

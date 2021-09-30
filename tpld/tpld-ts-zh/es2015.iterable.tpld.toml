@@ -13,7 +13,7 @@ dep = [
 
 # type
 [[d]]
-scope = "type:"
+scope = "t:"
 [d.d]
 IteratorResult = "迭代器结果"
 

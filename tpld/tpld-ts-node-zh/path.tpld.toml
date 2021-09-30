@@ -5,7 +5,7 @@ to = "zh_CN"
 
 type = "lib:node"
 # path.d.ts
-scope = "module:path\n namespace:path"
+scope = "m:path\n path"
 scope_to = "路径"
 
 # 全局

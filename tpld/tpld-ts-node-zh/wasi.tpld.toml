@@ -5,7 +5,7 @@ to = "zh_CN"
 
 type = "lib:node"
 # wasi.d.ts
-scope = "module:wasi"
+scope = "m:wasi"
 # scope_to 拒绝翻译
 
 [[d]]

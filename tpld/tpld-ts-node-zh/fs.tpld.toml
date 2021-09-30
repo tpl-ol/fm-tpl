@@ -5,7 +5,7 @@ to = "zh_CN"
 
 type = "lib:node"
 # fs.d.ts
-scope = "module:fs"
+scope = "m:fs"
 scope_to = "文件操作"
 
 dep = [
@@ -106,19 +106,19 @@ lstatSync = "同步链接取状态"
 "cpSync()" = "同步复制()"
 
 [[d]]
-scope = ["namespace:rename", "namespace:truncate", "namespace:ftruncate", "namespace:chown", "namespace:fchown", "namespace:lchown", "namespace:lutimes", "namespace:chmod", "namespace:fchmod", "namespace:lchmod", "namespace:stat", "namespace:fstat", "namespace:lstat", "namespace:link", "namespace:symlink", "namespace:readlink", "namespace:realpath", "namespace:unlink", "namespace:rmdir", "namespace:rm", "namespace:mkdir", "namespace:mkdtemp", "namespace:readdir", "namespace:close", "namespace:open", "namespace:utimes", "namespace:futimes", "namespace:fsync", "namespace:write", "namespace:read", "namespace:readFile", "namespace:writeFile", "namespace:appendFile", "namespace:exists", "namespace:access", "namespace:fdatasync", "namespace:copyFile", "namespace:writev", "namespace:readv", "namespace:opendir"]
+scope = ["rename", "truncate", "ftruncate", "chown", "fchown", "lchown", "lutimes", "chmod", "fchmod", "lchmod", "stat", "fstat", "lstat", "link", "symlink", "readlink", "realpath", "unlink", "rmdir", "rm", "mkdir", "mkdtemp", "readdir", "close", "open", "utimes", "futimes", "fsync", "write", "read", "readFile", "writeFile", "appendFile", "exists", "access", "fdatasync", "copyFile", "writev", "readv", "opendir"]
 to = ["重命名", "截断", "文件截断", "改所有者", "文件改所有者", "链接改所有者", "链接改时间", "改模式", "文件改模式", "链接改模式", "取状态", "文件取状态", "链接取状态", "链接", "符号链接", "读链接", "真路径", "移除", "删目录", "删", "建目录", "建临时目录", "读目录", "关闭", "打开", "改时间", "文件改时间", "文件同步", "写", "读", "读文件", "写文件", "追加文件", "存在", "访问", "文件数据同步", "复制文件", "写多", "读多", "打开目录"]
 [d.d]
 "__promisify__()" = "__许诺化__()"
 
 [[d]]
-scope = ["arg:stat:options", "namespace:stat\n arg:__promisify__:options", "arg:fstat:options", "namespace:fstat\n arg:__promisify__:options", "arg:lstat:options", "namespace:lstat\n arg:__promisify__:options"]
+scope = ["stat.options", "stat.__promisify__.options", "fstat.options", "fstat.__promisify__.options", "lstat.options", "lstat.__promisify__.options"]
 to = "选项"
 [d.d]
 bigint = "大整数"
 
 [[d]]
-scope = "namespace:symlink\n type:Type"
+scope = "symlink\n t:Type"
 to = "链接类型"
 [d.d]
 dir = "目录"
@@ -126,26 +126,26 @@ file = "文件"
 junction = "接合"
 
 [[d]]
-scope = ["namespace:realpath", "namespace:realpathSync"]
+scope = ["realpath", "realpathSync"]
 to = ["真路径", "同步真路径"]
 [d.d]
 "native()" = "原生()"
 
 [[d]]
-scope = ["arg:mkdir:options", "namespace:mkdir\n arg:__promisify__:options", "arg:mkdirSync:options"]
+scope = ["mkdir.options", "mkdir.__promisify__.options", "mkdirSync.options"]
 to = "选项"
 [d.d]
 recursive = "递归"
 
 [[d]]
-scope = "arg:mkdtemp:options"
+scope = "mkdtemp.options"
 to = "选项"
 [d.d]
 encoding = "编码"
 buffer = "存储"
 
 [[d]]
-scope = ["arg:readdir:options", "namespace:readdir\n arg:__promisify__:options", "arg:readdirSync:options"]
+scope = ["readdir.options", "readdir.__promisify__.options", "readdirSync.options"]
 to = "选项"
 [d.d]
 encoding = "编码"
@@ -153,33 +153,33 @@ withFileTypes = "文件类型"
 buffer = "存储"
 
 [[d]]
-scope = "namespace:write\n arg:__promisify__:"
+scope = "write.__promisify__."
 [d.d]
 bytesWritten = "写字节数"
 buffer = "存储"
 
 [[d]]
-scope = "namespace:read\n arg:__promisify__:"
+scope = "read.__promisify__."
 [d.d]
 bytesRead = "读字节数"
 buffer = "存储"
 
 [[d]]
-scope = ["arg:readFile:options", "namespace:readFile\n arg:__promisify__:options", "arg:readFileSync:options"]
+scope = ["readFile.options", "readFile.__promisify__.options", "readFileSync.options"]
 to = "选项"
 [d.d]
 encoding = "编码"
 flag = "标志"
 
 [[d]]
-scope = "arg:watchFile:options"
+scope = "watchFile.options"
 to = "选项"
 [d.d]
 persistent = "持久"
 interval = "间隔"
 
 [[d]]
-scope = "arg:watch:options"
+scope = "watch.options"
 to = "选项"
 [d.d]
 encoding = "编码"
@@ -188,7 +188,7 @@ buffer = "存储"
 
 # 全局类型
 [[d]]
-scope = "type:"
+scope = "type."
 [d.d]
 PathLike = "似路径"
 PathOrFileDescriptor = "路径或文件描述符"
@@ -201,7 +201,7 @@ ReadPosition = "读位置"
 WatchListener = "监视监听器"
 
 [[d]]
-scope = "type:BufferEncodingOption"
+scope = "t:BufferEncodingOption"
 to = "存储编码选项"
 [d.d]
 encoding = "编码"
@@ -284,7 +284,7 @@ to = "文件监视器"
 "prependOnceListener()" = "前置一次监听器()"
 
 [[d]]
-scope = ["arg:FSWatcher.addListener:event", "arg:FSWatcher.on:event", "arg:FSWatcher.once:event", "arg:FSWatcher.prependListener:event", "arg:FSWatcher.prependOnceListener:event"]
+scope = ["FSWatcher.addListener.event", "FSWatcher.on.event", "FSWatcher.once.event", "FSWatcher.prependListener.event", "FSWatcher.prependOnceListener.event"]
 [d.d]
 change = "改变"
 error = "错误"
@@ -306,7 +306,7 @@ pending = "待定"
 "prependOnceListener()" = "前置一次监听器()"
 
 [[d]]
-scope = ["arg:ReadStream.addListener:event", "arg:ReadStream.on:event", "arg:ReadStream.once:event", "arg:ReadStream.prependListener:event", "arg:ReadStream.prependOnceListener:event"]
+scope = ["ReadStream.addListener.event", "ReadStream.on.event", "ReadStream.once.event", "ReadStream.prependListener.event", "ReadStream.prependOnceListener.event"]
 [d.d]
 close = "关闭"
 data = "数据"
@@ -334,7 +334,7 @@ pending = "待定"
 "prependOnceListener()" = "前置一次监听器()"
 
 [[d]]
-scope = ["arg:WriteStream.addListener:event", "arg:WriteStream.on:event", "arg:WriteStream.once:event", "arg:WriteStream.prependListener:event", "arg:WriteStream.prependOnceListener:event"]
+scope = ["WriteStream.addListener.event", "WriteStream.on.event", "WriteStream.once.event", "WriteStream.prependListener.event", "WriteStream.prependOnceListener.event"]
 [d.d]
 close = "关闭"
 drain = "排空"
@@ -350,7 +350,7 @@ scope = "StatSyncFn"
 to = "取状态同步函数"
 
 [[d]]
-scope = "arg:StatSyncFn:options"
+scope = "StatSyncFn.options"
 to = "选项"
 [d.d]
 bigint = "大整数"
@@ -389,7 +389,7 @@ length = "长度"
 position = "位置"
 
 [[d]]
-scope = "type:WriteFileOptions"
+scope = "t:WriteFileOptions"
 to = "写文件选项"
 [d.d]
 mode = "模式"

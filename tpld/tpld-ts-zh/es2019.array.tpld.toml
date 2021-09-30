@@ -9,7 +9,7 @@ type = "lib"
 
 # TODO
 [[d]]
-scope = "type:FlatArray"
+scope = "t:FlatArray"
 to = "平铺数组"
 [d.d]
 done = "完成"

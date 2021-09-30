@@ -6,7 +6,7 @@ to = "zh_CN"
 type = "lib"
 # lib.es5.d.ts
 
-scope = "namespace:Intl"
+scope = "Intl"
 
 
 # TODO

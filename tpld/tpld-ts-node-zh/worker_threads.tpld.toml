@@ -5,7 +5,7 @@ to = "zh_CN"
 
 type = "lib:node"
 # worker_threads.d.ts
-scope = "module:worker_threads"
+scope = "m:worker_threads"
 scope_to = "工人线程"
 
 # 全局
@@ -25,7 +25,7 @@ workerData = "工人数据"
 "setEnvironmentData()" = "设环境数据()"
 
 [[d]]
-scope = "type:"
+scope = "t:"
 [d.d]
 TransferListItem = "转移列表项"
 Serializable = "可序列化"
@@ -63,7 +63,7 @@ to = "消息端口"
 "off()" = "关()"
 
 [[d]]
-scope = ["arg:MessagePort.addListener:event", "arg:MessagePort.emit:event", "arg:MessagePort.on:event", "arg:MessagePort.once:event", "arg:MessagePort.prependListener:event", "arg:MessagePort.prependOnceListener:event", "arg:MessagePort.removeListener:event", "arg:MessagePort.off:event"]
+scope = ["MessagePort.addListener.event", "MessagePort.emit.event", "MessagePort.on.event", "MessagePort.once.event", "MessagePort.prependListener.event", "MessagePort.prependOnceListener.event", "MessagePort.removeListener.event", "MessagePort.off.event"]
 [d.d]
 close = "关闭"
 message = "消息"
@@ -121,7 +121,7 @@ performance = "性能"
 "off()" = "关()"
 
 [[d]]
-scope = ["arg:Worker.addListener:event", "arg:Worker.emit:event", "arg:Worker.on:event", "arg:Worker.once:event", "arg:Worker.prependListener:event", "arg:Worker.prependOnceListener:event", "arg:Worker.removeListener:event", "arg:Worker.off:event"]
+scope = ["Worker.addListener.event", "Worker.emit.event", "Worker.on.event", "Worker.once.event", "Worker.prependListener.event", "Worker.prependOnceListener.event", "Worker.removeListener.event", "Worker.off.event"]
 [d.d]
 error = "错误"
 exit = "退出"

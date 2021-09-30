@@ -5,7 +5,7 @@ to = "zh_CN"
 
 type = "lib:node"
 # module.d.ts
-scope = "module:module"
+scope = "m:module"
 scope_to = "模块"
 
 # 全局
@@ -15,14 +15,14 @@ scope = ""
 Module = "模块"
 
 [[d]]
-scope = "namespace:Module"
+scope = "Module"
 to = "模块"
 [d.d]
 "syncBuiltinESMExports()" = "同步内置模块导出()"
 "findSourceMap()" = "找源码映射()"
 
 [[d]]
-scope = "namespace:Module\n SourceMapPayload"
+scope = "Module.SourceMapPayload"
 to = "源码映射载荷"
 [d.d]
 file = "文件"
@@ -34,7 +34,7 @@ mappings = "映射"
 sourceRoot = "源根"
 
 [[d]]
-scope = "namespace:Module\n SourceMapping"
+scope = "Module.SourceMapping"
 to = "源映射"
 [d.d]
 generatedLine = "生成行"
@@ -44,7 +44,7 @@ originalLine = "原行"
 originalColumn = "原列"
 
 [[d]]
-scope = "namespace:Module\n SourceMap"
+scope = "Module.SourceMap"
 to = "源映射类"
 [d.d]
 payload = "载荷"
@@ -63,7 +63,7 @@ Module = "模块"
 "constructor()" = "构造()"
 
 [[d]]
-scope = "global:ImportMeta"
+scope = "g:ImportMeta"
 to = "导入元数据"
 [d.d]
 # 拒绝翻译

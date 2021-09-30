@@ -5,16 +5,16 @@ to = "zh_CN"
 
 type = "lib:node"
 # process.d.ts
-scope = "namespace:NodeJS"
+scope = "NodeJS"
 
 # 全局
 [[d]]
-scope = "global:"
+scope = "g:"
 [d.d]
 process = "进程"
 
 [[d]]
-scope = "type:"
+scope = "t:"
 [d.d]
 Platform = "平台"
 BeforeExitListener = "退出前监听器"
@@ -85,7 +85,7 @@ to = "进程版本"
 #openssl
 
 [[d]]
-scope = "type:Signals"
+scope = "t:Signals"
 to = "信号"
 [d.d]
 # TODO
@@ -128,14 +128,14 @@ SIGLOST = "信号失"
 SIGINFO = "信号信息"
 
 [[d]]
-scope = "type:UncaughtExceptionOrigin"
+scope = "t:UncaughtExceptionOrigin"
 to = "未捕捉例外源"
 [d.d]
 uncaughtException = "未捕捉例外"
 unhandledRejection = "未处理拒绝"
 
 [[d]]
-scope = "type:MultipleResolveType"
+scope = "t:MultipleResolveType"
 to = "多决定类型"
 [d.d]
 resolve = "解决"
@@ -306,7 +306,7 @@ traceDeprecation = "追踪弃用"
 "listeners()" = "监听器()"
 
 [[d]]
-scope = ["arg:Process.addListener:event", "arg:Process.emit:event", "arg:Process.on:event", "arg:Process.once:event", "arg:Process.prependListener:event", "arg:Process.prependOnceListener:event", "arg:Process.listeners:event"]
+scope = ["Process.addListener.event", "Process.emit.event", "Process.on.event", "Process.once.event", "Process.prependListener.event", "Process.prependOnceListener.event", "Process.listeners.event"]
 [d.d]
 beforeExit = "退出前"
 disconnect = "断开"

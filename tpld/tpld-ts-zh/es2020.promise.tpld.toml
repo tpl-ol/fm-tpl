@@ -24,7 +24,7 @@ status = "状态"
 reason = "原因"
 
 [[d]]
-scope = "type:"
+scope = "t:"
 [d.d]
 PromiseSettledResult = "许诺落定结果"
 

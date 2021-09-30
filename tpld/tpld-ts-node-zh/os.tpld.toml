@@ -5,7 +5,7 @@ to = "zh_CN"
 
 type = "lib:node"
 # os.d.ts
-scope = "module:os"
+scope = "m:os"
 # scope_to 拒绝翻译
 
 # 全局
@@ -29,12 +29,13 @@ EOL = "换行符"
 "version()" = "版本()"
 "platform()" = "平台()"
 "tmpdir()" = "临时目录()"
+# TODO
 "endianness(): 'BE' | 'LE'" = "字节序(): '大尾' | '小尾'"
 "getPriority()" = "取优先级()"
 "setPriority()" = "设优先级()"
 
 [[d]]
-scope = "type:"
+scope = "t:"
 [d.d]
 NetworkInterfaceInfo = "网络接口信息"
 SignalConstants = "信号常量"
@@ -87,14 +88,14 @@ shell = "壳"
 homedir = "家目录"
 
 [[d]]
-scope = "namespace:constants"
+scope = "constants"
 to = "常量"
 [d.d]
 UV_UDP_REUSEADDR = "UV_UDP_重用地址"
 signals = "信号"
 
 [[d]]
-scope = "namespace:constants\n namespace:errno"
+scope = "constants.errno"
 to = "错误号"
 [d.d]
 E2BIG = "错太大"
@@ -179,7 +180,7 @@ EWOULDBLOCK = "错将锁"
 # TODO
 
 [[d]]
-scope = "namespace:constants\n namespace:priority"
+scope = "constants.priority"
 to = "优先级"
 [d.d]
 PRIORITY_LOW = "优先级低"

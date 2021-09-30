@@ -5,7 +5,7 @@ to = "zh_CN"
 
 type = "lib:node"
 # repl.d.ts
-scope = "module:repl"
+scope = "m:repl"
 scope_to = "命令循环"
 
 # 全局
@@ -18,7 +18,7 @@ REPL_MODE_STRICT = "执行模式严格"
 "start()" = "开始()"
 
 [[d]]
-scope = "type:"
+scope = "t:"
 [d.d]
 REPLEval = "命令循环执行"
 REPLWriter = "命令循环写者"
@@ -85,7 +85,7 @@ replMode = "执行模式"
 "prependOnceListener()" = "前置一次监听器()"
 
 [[d]]
-scope = ["arg:REPLServer.addListener:event", "arg:REPLServer.emit:event", "arg:REPLServer.on:event", "arg:REPLServer.once:event", "arg:REPLServer.prependListener:event", "arg:REPLServer.prependOnceListener:event"]
+scope = ["REPLServer.addListener.event", "REPLServer.emit.event", "REPLServer.on.event", "REPLServer.once.event", "REPLServer.prependListener.event", "REPLServer.prependOnceListener.event"]
 [d.d]
 close = "关闭"
 line = "行"

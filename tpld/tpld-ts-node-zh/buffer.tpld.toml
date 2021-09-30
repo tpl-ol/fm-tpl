@@ -5,7 +5,7 @@ to = "zh_CN"
 
 type = "lib:node"
 # buffer.d.ts
-scope = "module:buffer"
+scope = "m:buffer"
 scope_to = "存储"
 
 # 全局
@@ -19,17 +19,17 @@ kStringMaxLength = "k串最大长度"
 Buffer = "存储"
 
 [[d]]
-scope = "global:"
+scope = "g:"
 [d.d]
 Buffer = "存储"
 
 [[d]]
-scope = "type:"
+scope = "t:"
 [d.d]
 TranscodeEncoding = "转码编码"
 
 [[d]]
-scope = "type:global:"
+scope = "t:g:"
 [d.d]
 BufferEncoding = "存储编码"
 # TODO
@@ -49,7 +49,7 @@ to = "慢存储"
 prototype = "原型"
 
 [[d]]
-scope = "global:BufferConstructor"
+scope = "g:BufferConstructor"
 to = "存储构造器"
 [d.d]
 "from()" = "从()"
@@ -65,7 +65,7 @@ to = "存储构造器"
 "poolSize" = "池大小()"
 
 [[d]]
-scope = "global:Buffer"
+scope = "g:Buffer"
 to = "存储"
 [d.d]
 "write()" = "写()"
