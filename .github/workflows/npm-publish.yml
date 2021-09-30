@@ -1,5 +1,7 @@
-name: CI
-on: [push, pull_request]
+name: NPM 发布
+on:
+  release:
+    types: [created]
 
 env:
   # npm pack
@@ -26,3 +28,20 @@ jobs:
         with:
           name: ${{ env.PACK_FILENAME }}
           path: ./npm/doc/${{ env.PACK_FILENAME }}
+
+  publish-npm:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "16"
+          registry-url: https://registry.npmjs.org/
+      - run: npm ci
+
+      - run: cd npm/doc && npm ci && npm run build && npm test
+      - run: cd npm/doc && npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
