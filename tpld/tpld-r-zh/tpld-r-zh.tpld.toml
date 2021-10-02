@@ -1,0 +1,51 @@
+# tpld-r-zh.tpld.toml
+tpl-spec = "0.1.0"
+
+# R
+from = "r"
+# 简体中文 (中国)
+to = "zh_CN"
+
+dep = [
+  "./r_base",
+  # TODO
+]
+
+[[d]]
+type = "tpl"
+[d.d]
+tpl = "替"
+filename = "文件名"
+file-ext = ".替"
+
+[[d]]
+type = "keyword"
+[d.d]
+else = "另"
+for = "为"
+function = "术"
+if = "若"
+repeat = "循环"
+while = "当"
+# TODO
+
+[[d]]
+type = "type"
+[d.d]
+FALSE = "假"
+NA = "无"
+NaN = "非数"
+NULL = "空"
+TRUE = "真"
+# TODO
+
+[[d]]
+type = "lib"
+# 特殊属性 (special attribute)
+scope = "a:"
+[d.d]
+class = "类"
+# TODO
+
+# TODO scope = ".p:"  .Primitive
+# TODO scope = ".i:"  .Internal

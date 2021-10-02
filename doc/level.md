@@ -28,7 +28,7 @@
 
 - 三级: **核心支持** `L3`
 
-  在二级的基础上, 替语言工具 (tpl-ast-LANG) 能够完成全部标识符的替换.
+  在二级的基础上, 替语言工具 (tpl-ast-LANG) 能够完成 (几乎) 全部标识符的替换.
   同时完成原语言的全部标准库的翻译.
 
   并且有多个第三方软件包 (或运行环境/平台) 完成翻译.
@@ -56,8 +56,8 @@
 | :-------------------------------------------------------- | :--------------- | :------: | :----------------------------------------------------------------- |
 | [TypeScript 4.3](https://github.com/microsoft/TypeScript) | `ts`             |    L0    |                                                                    |
 | [Java (jdk17u)](https://github.com/openjdk/jdk17u)        | `java`           |    L0    |                                                                    |
-| [Python 3.9](https://www.python.org/)                     | `py`             |    L0    | (rt)                                                               |
 | [R 4.1](https://www.r-project.org/)                       | `r`              |    L0    | (rt)                                                               |
+| [Python 3.9](https://www.python.org/)                     | `py`             |    L0    | (rt)                                                               |
 | [Kotlin 1.5](https://kotlinlang.org/)                     | `kotlin`         |    L0    |                                                                    |
 | [Rust 1.54](https://www.rust-lang.org/)                   | `rust`           |    L0    |                                                                    |
 | [TOML 1.0](https://toml.io/)                              | `toml`           |    L0    | (替语言自举) 用于存储数据, 不是编程语言                            |
@@ -77,4 +77,4 @@
 
 注: 级别 `-1` 的语言不加入这个列表 (一般情况).
 
-(2021-10-01)
+(2021-10-03)
