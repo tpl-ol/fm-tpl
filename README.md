@@ -41,13 +41,17 @@ such as Chinese, or .. . whatever you like.
   console.log("123");
   ```
 
-## 安装 使用 编译
+## 安装与使用说明
 
-- [安装与使用说明](./doc/user)
+- [用户手册](./doc/user)
 
-- [编译说明](./doc/dev)
+- [开发者文档](./doc/dev)
 
 - [常见问题 (FAQ)](./doc/faq.md)
+
+遇到问题欢迎 [提问(issue)](https://github.com/fm-elpac/fm-tpl/issues).
+如果在镜像页面看到此内容, 建议回到主仓库 (上方链接) 进行提问.
+在镜像仓库的提问不能保证及时回复.
 
 ## 替语言主要组成
 
@@ -101,8 +105,8 @@ such as Chinese, or .. . whatever you like.
 
 ## 相关代码仓库
 
-本代码仓库 (fm-tpl) 存放 [替语言规范](./tpl-spec), [主要文档](./doc).
-以及, 替语言中文版描述文件 (tpld-zh) 的各个原语言的核心语言部分, 标准库, 主要运行环境.
+本仓库 (fm-tpl) 存放 [替语言规范](./tpl-spec), [主要文档](./doc).
+以及, 替语言中文版描述文件 (tpld-zh) 的各个原语言的核心语言部分, 标准库, 主要运行环境等.
 
 替语言中文版 (zh_CN) 的各个原语言的第三方软件包的 tpld 文件, 集中存放在另一个仓库 (tpld-zh).
 
