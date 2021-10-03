@@ -6,1282 +6,1372 @@ to = "zh_CN"
 type = "lib"
 # package:base
 scope = "p:base"
-# R 4.1
-# ls("package:base")
 
-# 通过简单赋值即可实现, 如:  向量 <- c
 [[d]]
+# 通过简单赋值即可实现, 如:  向量 <- c
+# TODO
 scope = "s:"
 [d.d]
+# 特殊函数 (.Primitive .Internal)
+#.C()  拒绝翻译
+".Call()" = ".调用()"
+".Call.graphics()" = ".调用图形()"
+".External()" = ".外部()"
+".External.graphics()" = ".外部图形()"
+#.Fortran()  拒绝翻译
 ".Internal()" = ".内部()"
 ".Primitive()" = ".原始()"
+"as.call()" = "作调用()"
+"as.character()" = "作字符()"
+"as.complex()" = "作复数()"
+"as.double()" = "作实数()"
+"as.environment()" = "作环境()"
+"as.integer()" = "作整数()"
+"as.logical()" = "作逻辑()"
+"as.raw()" = "作字节()"
 "attr()" = "属()"
 "attr<-" = "属<-"
 "attributes()" = "属性()"
 "attributes<-" = "属性<-"
+"baseenv()" = "基环境()"
+"browser()" = "浏览()"
+"c()" = "向量()"
+"call()" = "调用()"
+"cbind()" = "列合()"
 "class()" = "类()"
 "class<-" = "类<-"
+"dim()" = "维()"
+"dim<-" = "维<-"
+"dimnames()" = "维名()"
+"dimnames<-" = "维名<-"
+"eapply()" = "环境施用()"
+"emptyenv()" = "空环境()"
+"environment<-" = "环境<-"
+"expression()" = "表达式()"
+"globalenv()" = "全局环境()"
+"interactive()" = "交互的()"
+"invisible()" = "不可见()"
+"is.array()" = "是数组()"
+"is.atomic()" = "是原子()"
+"is.call()" = "是调用()"
+"is.character()" = "是字符()"
+"is.complex()" = "是复数()"
+"is.double()" = "是实数()"
+"is.environment()" = "是环境()"
+"is.expression()" = "是表达式()"
+"is.finite()" = "是有限()"
+"is.function()" = "是函数()"
+"is.infinite()" = "是无限()"
+"is.integer()" = "是整数()"
+"is.language()" = "是语言()"
+"is.list()" = "是列表()"
+"is.logical()" = "是逻辑()"
+"is.matrix()" = "是矩阵()"
+"is.na()" = "是无()"
+"is.name()" = "是名()"
+"is.nan()" = "是非数()"
+"is.null()" = "是空()"
+"is.numeric()" = "是数字()"
+"is.object()" = "是物()"
+"is.pairlist()" = "是对表()"
+"is.raw()" = "是字节()"
+"is.recursive()" = "是递归()"
+"is.single()" = "是单()"
+"is.symbol()" = "是符号()"
+"lapply()" = "列施用()"
 "length()" = "长度()"
 "length<-" = "长度<-"
+"levels<-" = "级<-"
+"list()" = "列表()"
+"missing()" = "缺()"
+"names()" = "名()"
+"names<-" = "名<-"
+"nargs()" = "参个数()"
+"oldClass()" = "旧类()"
+"oldClass<-" = "旧类<-"
+"on.exit()" = "退出时()"
+"pos.to.env()" = "位至环境()"
+"quote()" = "引用()"
+"rbind()" = "行合()"
+"rep()" = "再造()"
+"return()" = "返回()"
+"round()" = "大约()"
+"seq_along()" = "序同()"
+"seq_len()" = "序长()"
+"seq.int()" = "序内()"
+"signif()" = "约数()"
+"standardGeneric()" = "标准通用()"
+"storage.mode<-" = "存储模式<-"
+"substitute()" = "取代()"
+"switch()" = "选择()"
+"unclass()" = "去类()"
+"vapply()" = "值施用()"
+"withVisible()" = "同可见()"
+"NextMethod()" = "下个方法()"
+"Recall()" = "递归调用()"
+"UseMethod()" = "用方法()"
 
-"as()" = "作()"
-"as.integer()" = "作整数()"
-"c()" = "向量()"
-"factor()" = "因子()"
-"mode()" = "模式()"
+# 常见函数
+"library()" = "用()"
 "q()" = "退出()"
+#"as()" = "作()"
 
-# TODO
--
--.Date
--.POSIXt
-:
-::
-:::
-!
-!.hexmode
-!.octmode
-!=
-(
-[
-[.AsIs
-[.data.frame
-[.Date
-[.difftime
-[.Dlist
-[.DLLInfoList
-[.factor
-[.hexmode
-[.listof
-[.noquote
-[.numeric_version
-[.octmode
-[.POSIXct
-[.POSIXlt
-[.simple.list
-[.table
-[.warnings
-[[
-[[.data.frame
-[[.Date
-[[.factor
-[[.numeric_version
-[[.POSIXct
-[[.POSIXlt
-[[<-
-[[<-.data.frame
-[[<-.factor
-[[<-.numeric_version
-[[<-.POSIXlt
-[<-
-[<-.data.frame
-[<-.Date
-[<-.difftime
-[<-.factor
-[<-.numeric_version
-[<-.POSIXct
-[<-.POSIXlt
-{
-@
-@<-
-*
-*.difftime
-/
-/.difftime
-&
-&.hexmode
-&.octmode
-&&
-%*%
-%/%
-%%
-%in%
-%o%
-%x%
-^
-+
-+.Date
-+.POSIXt
-<
-<-
-<<-
-<=
-=
-==
->
->=
-|
-|.hexmode
-|.octmode
-||
-~
-$
-$.DLLInfo
-$.package_version
-$<-
-$<-.data.frame
-abbreviate
-abs
-acos
-acosh
-activeBindingFunction
-addNA
-addTaskCallback
-agrep
-agrepl
-alist
-all
-all.equal
-all.equal.character
-all.equal.default
-all.equal.environment
-all.equal.envRefClass
-all.equal.factor
-all.equal.formula
-all.equal.function
-all.equal.language
-all.equal.list
-all.equal.numeric
-all.equal.POSIXt
-all.equal.raw
-all.names
-all.vars
-allowInterrupts
-any
-anyDuplicated
-anyDuplicated.array
-anyDuplicated.data.frame
-anyDuplicated.default
-anyDuplicated.matrix
-anyNA
-anyNA.data.frame
-anyNA.numeric_version
-anyNA.POSIXlt
-aperm
-aperm.default
-aperm.table
-append
-apply
-Arg
-args
-array
-arrayInd
-as.array
-as.array.default
-as.call
-as.character
-as.character.condition
-as.character.Date
-as.character.default
-as.character.error
-as.character.factor
-as.character.hexmode
-as.character.numeric_version
-as.character.octmode
-as.character.POSIXt
-as.character.srcref
-as.complex
-as.data.frame
-as.data.frame.array
-as.data.frame.AsIs
-as.data.frame.character
-as.data.frame.complex
-as.data.frame.data.frame
-as.data.frame.Date
-as.data.frame.default
-as.data.frame.difftime
-as.data.frame.factor
-as.data.frame.integer
-as.data.frame.list
-as.data.frame.logical
-as.data.frame.matrix
-as.data.frame.model.matrix
-as.data.frame.noquote
-as.data.frame.numeric
-as.data.frame.numeric_version
-as.data.frame.ordered
-as.data.frame.POSIXct
-as.data.frame.POSIXlt
-as.data.frame.raw
-as.data.frame.table
-as.data.frame.ts
-as.data.frame.vector
-as.Date
-as.Date.character
-as.Date.default
-as.Date.factor
-as.Date.numeric
-as.Date.POSIXct
-as.Date.POSIXlt
-as.difftime
-as.double
-as.double.difftime
-as.double.POSIXlt
-as.environment
-as.expression
-as.expression.default
-as.factor
-as.function
-as.function.default
-as.hexmode
-as.integer
-as.list
-as.list.data.frame
-as.list.Date
-as.list.default
-as.list.difftime
-as.list.environment
-as.list.factor
-as.list.function
-as.list.numeric_version
-as.list.POSIXct
-as.list.POSIXlt
-as.logical
-as.logical.factor
-as.matrix
-as.matrix.data.frame
-as.matrix.default
-as.matrix.noquote
-as.matrix.POSIXlt
-as.name
-as.null
-as.null.default
-as.numeric
-as.numeric_version
-as.octmode
-as.ordered
-as.package_version
-as.pairlist
-as.POSIXct
-as.POSIXct.Date
-as.POSIXct.default
-as.POSIXct.numeric
-as.POSIXct.POSIXlt
-as.POSIXlt
-as.POSIXlt.character
-as.POSIXlt.Date
-as.POSIXlt.default
-as.POSIXlt.factor
-as.POSIXlt.numeric
-as.POSIXlt.POSIXct
-as.qr
-as.raw
-as.single
-as.single.default
-as.symbol
-as.table
-as.table.default
-as.vector
-as.vector.factor
-asin
-asinh
-asNamespace
-asplit
-asS3
-asS4
-assign
-atan
-atan2
-atanh
-attach
-attachNamespace
-attr
-attr.all.equal
-attr<-
-attributes
-attributes<-
-autoload
-autoloader
-backsolve
-baseenv
-basename
-besselI
-besselJ
-besselK
-besselY
-beta
-bindingIsActive
-bindingIsLocked
-bindtextdomain
-bitwAnd
-bitwNot
-bitwOr
-bitwShiftL
-bitwShiftR
-bitwXor
-body
-body<-
-bquote
-break
-browser
-browserCondition
-browserSetDebug
-browserText
-builtins
-by
-by.data.frame
-by.default
-bzfile
-c
-c.Date
-c.difftime
-c.factor
-c.noquote
-c.numeric_version
-c.POSIXct
-c.POSIXlt
-c.warnings
-call
-callCC
-capabilities
-casefold
-cat
-cbind
-cbind.data.frame
-ceiling
-char.expand
-character
-charmatch
-charToRaw
-chartr
-check_tzones
-chkDots
-chol
-chol.default
-chol2inv
-choose
-class
-class<-
-clearPushBack
-close
-close.connection
-close.srcfile
-close.srcfilealias
-closeAllConnections
-col
-colMeans
-colnames
-colnames<-
-colSums
-commandArgs
-comment
-comment<-
-complex
-computeRestarts
-conditionCall
-conditionCall.condition
-conditionMessage
-conditionMessage.condition
-conflictRules
-conflicts
-Conj
-contributors
-cos
-cosh
-cospi
-crossprod
-Cstack_info
-cummax
-cummin
-cumprod
-cumsum
-curlGetHeaders
-cut
-cut.Date
-cut.default
-cut.POSIXt
-data.class
-data.frame
-data.matrix
-date
-debug
-debuggingState
-debugonce
-default.stringsAsFactors
-delayedAssign
-deparse
-deparse1
-det
-detach
-determinant
-determinant.matrix
-dget
-diag
-diag<-
-diff
-diff.Date
-diff.default
-diff.difftime
-diff.POSIXt
-difftime
-digamma
-dim
-dim.data.frame
-dim<-
-dimnames
-dimnames.data.frame
-dimnames<-
-dimnames<-.data.frame
-dir
-dir.create
-dir.exists
-dirname
-do.call
-dontCheck
-double
-dput
-dQuote
-drop
-droplevels
-droplevels.data.frame
-droplevels.factor
-dump
-duplicated
-duplicated.array
-duplicated.data.frame
-duplicated.default
-duplicated.matrix
-duplicated.numeric_version
-duplicated.POSIXlt
-duplicated.warnings
-dyn.load
-dyn.unload
-dynGet
-eapply
-eigen
-emptyenv
-enc2native
-enc2utf8
-encodeString
-Encoding
-Encoding<-
-endsWith
-enquote
-env.profile
-environment
-environment<-
-environmentIsLocked
-environmentName
-errorCondition
-eval
-eval.parent
-evalq
-exists
-exp
-expand.grid
-expm1
-expression
-extSoftVersion
-F
-factor
-factorial
-fifo
-file
-file.access
-file.append
-file.choose
-file.copy
-file.create
-file.exists
-file.info
-file.link
-file.mode
-file.mtime
-file.path
-file.remove
-file.rename
-file.show
-file.size
-file.symlink
-Filter
-Find
-find.package
-findInterval
-findPackageEnv
-findRestart
-floor
-flush
-flush.connection
-for
-force
-forceAndCall
-formals
-formals<-
-format
-format.AsIs
-format.data.frame
-format.Date
-format.default
-format.difftime
-format.factor
-format.hexmode
-format.info
-format.libraryIQR
-format.numeric_version
-format.octmode
-format.packageInfo
-format.POSIXct
-format.POSIXlt
-format.pval
-format.summaryDefault
-formatC
-formatDL
-forwardsolve
-function
-gamma
-gc
-gc.time
-gcinfo
-gctorture
-gctorture2
-get
-get0
-getAllConnections
-getCallingDLL
-getCallingDLLe
-getConnection
-getDLLRegisteredRoutines
-getDLLRegisteredRoutines.character
-getDLLRegisteredRoutines.DLLInfo
-getElement
-geterrmessage
-getExportedValue
-getHook
-getLoadedDLLs
-getNamespace
-getNamespaceExports
-getNamespaceImports
-getNamespaceInfo
-getNamespaceName
-getNamespaceUsers
-getNamespaceVersion
-getNativeSymbolInfo
-getOption
-getRversion
-getSrcLines
-getTaskCallbackNames
-gettext
-gettextf
-getwd
-gl
-globalCallingHandlers
-globalenv
-gregexec
-gregexpr
-grep
-grepl
-grepRaw
-grouping
-gsub
-gzcon
-gzfile
-I
-iconv
-iconvlist
-icuGetCollate
-icuSetCollate
-identical
-identity
-if
-ifelse
-Im
-importIntoEnv
-infoRDS
-inherits
-integer
-interaction
-interactive
-intersect
-intToBits
-intToUtf8
-inverse.rle
-invisible
-invokeRestart
-invokeRestartInteractively
-is.array
-is.atomic
-is.call
-is.character
-is.complex
-is.data.frame
-is.double
-is.element
-is.environment
-is.expression
-is.factor
-is.finite
-is.function
-is.infinite
-is.integer
-is.language
-is.list
-is.loaded
-is.logical
-is.matrix
-is.na
-is.na.data.frame
-is.na.numeric_version
-is.na.POSIXlt
-is.na<-
-is.na<-.default
-is.na<-.factor
-is.na<-.numeric_version
-is.name
-is.nan
-is.null
-is.numeric
-is.numeric_version
-is.numeric.Date
-is.numeric.difftime
-is.numeric.POSIXt
-is.object
-is.ordered
-is.package_version
-is.pairlist
-is.primitive
-is.qr
-is.R
-is.raw
-is.recursive
-is.single
-is.symbol
-is.table
-is.unsorted
-is.vector
-isa
-isatty
-isBaseNamespace
-isdebugged
-isFALSE
-isIncomplete
-isNamespace
-isNamespaceLoaded
-ISOdate
-ISOdatetime
-isOpen
-isRestart
-isS4
-isSeekable
-isSymmetric
-isSymmetric.matrix
-isTRUE
-jitter
-julian
-julian.Date
-julian.POSIXt
-kappa
-kappa.default
-kappa.lm
-kappa.qr
-kronecker
-l10n_info
-La_library
-La_version
-La.svd
-labels
-labels.default
-lapply
-lazyLoad
-lazyLoadDBexec
-lazyLoadDBfetch
-lbeta
-lchoose
-length
-length.POSIXlt
-length<-
-length<-.Date
-length<-.difftime
-length<-.factor
-length<-.POSIXct
-length<-.POSIXlt
-lengths
-letters
-LETTERS
-levels
-levels.default
-levels<-
-levels<-.factor
-lfactorial
-lgamma
-libcurlVersion
-library
-library.dynam
-library.dynam.unload
-licence
-license
-list
-list.dirs
-list.files
-list2DF
-list2env
-load
-loadedNamespaces
-loadingNamespaceInfo
-loadNamespace
-local
-lockBinding
-lockEnvironment
-log
-log10
-log1p
-log2
-logb
-logical
-lower.tri
-ls
-make.names
-make.unique
-makeActiveBinding
-Map
-mapply
-margin.table
-marginSums
-mat.or.vec
-match
-match.arg
-match.call
-match.fun
-Math.data.frame
-Math.Date
-Math.difftime
-Math.factor
-Math.POSIXt
-matrix
-max
-max.col
-mean
-mean.Date
-mean.default
-mean.difftime
-mean.POSIXct
-mean.POSIXlt
-mem.maxNSize
-mem.maxVSize
-memCompress
-memDecompress
-memory.profile
-merge
-merge.data.frame
-merge.default
-message
-mget
-min
-missing
-Mod
-mode
-mode<-
-month.abb
-month.name
-months
-months.Date
-months.POSIXt
-mostattributes<-
-names
-names.POSIXlt
-names<-
-names<-.POSIXlt
-namespaceExport
-namespaceImport
-namespaceImportClasses
-namespaceImportFrom
-namespaceImportMethods
-nargs
-nchar
-ncol
-NCOL
-Negate
-new.env
-next
-NextMethod
-ngettext
-nlevels
-noquote
-norm
-normalizePath
-nrow
-NROW
-nullfile
-numeric
-numeric_version
-numToBits
-numToInts
-nzchar
-objects
-oldClass
-oldClass<-
-OlsonNames
-on.exit
-open
-open.connection
-open.srcfile
-open.srcfilealias
-open.srcfilecopy
-Ops.data.frame
-Ops.Date
-Ops.difftime
-Ops.factor
-Ops.numeric_version
-Ops.ordered
-Ops.POSIXt
-options
-order
-ordered
-outer
-package_version
-packageEvent
-packageHasNamespace
-packageNotFoundError
-packageStartupMessage
-packBits
-pairlist
-parent.env
-parent.env<-
-parent.frame
-parse
-parseNamespaceFile
-paste
-paste0
-path.expand
-path.package
-pcre_config
-pi
-pipe
-plot
-pmatch
-pmax
-pmax.int
-pmin
-pmin.int
-polyroot
-pos.to.env
-Position
-pretty
-pretty.default
-prettyNum
-print
-print.AsIs
-print.by
-print.condition
-print.connection
-print.data.frame
-print.Date
-print.default
-print.difftime
-print.Dlist
-print.DLLInfo
-print.DLLInfoList
-print.DLLRegisteredRoutines
-print.eigen
-print.factor
-print.function
-print.hexmode
-print.libraryIQR
-print.listof
-print.NativeRoutineList
-print.noquote
-print.numeric_version
-print.octmode
-print.packageInfo
-print.POSIXct
-print.POSIXlt
-print.proc_time
-print.restart
-print.rle
-print.simple.list
-print.srcfile
-print.srcref
-print.summary.table
-print.summary.warnings
-print.summaryDefault
-print.table
-print.warnings
-prmatrix
-proc.time
-prod
-prop.table
-proportions
-provideDimnames
-psigamma
-pushBack
-pushBackLength
-q
-qr
-qr.coef
-qr.default
-qr.fitted
-qr.Q
-qr.qty
-qr.qy
-qr.R
-qr.resid
-qr.solve
-qr.X
-quarters
-quarters.Date
-quarters.POSIXt
-quit
-quote
-R_system_version
-R.home
-R.version
-R.Version
-R.version.string
-range
-range.default
-rank
-rapply
-raw
-rawConnection
-rawConnectionValue
-rawShift
-rawToBits
-rawToChar
-rbind
-rbind.data.frame
-rcond
-Re
-read.dcf
-readBin
-readChar
-readline
-readLines
-readRDS
-readRenviron
-Recall
-Reduce
-reg.finalizer
-regexec
-regexpr
-registerS3method
-registerS3methods
-regmatches
-regmatches<-
-remove
-removeTaskCallback
-rep
-rep_len
-rep.Date
-rep.difftime
-rep.factor
-rep.int
-rep.numeric_version
-rep.POSIXct
-rep.POSIXlt
-repeat
-replace
-replicate
-require
-requireNamespace
-restartDescription
-restartFormals
-retracemem
-return
-returnValue
-rev
-rev.default
-rle
-rm
-RNGkind
-RNGversion
-round
-round.Date
-round.POSIXt
-row
-row.names
-row.names.data.frame
-row.names.default
-row.names<-
-row.names<-.data.frame
-row.names<-.default
-rowMeans
-rownames
-rownames<-
-rowsum
-rowsum.data.frame
-rowsum.default
-rowSums
-sample
-sample.int
-sapply
-save
-save.image
-saveRDS
-scale
-scale.default
-scan
-search
-searchpaths
-seek
-seek.connection
-seq
-seq_along
-seq_len
-seq.Date
-seq.default
-seq.int
-seq.POSIXt
-sequence
-sequence.default
-serialize
-serverSocket
-set.seed
-setdiff
-setequal
-setHook
-setNamespaceInfo
-setSessionTimeLimit
-setTimeLimit
-setwd
-showConnections
-shQuote
-sign
-signalCondition
-signif
-simpleCondition
-simpleError
-simpleMessage
-simpleWarning
-simplify2array
-sin
-single
-sinh
-sink
-sink.number
-sinpi
-slice.index
-socketAccept
-socketConnection
-socketSelect
-socketTimeout
-solve
-solve.default
-solve.qr
-sort
-sort.default
-sort.int
-sort.list
-sort.POSIXlt
-source
-split
-split.data.frame
-split.Date
-split.default
-split.POSIXct
-split<-
-split<-.data.frame
-split<-.default
-sprintf
-sqrt
-sQuote
-srcfile
-srcfilealias
-srcfilecopy
-srcref
-standardGeneric
-startsWith
-stderr
-stdin
-stdout
-stop
-stopifnot
-storage.mode
-storage.mode<-
-str2expression
-str2lang
-strftime
-strptime
-strrep
-strsplit
-strtoi
-strtrim
-structure
-strwrap
-sub
-subset
-subset.data.frame
-subset.default
-subset.matrix
-substitute
-substr
-substr<-
-substring
-substring<-
-sum
-summary
-summary.connection
-summary.data.frame
-Summary.data.frame
-summary.Date
-Summary.Date
-summary.default
-Summary.difftime
-summary.factor
-Summary.factor
-summary.matrix
-Summary.numeric_version
-Summary.ordered
-summary.POSIXct
-Summary.POSIXct
-summary.POSIXlt
-Summary.POSIXlt
-summary.proc_time
-summary.srcfile
-summary.srcref
-summary.table
-summary.warnings
-suppressMessages
-suppressPackageStartupMessages
-suppressWarnings
-suspendInterrupts
-svd
-sweep
-switch
-sys.call
-sys.calls
-Sys.chmod
-Sys.Date
-sys.frame
-sys.frames
-sys.function
-Sys.getenv
-Sys.getlocale
-Sys.getpid
-Sys.glob
-Sys.info
-sys.load.image
-Sys.localeconv
-sys.nframe
-sys.on.exit
-sys.parent
-sys.parents
-Sys.readlink
-sys.save.image
-Sys.setenv
-Sys.setFileTime
-Sys.setlocale
-Sys.sleep
-sys.source
-sys.status
-Sys.time
-Sys.timezone
-Sys.umask
-Sys.unsetenv
-Sys.which
-system
-system.file
-system.time
-system2
-t
-T
-t.data.frame
-t.default
-table
-tabulate
-tan
-tanh
-tanpi
-tapply
-taskCallbackManager
-tcrossprod
-tempdir
-tempfile
-textConnection
-textConnectionValue
-tolower
-topenv
-toString
-toString.default
-toupper
-trace
-traceback
-tracemem
-tracingState
-transform
-transform.data.frame
-transform.default
-trigamma
-trimws
-trunc
-trunc.Date
-trunc.POSIXt
-truncate
-truncate.connection
-try
-tryCatch
-tryInvokeRestart
-typeof
-unclass
-undebug
-union
-unique
-unique.array
-unique.data.frame
-unique.default
-unique.matrix
-unique.numeric_version
-unique.POSIXlt
-unique.warnings
-units
-units.difftime
-units<-
-units<-.difftime
-unix.time
-unlink
-unlist
-unloadNamespace
-unlockBinding
-unname
-unserialize
-unsplit
-untrace
-untracemem
-unz
-upper.tri
-url
-UseMethod
-utf8ToInt
-validEnc
-validUTF8
-vapply
-vector
-Vectorize
-version
-warning
-warningCondition
-warnings
-weekdays
-weekdays.Date
-weekdays.POSIXt
-which
-which.max
-which.min
-while
-with
-with.default
-withAutoprint
-withCallingHandlers
-within
-within.data.frame
-within.list
-withRestarts
-withVisible
-write
-write.dcf
-writeBin
-writeChar
-writeLines
-xor
-xpdrows.data.frame
-xtfrm
-xtfrm.AsIs
-xtfrm.data.frame
-xtfrm.Date
-xtfrm.default
-xtfrm.difftime
-xtfrm.factor
-xtfrm.numeric_version
-xtfrm.POSIXct
-xtfrm.POSIXlt
-xzfile
-zapsmall
-# TODO
+# R 4.1
+# `ls("package:base")`
+#
+# 拒绝翻译
+#-
+"-.Date()" = "-.日期()"
+#-.POSIXt
+#:
+#::
+#:::
+#!
+"!.hexmode()" = "!.16进制模式()"
+"!.octmode()" = "!.8进制模式()"
+#!=
+#(
+#[
+"[.AsIs()" = "[.原样()"
+"[.data.frame()" = "[.数据框()"
+"[.Date()" = "[.日期()"
+"[.difftime()" = "[.时间差()"
+"[.Dlist()" = "[.D列表()"
+"[.DLLInfoList()" = "[.动态链接库信息表()"
+"[.factor()" = "[.因子()"
+"[.hexmode()" = "[.16进制模式()"
+"[.listof()" = "[.列表于()"
+"[.noquote()" = "[.不引用()"
+"[.numeric_version()" = "[.数字版本()"
+"[.octmode()" = "[.8进制模式()"
+#[.POSIXct
+#[.POSIXlt
+"[.simple.list()" = "[.简单列表()"
+"[.table()" = "[.表()"
+"[.warnings()" = "[.警告()"
+#[[
+"[[.data.frame()" = "[[.数据框()"
+"[[.Date()" = "[[.日期()"
+"[[.factor()" = "[[.因子()"
+"[[.numeric_version()" = "[[.数字版本()"
+#[[.POSIXct
+#[[.POSIXlt
+#[[<-
+"[[<-.data.frame()" = "[[<-.数据框()"
+"[[<-.factor()" = "[[<-.因子()"
+"[[<-.numeric_version()" = "[[<-.数字版本()"
+#[[<-.POSIXlt
+#[<-
+"[<-.data.frame()" = "[<-.数据框()"
+"[<-.Date()" = "[<-.日期()"
+"[<-.difftime()" = "[<-.时间差()"
+"[<-.factor()" = "[<-.因子()"
+"[<-.numeric_version()" = "[<-.数字版本()"
+#[<-.POSIXct
+#[<-.POSIXlt
+#{
+#@
+#@<-
+#*
+"*.difftime()" = "*.时间差()"
+#/
+"/.difftime()" = "/.时间差()"
+#&
+"&.hexmode()" = "&.16进制模式()"
+"&.octmode()" = "&.8进制模式()"
+#&&
+#%*%
+#%/%
+#%%
+"%in%()" = "%在%()"
+#%o%
+#%x%
+#^
+#+
+"+.Date()" = "+.日期()"
+#+.POSIXt
+#<
+#<-
+#<<-
+#<=
+#=
+#==
+#>
+#>=
+#|
+"|.hexmode()" = "|.16进制模式()"
+"|.octmode()" = "|.8进制模式()"
+#||
+#~
+#$
+"$.DLLInfo()" = "$.动态链接库信息()"
+"$.package_version()" = "$.包版本()"
+#$<-
+"$<-.data.frame()" = "$<-.数据框()"
+"abbreviate()" = "缩写()"
+"abs()" = "绝对值()"
+"acos()" = "反余弦()"
+"acosh()" = "双曲反余弦()"
+"activeBindingFunction()" = "生效绑定函数()"
+"addNA()" = "加无()"
+"addTaskCallback()" = "加任务回调()"
+"agrep()" = "模糊匹配()"
+"agrepl()" = "模糊匹配逻辑()"
+"alist()" = "参列表()"
+"all()" = "全()"
+"all.equal()" = "全等()"
+"all.equal.character()" = "全等字符()"
+"all.equal.default()" = "全等默认()"
+"all.equal.environment()" = "全等环境()"
+"all.equal.envRefClass()" = "全等环境参考类()"
+"all.equal.factor()" = "全等因子()"
+"all.equal.formula()" = "全等公式()"
+"all.equal.function()" = "全等函数()"
+"all.equal.language()" = "全等语言()"
+"all.equal.list()" = "全等列表()"
+"all.equal.numeric()" = "全等数字()"
+"all.equal.POSIXt()" = "全等.POSIXt()"
+"all.equal.raw()" = "全等字节()"
+"all.names()" = "全名()"
+"all.vars()" = "全变()"
+"allowInterrupts()" = "允许中断()"
+"any()" = "任何()"
+"anyDuplicated()" = "任何复制()"
+"anyDuplicated.array()" = "任何复制数组()"
+"anyDuplicated.data.frame()" = "任何复制数据框()"
+"anyDuplicated.default()" = "任何复制默认()"
+"anyDuplicated.matrix()" = "任何复制矩阵()"
+"anyNA()" = "任何无()"
+"anyNA.data.frame()" = "任何无数据框()"
+"anyNA.numeric_version()" = "任何无数字版本()"
+"anyNA.POSIXlt()" = "任何无.POSIXlt()"
+"aperm()" = "数组转置()"
+"aperm.default()" = "数组转置默认()"
+"aperm.table()" = "数组转置表()"
+"append()" = "追加()"
+"apply()" = "施用()"
+#Arg
+"args()" = "参数()"
+"array()" = "数组()"
+"arrayInd()" = "数组下标()"
+"as.array()" = "作数组()"
+"as.array.default()" = "作数组默认()"
+#as.call
+#as.character
+"as.character.condition()" = "作字符条件()"
+"as.character.Date()" = "作字符日期()"
+"as.character.default()" = "作字符默认()"
+"as.character.error()" = "作字符错误()"
+"as.character.factor()" = "作字符因子()"
+"as.character.hexmode()" = "作字符16进制模式()"
+"as.character.numeric_version()" = "作字符数字版本()"
+"as.character.octmode()" = "作字符8进制模式()"
+"as.character.POSIXt()" = "作字符.POSIXt()"
+"as.character.srcref()" = "作字符源引()"
+#as.complex
+"as.data.frame()" = "作数据框()"
+"as.data.frame.array()" = "作数据框数组()"
+"as.data.frame.AsIs()" = "作数据框原样()"
+"as.data.frame.character()" = "作数据框字符()"
+"as.data.frame.complex()" = "作数据框复数()"
+"as.data.frame.data.frame()" = "作数据框数据框()"
+"as.data.frame.Date()" = "作数据框日期()"
+"as.data.frame.default()" = "作数据框默认()"
+"as.data.frame.difftime()" = "作数据框时间差()"
+"as.data.frame.factor()" = "作数据框因子()"
+"as.data.frame.integer()" = "作数据框整数()"
+"as.data.frame.list()" = "作数据框列表()"
+"as.data.frame.logical()" = "作数据框逻辑()"
+"as.data.frame.matrix()" = "作数据框矩阵()"
+"as.data.frame.model.matrix()" = "作数据框模型矩阵()"
+"as.data.frame.noquote()" = "作数据框不引用()"
+"as.data.frame.numeric()" = "作数据框数字()"
+"as.data.frame.numeric_version()" = "作数据框数字版本()"
+"as.data.frame.ordered()" = "作数据框有序()"
+"as.data.frame.POSIXct()" = "作数据框.POSIXct()"
+"as.data.frame.POSIXlt()" = "作数据框.POSIXlt()"
+"as.data.frame.raw()" = "作数据框字节()"
+"as.data.frame.table()" = "作数据框表()"
+"as.data.frame.ts()" = "作数据框时系()"
+"as.data.frame.vector()" = "作数据框向量()"
+"as.Date()" = "作日期()"
+"as.Date.character()" = "作日期字符()"
+"as.Date.default()" = "作日期默认()"
+"as.Date.factor()" = "作日期因子()"
+"as.Date.numeric()" = "作日期数字()"
+"as.Date.POSIXct()" = "作日期.POSIXct()"
+"as.Date.POSIXlt()" = "作日期.POSIXlt()"
+"as.difftime()" = "作时间差()"
+#as.double
+"as.double.difftime()" = "作实数时间差()"
+"as.double.POSIXlt()" = "作实数.POSIXlt()"
+#as.environment
+"as.expression()" = "作表达式()"
+"as.expression.default()" = "作表达式默认()"
+"as.factor()" = "作因子()"
+"as.function()" = "作函数()"
+"as.function.default()" = "作函数默认()"
+"as.hexmode()" = "作16进制模式()"
+#as.integer
+"as.list()" = "作列表()"
+"as.list.data.frame()" = "作列表数据框()"
+"as.list.Date()" = "作列表日期()"
+"as.list.default()" = "作列表默认()"
+"as.list.difftime()" = "作列表时间差()"
+"as.list.environment()" = "作列表环境()"
+"as.list.factor()" = "作列表因子()"
+"as.list.function()" = "作列表函数()"
+"as.list.numeric_version()" = "作列表数字版本()"
+"as.list.POSIXct()" = "作列表.POSIXct()"
+"as.list.POSIXlt()" = "作列表.POSIXlt()"
+#as.logical
+"as.logical.factor()" = "作逻辑因子()"
+"as.matrix()" = "作矩阵()"
+"as.matrix.data.frame()" = "作矩阵数据框()"
+"as.matrix.default()" = "作矩阵默认()"
+"as.matrix.noquote()" = "作矩阵不引用()"
+"as.matrix.POSIXlt()" = "作矩阵.POSIXlt()"
+"as.name()" = "作名()"
+"as.null()" = "作空()"
+"as.null.default()" = "作空默认()"
+"as.numeric()" = "作数字()"
+"as.numeric_version()" = "作数字版本()"
+"as.octmode()" = "作8进制模式()"
+"as.ordered()" = "作有序()"
+"as.package_version()" = "作包版本()"
+"as.pairlist()" = "作对表()"
+"as.POSIXct()" = "作.POSIXct()"
+"as.POSIXct.Date()" = "作.POSIXct.日期()"
+"as.POSIXct.default()" = "作.POSIXct.默认()"
+"as.POSIXct.numeric()" = "作.POSIXct.数字()"
+"as.POSIXct.POSIXlt()" = "作.POSIXct.POSIXlt()"
+"as.POSIXlt()" = "作.POSIXlt()"
+"as.POSIXlt.character()" = "作.POSIXlt.字符()"
+"as.POSIXlt.Date()" = "作.POSIXlt.日期()"
+"as.POSIXlt.default()" = "作.POSIXlt.默认()"
+"as.POSIXlt.factor()" = "作.POSIXlt.因子()"
+"as.POSIXlt.numeric()" = "作.POSIXlt.数字()"
+"as.POSIXlt.POSIXct()" = "作.POSIXlt.POSIXct()"
+"as.qr()" = "作QR()"
+#as.raw
+"as.single()" = "作单()"
+"as.single.default()" = "作单默认()"
+"as.symbol()" = "作符号()"
+"as.table()" = "作表()"
+"as.table.default()" = "作表默认()"
+"as.vector()" = "作向量()"
+"as.vector.factor()" = "作向量因子()"
+"asin()" = "反正弦()"
+"asinh()" = "双曲反正弦()"
+"asNamespace()" = "作命名空间()"
+"asplit()" = "数组切()"
+"asS3()" = "作S3()"
+"asS4()" = "作S4()"
+"assign()" = "赋值()"
+"atan()" = "反正切()"
+"atan2()" = "反正切2()"
+"atanh()" = "双曲反正切()"
+"attach()" = "附加()"
+"attachNamespace()" = "附加命名空间()"
+#attr
+"attr.all.equal()" = "属全等()"
+#attr<-
+#attributes
+#attributes<-
+"autoload()" = "自动加载()"
+"autoloader()" = "自动加载器()"
+"backsolve()" = "反解()"
+#baseenv
+"basename()" = "基名()"
+#besselI
+#besselJ
+#besselK
+#besselY
+#beta
+"bindingIsActive()" = "绑定是生效()"
+"bindingIsLocked()" = "绑定是锁定()"
+"bindtextdomain()" = "绑定文本域()"
+"bitwAnd()" = "位与()"
+"bitwNot()" = "位非()"
+"bitwOr()" = "位或()"
+"bitwShiftL()" = "位左移()"
+"bitwShiftR()" = "位右移()"
+"bitwXor()" = "位异或()"
+"body()" = "体()"
+"body<-" = "体<-"
+"bquote()" = "反引()"
+#break
+#browser
+"browserCondition()" = "浏览条件()"
+"browserSetDebug()" = "浏览设调试()"
+"browserText()" = "浏览文本()"
+"builtins()" = "内置()"
+"by()" = "按()"
+"by.data.frame()" = "按数据框()"
+"by.default()" = "按默认()"
+"bzfile()" = "bz文件()"
+#c
+"c.Date()" = "向量日期()"
+"c.difftime()" = "向量时间差()"
+"c.factor()" = "向量因子()"
+"c.noquote()" = "向量不引用()"
+"c.numeric_version()" = "向量数字版本()"
+"c.POSIXct()" = "向量.POSIXct()"
+"c.POSIXlt()" = "向量.POSIXlt()"
+"c.warnings()" = "向量警告()"
+#call
+"callCC()" = "调用当前继续()"
+"capabilities()" = "能力()"
+"casefold()" = "大小写()"
+"cat()" = "接()"
+#cbind
+"cbind.data.frame()" = "列合数据框()"
+"ceiling()" = "上取整()"
+"char.expand()" = "字符扩展()"
+"character()" = "字符()"
+"charmatch()" = "字符匹配()"
+"charToRaw()" = "字符至字节()"
+"chartr()" = "字符替换()"
+"check_tzones()" = "检查时区()"
+"chkDots()" = "检查点()"
+#chol
+#chol.default
+#chol2inv
+#choose
+#class
+#class<-
+"clearPushBack()" = "清除推回()"
+"close()" = "关闭()"
+"close.connection()" = "关闭连接()"
+"close.srcfile()" = "关闭源文件()"
+"close.srcfilealias()" = "关闭源文件别名()"
+"closeAllConnections()" = "关闭全部连接()"
+"col()" = "列()"
+"colMeans()" = "列均值()"
+"colnames()" = "列名()"
+"colnames<-" = "列名<-"
+"colSums()" = "列求和()"
+"commandArgs()" = "命令参数()"
+"comment()" = "注释()"
+"comment<-" = "注释<-"
+"complex()" = "复数()"
+"computeRestarts()" = "计算重开()"
+"conditionCall()" = "条件调用()"
+"conditionCall.condition()" = "条件调用条件()"
+"conditionMessage()" = "条件消息()"
+"conditionMessage.condition()" = "条件消息条件()"
+"conflictRules()" = "冲突规则()"
+"conflicts()" = "冲突()"
+#Conj
+"contributors()" = "贡献者()"
+"cos()" = "余弦()"
+"cosh()" = "双曲余弦()"
+#cospi
+"crossprod()" = "叉乘()"
+"Cstack_info()" = "C栈信息()"
+"cummax()" = "累最大()"
+"cummin()" = "累最小()"
+"cumprod()" = "累乘()"
+"cumsum()" = "累和()"
+"curlGetHeaders()" = "curl取头()"
+"cut()" = "切()"
+"cut.Date()" = "切日期()"
+"cut.default()" = "切默认()"
+"cut.POSIXt()" = "切.POSIXt()"
+"data.class()" = "()"
+"data.frame()" = "()"
+"data.matrix()" = "()"
+"date()" = "()"
+"debug()" = "()"
+"debuggingState()" = "()"
+"debugonce()" = "()"
+"default.stringsAsFactors()" = "()"
+"delayedAssign()" = "()"
+"deparse()" = "()"
+"deparse1()" = "()"
+"det()" = "()"
+"detach()" = "()"
+"determinant()" = "()"
+"determinant.matrix()" = "()"
+"dget()" = "()"
+"diag()" = "()"
+"diag<-()" = "()"
+"diff()" = "()"
+"diff.Date()" = "()"
+"diff.default()" = "()"
+"diff.difftime()" = "()"
+"diff.POSIXt()" = "()"
+"difftime()" = "()"
+#digamma
+#dim
+"dim.data.frame()" = "()"
+#dim<-
+#dimnames
+"dimnames.data.frame()" = "()"
+#dimnames<-
+"dimnames<-.data.frame()" = "()"
+"dir()" = "()"
+"dir.create()" = "()"
+"dir.exists()" = "()"
+"dirname()" = "()"
+"do.call()" = "()"
+"dontCheck()" = "()"
+"double()" = "()"
+"dput()" = "()"
+"dQuote()" = "()"
+"drop()" = "()"
+"droplevels()" = "()"
+"droplevels.data.frame()" = "()"
+"droplevels.factor()" = "()"
+"dump()" = "()"
+"duplicated()" = "()"
+"duplicated.array()" = "()"
+"duplicated.data.frame()" = "()"
+"duplicated.default()" = "()"
+"duplicated.matrix()" = "()"
+"duplicated.numeric_version()" = "()"
+"duplicated.POSIXlt()" = "()"
+"duplicated.warnings()" = "()"
+"dyn.load()" = "()"
+"dyn.unload()" = "()"
+"dynGet()" = "()"
+#eapply
+"eigen()" = "()"
+#emptyenv
+"enc2native()" = "()"
+"enc2utf8()" = "()"
+"encodeString()" = "()"
+"Encoding()" = "()"
+"Encoding<-()" = "()"
+"endsWith()" = "()"
+"enquote()" = "()"
+"env.profile()" = "()"
+"environment()" = "()"
+#environment<-
+"environmentIsLocked()" = "()"
+"environmentName()" = "()"
+"errorCondition()" = "()"
+"eval()" = "()"
+"eval.parent()" = "()"
+"evalq()" = "()"
+"exists()" = "()"
+"exp()" = "()"
+"expand.grid()" = "()"
+"expm1()" = "()"
+#expression
+"extSoftVersion()" = "()"
+#F
+"factor()" = "因子()"
+#factorial
+"fifo()" = "()"
+"file()" = "()"
+"file.access()" = "()"
+"file.append()" = "()"
+"file.choose()" = "()"
+"file.copy()" = "()"
+"file.create()" = "()"
+"file.exists()" = "()"
+"file.info()" = "()"
+"file.link()" = "()"
+"file.mode()" = "()"
+"file.mtime()" = "()"
+"file.path()" = "()"
+"file.remove()" = "()"
+"file.rename()" = "()"
+"file.show()" = "()"
+"file.size()" = "()"
+"file.symlink()" = "()"
+"Filter()" = "()"
+"Find()" = "()"
+"find.package()" = "()"
+"findInterval()" = "()"
+"findPackageEnv()" = "()"
+"findRestart()" = "()"
+"floor()" = "()"
+"flush()" = "()"
+"flush.connection()" = "()"
+#for
+"force()" = "()"
+"forceAndCall()" = "()"
+"formals()" = "()"
+"formals<-()" = "()"
+"format()" = "()"
+"format.AsIs()" = "()"
+"format.data.frame()" = "()"
+"format.Date()" = "()"
+"format.default()" = "()"
+"format.difftime()" = "()"
+"format.factor()" = "()"
+"format.hexmode()" = "()"
+"format.info()" = "()"
+"format.libraryIQR()" = "()"
+"format.numeric_version()" = "()"
+"format.octmode()" = "()"
+"format.packageInfo()" = "()"
+"format.POSIXct()" = "()"
+"format.POSIXlt()" = "()"
+"format.pval()" = "()"
+"format.summaryDefault()" = "()"
+"formatC()" = "()"
+"formatDL()" = "()"
+"forwardsolve()" = "正解()"
+#function
+#gamma
+"gc()" = "()"
+"gc.time()" = "()"
+"gcinfo()" = "()"
+"gctorture()" = "()"
+"gctorture2()" = "()"
+"get()" = "()"
+"get0()" = "()"
+"getAllConnections()" = "()"
+"getCallingDLL()" = "()"
+"getCallingDLLe()" = "()"
+"getConnection()" = "()"
+"getDLLRegisteredRoutines()" = "()"
+"getDLLRegisteredRoutines.character()" = "()"
+"getDLLRegisteredRoutines.DLLInfo()" = "()"
+"getElement()" = "()"
+"geterrmessage()" = "()"
+"getExportedValue()" = "()"
+"getHook()" = "()"
+"getLoadedDLLs()" = "()"
+"getNamespace()" = "()"
+"getNamespaceExports()" = "()"
+"getNamespaceImports()" = "()"
+"getNamespaceInfo()" = "()"
+"getNamespaceName()" = "()"
+"getNamespaceUsers()" = "()"
+"getNamespaceVersion()" = "()"
+"getNativeSymbolInfo()" = "()"
+"getOption()" = "()"
+"getRversion()" = "()"
+"getSrcLines()" = "()"
+"getTaskCallbackNames()" = "()"
+"gettext()" = "()"
+"gettextf()" = "()"
+"getwd()" = "()"
+"gl()" = "()"
+"globalCallingHandlers()" = "()"
+#globalenv
+"gregexec()" = "()"
+"gregexpr()" = "()"
+"grep()" = "()"
+"grepl()" = "()"
+"grepRaw()" = "()"
+"grouping()" = "()"
+"gsub()" = "()"
+"gzcon()" = "()"
+"gzfile()" = "()"
+"I()" = "禁止()"
+"iconv()" = "()"
+"iconvlist()" = "()"
+"icuGetCollate()" = "()"
+"icuSetCollate()" = "()"
+"identical()" = "()"
+"identity()" = "()"
+#if
+"ifelse()" = "()"
+#Im
+"importIntoEnv()" = "()"
+"infoRDS()" = "()"
+"inherits()" = "()"
+"integer()" = "()"
+"interaction()" = "()"
+#interactive
+"intersect()" = "()"
+"intToBits()" = "()"
+"intToUtf8()" = "()"
+"inverse.rle()" = "()"
+#invisible
+"invokeRestart()" = "()"
+"invokeRestartInteractively()" = "()"
+#is.array
+#is.atomic
+#is.call
+#is.character
+#is.complex
+"is.data.frame()" = "()"
+#is.double
+"is.element()" = "()"
+#is.environment
+#is.expression
+"is.factor()" = "()"
+#is.finite
+#is.function
+#is.infinite
+#is.integer
+#is.language
+#is.list
+"is.loaded()" = "()"
+#is.logical
+#is.matrix
+#is.na
+"is.na.data.frame()" = "()"
+"is.na.numeric_version()" = "()"
+"is.na.POSIXlt()" = "()"
+"is.na<-()" = "()"
+"is.na<-.default()" = "()"
+"is.na<-.factor()" = "()"
+"is.na<-.numeric_version()" = "()"
+#is.name
+#is.nan
+#is.null
+#is.numeric
+"is.numeric_version()" = "()"
+"is.numeric.Date()" = "()"
+"is.numeric.difftime()" = "()"
+"is.numeric.POSIXt()" = "()"
+#is.object
+"is.ordered()" = "()"
+"is.package_version()" = "()"
+#is.pairlist
+"is.primitive()" = "()"
+"is.qr()" = "()"
+"is.R()" = "()"
+#is.raw
+#is.recursive
+#is.single
+#is.symbol
+"is.table()" = "()"
+"is.unsorted()" = "()"
+"is.vector()" = "()"
+"isa()" = "()"
+"isatty()" = "()"
+"isBaseNamespace()" = "()"
+"isdebugged()" = "()"
+"isFALSE()" = "()"
+"isIncomplete()" = "()"
+"isNamespace()" = "()"
+"isNamespaceLoaded()" = "()"
+"ISOdate()" = "()"
+"ISOdatetime()" = "()"
+"isOpen()" = "()"
+"isRestart()" = "()"
+"isS4()" = "()"
+"isSeekable()" = "()"
+"isSymmetric()" = "()"
+"isSymmetric.matrix()" = "()"
+"isTRUE()" = "()"
+"jitter()" = "()"
+"julian()" = "()"
+"julian.Date()" = "()"
+"julian.POSIXt()" = "()"
+"kappa()" = "()"
+"kappa.default()" = "()"
+"kappa.lm()" = "()"
+"kappa.qr()" = "()"
+"kronecker()" = "()"
+"l10n_info()" = "()"
+"La_library()" = "()"
+"La_version()" = "()"
+"La.svd()" = "()"
+"labels()" = "()"
+"labels.default()" = "()"
+#lapply
+"lazyLoad()" = "()"
+"lazyLoadDBexec()" = "()"
+"lazyLoadDBfetch()" = "()"
+#lbeta
+#lchoose
+#length
+"length.POSIXlt()" = "()"
+#length<-
+"length<-.Date()" = "()"
+"length<-.difftime()" = "()"
+"length<-.factor()" = "()"
+"length<-.POSIXct()" = "()"
+"length<-.POSIXlt()" = "()"
+"lengths()" = "()"
+"letters()" = "()"
+"LETTERS()" = "()"
+#levels
+"levels.default()" = "()"
+"levels<-()" = "()"
+"levels<-.factor()" = "()"
+#lfactorial
+#lgamma
+"libcurlVersion()" = "()"
+#library
+"library.dynam()" = "()"
+"library.dynam.unload()" = "()"
+"licence()" = "()"
+"license()" = "()"
+#list
+"list.dirs()" = "()"
+"list.files()" = "()"
+"list2DF()" = "()"
+"list2env()" = "()"
+"load()" = "()"
+"loadedNamespaces()" = "()"
+"loadingNamespaceInfo()" = "()"
+"loadNamespace()" = "()"
+"local()" = "()"
+"lockBinding()" = "()"
+"lockEnvironment()" = "()"
+"log()" = "()"
+"log10()" = "()"
+"log1p()" = "()"
+"log2()" = "()"
+"logb()" = "()"
+"logical()" = "()"
+"lower.tri()" = "()"
+"ls()" = "()"
+"make.names()" = "()"
+"make.unique()" = "()"
+"makeActiveBinding()" = "()"
+"Map()" = "()"
+"mapply()" = "()"
+"margin.table()" = "()"
+"marginSums()" = "()"
+"mat.or.vec()" = "()"
+"match()" = "()"
+"match.arg()" = "()"
+"match.call()" = "()"
+"match.fun()" = "()"
+"Math.data.frame()" = "()"
+"Math.Date()" = "()"
+"Math.difftime()" = "()"
+"Math.factor()" = "()"
+"Math.POSIXt()" = "()"
+"matrix()" = "()"
+"max()" = "()"
+"max.col()" = "()"
+"mean()" = "()"
+"mean.Date()" = "()"
+"mean.default()" = "()"
+"mean.difftime()" = "()"
+"mean.POSIXct()" = "()"
+"mean.POSIXlt()" = "()"
+"mem.maxNSize()" = "()"
+"mem.maxVSize()" = "()"
+"memCompress()" = "()"
+"memDecompress()" = "()"
+"memory.profile()" = "()"
+"merge()" = "()"
+"merge.data.frame()" = "()"
+"merge.default()" = "()"
+"message()" = "()"
+"mget()" = "()"
+"min()" = "()"
+#missing
+#Mod
+"mode()" = "模式()"
+"mode<-()" = "()"
+"month.abb()" = "()"
+"month.name()" = "()"
+"months()" = "()"
+"months.Date()" = "()"
+"months.POSIXt()" = "()"
+"mostattributes<-()" = "()"
+#names
+"names.POSIXlt()" = "()"
+#names<-
+"names<-.POSIXlt()" = "()"
+"namespaceExport()" = "()"
+"namespaceImport()" = "()"
+"namespaceImportClasses()" = "()"
+"namespaceImportFrom()" = "()"
+"namespaceImportMethods()" = "()"
+#nargs
+"nchar()" = "()"
+"ncol()" = "()"
+"NCOL()" = "()"
+"Negate()" = "()"
+"new.env()" = "()"
+#next
+#NextMethod
+"ngettext()" = "()"
+"nlevels()" = "()"
+"noquote()" = "()"
+"norm()" = "()"
+"normalizePath()" = "()"
+"nrow()" = "()"
+"NROW()" = "()"
+"nullfile()" = "()"
+"numeric()" = "()"
+"numeric_version()" = "()"
+"numToBits()" = "()"
+"numToInts()" = "()"
+"nzchar()" = "()"
+"objects()" = "()"
+#oldClass
+#oldClass<-
+"OlsonNames()" = "()"
+#on.exit
+"open()" = "()"
+"open.connection()" = "()"
+"open.srcfile()" = "()"
+"open.srcfilealias()" = "()"
+"open.srcfilecopy()" = "()"
+"Ops.data.frame()" = "()"
+"Ops.Date()" = "()"
+"Ops.difftime()" = "()"
+"Ops.factor()" = "()"
+"Ops.numeric_version()" = "()"
+"Ops.ordered()" = "()"
+"Ops.POSIXt()" = "()"
+"options()" = "()"
+"order()" = "()"
+"ordered()" = "()"
+"outer()" = "()"
+"package_version()" = "()"
+"packageEvent()" = "()"
+"packageHasNamespace()" = "()"
+"packageNotFoundError()" = "()"
+"packageStartupMessage()" = "()"
+"packBits()" = "()"
+"pairlist()" = "()"
+"parent.env()" = "()"
+"parent.env<-()" = "()"
+"parent.frame()" = "()"
+"parse()" = "()"
+"parseNamespaceFile()" = "()"
+"paste()" = "()"
+"paste0()" = "()"
+"path.expand()" = "()"
+"path.package()" = "()"
+"pcre_config()" = "()"
+"pi()" = "()"
+"pipe()" = "()"
+"plot()" = "()"
+"pmatch()" = "()"
+"pmax()" = "()"
+"pmax.int()" = "()"
+"pmin()" = "()"
+"pmin.int()" = "()"
+"polyroot()" = "()"
+#pos.to.env
+"Position()" = "()"
+"pretty()" = "()"
+"pretty.default()" = "()"
+"prettyNum()" = "()"
+"print()" = "()"
+"print.AsIs()" = "()"
+"print.by()" = "()"
+"print.condition()" = "()"
+"print.connection()" = "()"
+"print.data.frame()" = "()"
+"print.Date()" = "()"
+"print.default()" = "()"
+"print.difftime()" = "()"
+"print.Dlist()" = "()"
+"print.DLLInfo()" = "()"
+"print.DLLInfoList()" = "()"
+"print.DLLRegisteredRoutines()" = "()"
+"print.eigen()" = "()"
+"print.factor()" = "()"
+"print.function()" = "()"
+"print.hexmode()" = "()"
+"print.libraryIQR()" = "()"
+"print.listof()" = "()"
+"print.NativeRoutineList()" = "()"
+"print.noquote()" = "()"
+"print.numeric_version()" = "()"
+"print.octmode()" = "()"
+"print.packageInfo()" = "()"
+"print.POSIXct()" = "()"
+"print.POSIXlt()" = "()"
+"print.proc_time()" = "()"
+"print.restart()" = "()"
+"print.rle()" = "()"
+"print.simple.list()" = "()"
+"print.srcfile()" = "()"
+"print.srcref()" = "()"
+"print.summary.table()" = "()"
+"print.summary.warnings()" = "()"
+"print.summaryDefault()" = "()"
+"print.table()" = "()"
+"print.warnings()" = "()"
+"prmatrix()" = "()"
+"proc.time()" = "()"
+"prod()" = "()"
+"prop.table()" = "()"
+"proportions()" = "()"
+"provideDimnames()" = "()"
+#psigamma
+"pushBack()" = "()"
+"pushBackLength()" = "()"
+#q
+"qr()" = "()"
+"qr.coef()" = "()"
+"qr.default()" = "()"
+"qr.fitted()" = "()"
+"qr.Q()" = "()"
+"qr.qty()" = "()"
+"qr.qy()" = "()"
+"qr.R()" = "()"
+"qr.resid()" = "()"
+"qr.solve()" = "()"
+"qr.X()" = "()"
+"quarters()" = "()"
+"quarters.Date()" = "()"
+"quarters.POSIXt()" = "()"
+"quit()" = "退出程序()"
+#quote
+"R_system_version()" = "()"
+"R.home()" = "()"
+"R.version()" = "()"
+"R.Version()" = "()"
+"R.version.string()" = "()"
+"range()" = "()"
+"range.default()" = "()"
+"rank()" = "()"
+"rapply()" = "()"
+"raw()" = "()"
+"rawConnection()" = "()"
+"rawConnectionValue()" = "()"
+"rawShift()" = "()"
+"rawToBits()" = "()"
+"rawToChar()" = "()"
+#rbind
+"rbind.data.frame()" = "()"
+"rcond()" = "()"
+#Re
+"read.dcf()" = "()"
+"readBin()" = "()"
+"readChar()" = "()"
+"readline()" = "()"
+"readLines()" = "()"
+"readRDS()" = "()"
+"readRenviron()" = "()"
+#Recall
+"Reduce()" = "()"
+"reg.finalizer()" = "()"
+"regexec()" = "()"
+"regexpr()" = "()"
+"registerS3method()" = "()"
+"registerS3methods()" = "()"
+"regmatches()" = "()"
+"regmatches<-()" = "()"
+"remove()" = "()"
+"removeTaskCallback()" = "()"
+#rep
+"rep_len()" = "()"
+"rep.Date()" = "()"
+"rep.difftime()" = "()"
+"rep.factor()" = "()"
+"rep.int()" = "()"
+"rep.numeric_version()" = "()"
+"rep.POSIXct()" = "()"
+"rep.POSIXlt()" = "()"
+#repeat
+"replace()" = "()"
+"replicate()" = "()"
+"require()" = "()"
+"requireNamespace()" = "()"
+"restartDescription()" = "()"
+"restartFormals()" = "()"
+"retracemem()" = "()"
+#return
+"returnValue()" = "()"
+"rev()" = "()"
+"rev.default()" = "()"
+"rle()" = "()"
+"rm()" = "()"
+"RNGkind()" = "()"
+"RNGversion()" = "()"
+#round
+"round.Date()" = "()"
+"round.POSIXt()" = "()"
+"row()" = "()"
+"row.names()" = "()"
+"row.names.data.frame()" = "()"
+"row.names.default()" = "()"
+"row.names<-()" = "()"
+"row.names<-.data.frame()" = "()"
+"row.names<-.default()" = "()"
+"rowMeans()" = "()"
+"rownames()" = "()"
+"rownames<-()" = "()"
+"rowsum()" = "()"
+"rowsum.data.frame()" = "()"
+"rowsum.default()" = "()"
+"rowSums()" = "()"
+"sample()" = "()"
+"sample.int()" = "()"
+"sapply()" = "()"
+"save()" = "()"
+"save.image()" = "()"
+"saveRDS()" = "()"
+"scale()" = "()"
+"scale.default()" = "()"
+"scan()" = "()"
+"search()" = "()"
+"searchpaths()" = "()"
+"seek()" = "()"
+"seek.connection()" = "()"
+"seq()" = "()"
+#seq_along
+#seq_len
+"seq.Date()" = "()"
+"seq.default()" = "()"
+#seq.int
+"seq.POSIXt()" = "()"
+"sequence()" = "()"
+"sequence.default()" = "()"
+"serialize()" = "()"
+"serverSocket()" = "()"
+"set.seed()" = "()"
+"setdiff()" = "()"
+"setequal()" = "()"
+"setHook()" = "()"
+"setNamespaceInfo()" = "()"
+"setSessionTimeLimit()" = "()"
+"setTimeLimit()" = "()"
+"setwd()" = "()"
+"showConnections()" = "()"
+"shQuote()" = "()"
+"sign()" = "()"
+"signalCondition()" = "()"
+#signif
+"simpleCondition()" = "()"
+"simpleError()" = "()"
+"simpleMessage()" = "()"
+"simpleWarning()" = "()"
+"simplify2array()" = "()"
+"sin()" = "()"
+"single()" = "()"
+"sinh()" = "()"
+"sink()" = "()"
+"sink.number()" = "()"
+"sinpi()" = "()"
+"slice.index()" = "()"
+"socketAccept()" = "()"
+"socketConnection()" = "()"
+"socketSelect()" = "()"
+"socketTimeout()" = "()"
+"solve()" = "()"
+"solve.default()" = "()"
+"solve.qr()" = "()"
+"sort()" = "()"
+"sort.default()" = "()"
+"sort.int()" = "()"
+"sort.list()" = "()"
+"sort.POSIXlt()" = "()"
+"source()" = "()"
+"split()" = "()"
+"split.data.frame()" = "()"
+"split.Date()" = "()"
+"split.default()" = "()"
+"split.POSIXct()" = "()"
+"split<-()" = "()"
+"split<-.data.frame()" = "()"
+"split<-.default()" = "()"
+"sprintf()" = "()"
+"sqrt()" = "()"
+"sQuote()" = "()"
+"srcfile()" = "()"
+"srcfilealias()" = "()"
+"srcfilecopy()" = "()"
+"srcref()" = "()"
+#standardGeneric
+"startsWith()" = "()"
+"stderr()" = "()"
+"stdin()" = "()"
+"stdout()" = "()"
+"stop()" = "()"
+"stopifnot()" = "()"
+"storage.mode()" = "()"
+#storage.mode<-
+"str2expression()" = "()"
+"str2lang()" = "()"
+"strftime()" = "()"
+"strptime()" = "()"
+"strrep()" = "()"
+"strsplit()" = "()"
+"strtoi()" = "()"
+"strtrim()" = "()"
+"structure()" = "()"
+"strwrap()" = "()"
+"sub()" = "()"
+"subset()" = "()"
+"subset.data.frame()" = "()"
+"subset.default()" = "()"
+"subset.matrix()" = "()"
+#substitute
+"substr()" = "()"
+"substr<-()" = "()"
+"substring()" = "()"
+"substring<-()" = "()"
+"sum()" = "()"
+"summary()" = "()"
+"summary.connection()" = "()"
+"summary.data.frame()" = "()"
+"Summary.data.frame()" = "()"
+"summary.Date()" = "()"
+"Summary.Date()" = "()"
+"summary.default()" = "()"
+"Summary.difftime()" = "()"
+"summary.factor()" = "()"
+"Summary.factor()" = "()"
+"summary.matrix()" = "()"
+"Summary.numeric_version()" = "()"
+"Summary.ordered()" = "()"
+"summary.POSIXct()" = "()"
+"Summary.POSIXct()" = "()"
+"summary.POSIXlt()" = "()"
+"Summary.POSIXlt()" = "()"
+"summary.proc_time()" = "()"
+"summary.srcfile()" = "()"
+"summary.srcref()" = "()"
+"summary.table()" = "()"
+"summary.warnings()" = "()"
+"suppressMessages()" = "()"
+"suppressPackageStartupMessages()" = "()"
+"suppressWarnings()" = "()"
+"suspendInterrupts()" = "()"
+"svd()" = "()"
+"sweep()" = "()"
+#switch
+"sys.call()" = "()"
+"sys.calls()" = "()"
+"Sys.chmod()" = "()"
+"Sys.Date()" = "()"
+"sys.frame()" = "()"
+"sys.frames()" = "()"
+"sys.function()" = "()"
+"Sys.getenv()" = "()"
+"Sys.getlocale()" = "()"
+"Sys.getpid()" = "()"
+"Sys.glob()" = "()"
+"Sys.info()" = "()"
+"sys.load.image()" = "()"
+"Sys.localeconv()" = "()"
+"sys.nframe()" = "()"
+"sys.on.exit()" = "()"
+"sys.parent()" = "()"
+"sys.parents()" = "()"
+"Sys.readlink()" = "()"
+"sys.save.image()" = "()"
+"Sys.setenv()" = "()"
+"Sys.setFileTime()" = "()"
+"Sys.setlocale()" = "()"
+"Sys.sleep()" = "()"
+"sys.source()" = "()"
+"sys.status()" = "()"
+"Sys.time()" = "()"
+"Sys.timezone()" = "()"
+"Sys.umask()" = "()"
+"Sys.unsetenv()" = "()"
+"Sys.which()" = "()"
+"system()" = "()"
+"system.file()" = "()"
+"system.time()" = "()"
+"system2()" = "()"
+"t()" = "转置()"
+#T
+"t.data.frame()" = "()"
+"t.default()" = "()"
+"table()" = "()"
+"tabulate()" = "()"
+"tan()" = "()"
+"tanh()" = "()"
+"tanpi()" = "()"
+"tapply()" = "()"
+"taskCallbackManager()" = "()"
+"tcrossprod()" = "()"
+"tempdir()" = "()"
+"tempfile()" = "()"
+"textConnection()" = "()"
+"textConnectionValue()" = "()"
+"tolower()" = "()"
+"topenv()" = "()"
+"toString()" = "()"
+"toString.default()" = "()"
+"toupper()" = "()"
+"trace()" = "()"
+"traceback()" = "()"
+"tracemem()" = "()"
+"tracingState()" = "()"
+"transform()" = "()"
+"transform.data.frame()" = "()"
+"transform.default()" = "()"
+#trigamma
+"trimws()" = "()"
+"trunc()" = "()"
+"trunc.Date()" = "()"
+"trunc.POSIXt()" = "()"
+"truncate()" = "()"
+"truncate.connection()" = "()"
+"try()" = "()"
+"tryCatch()" = "()"
+"tryInvokeRestart()" = "()"
+"typeof()" = "()"
+#unclass
+"undebug()" = "()"
+"union()" = "()"
+"unique()" = "()"
+"unique.array()" = "()"
+"unique.data.frame()" = "()"
+"unique.default()" = "()"
+"unique.matrix()" = "()"
+"unique.numeric_version()" = "()"
+"unique.POSIXlt()" = "()"
+"unique.warnings()" = "()"
+"units()" = "()"
+"units.difftime()" = "()"
+"units<-()" = "()"
+"units<-.difftime()" = "()"
+"unix.time()" = "()"
+"unlink()" = "()"
+"unlist()" = "()"
+"unloadNamespace()" = "()"
+"unlockBinding()" = "()"
+"unname()" = "()"
+"unserialize()" = "()"
+"unsplit()" = "()"
+"untrace()" = "()"
+"untracemem()" = "()"
+"unz()" = "()"
+"upper.tri()" = "()"
+"url()" = "()"
+#UseMethod
+"utf8ToInt()" = "()"
+"validEnc()" = "()"
+"validUTF8()" = "()"
+#vapply
+"vector()" = "()"
+"Vectorize()" = "()"
+"version()" = "()"
+"warning()" = "()"
+"warningCondition()" = "()"
+"warnings()" = "()"
+"weekdays()" = "()"
+"weekdays.Date()" = "()"
+"weekdays.POSIXt()" = "()"
+"which()" = "()"
+"which.max()" = "()"
+"which.min()" = "()"
+#while
+"with()" = "()"
+"with.default()" = "()"
+"withAutoprint()" = "()"
+"withCallingHandlers()" = "()"
+"within()" = "()"
+"within.data.frame()" = "()"
+"within.list()" = "()"
+"withRestarts()" = "()"
+#withVisible
+"write()" = "()"
+"write.dcf()" = "()"
+"writeBin()" = "()"
+"writeChar()" = "()"
+"writeLines()" = "()"
+"xor()" = "()"
+"xpdrows.data.frame()" = "()"
+"xtfrm()" = "()"
+"xtfrm.AsIs()" = "()"
+"xtfrm.data.frame()" = "()"
+"xtfrm.Date()" = "()"
+"xtfrm.default()" = "()"
+"xtfrm.difftime()" = "()"
+"xtfrm.factor()" = "()"
+"xtfrm.numeric_version()" = "()"
+"xtfrm.POSIXct()" = "()"
+"xtfrm.POSIXlt()" = "()"
+"xzfile()" = "()"
+"zapsmall()" = "()"
+
+# TODO 函数的参数
+# TODO 函数返回值

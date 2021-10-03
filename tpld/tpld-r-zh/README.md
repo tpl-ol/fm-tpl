@@ -184,8 +184,8 @@ TODO
 | pos.to.env()         | 位至环境()  |          |
 | quote()              | 引用()      |          |
 | rbind()              | 行合()      |          |
-| return()             | 返回()      |          |
 | rep()                | 再造()      |          |
+| return()             | 返回()      |          |
 | round()              | 大约()      |          |
 | seq_along()          | 序同()      |          |
 | seq_len()            | 序长()      |          |

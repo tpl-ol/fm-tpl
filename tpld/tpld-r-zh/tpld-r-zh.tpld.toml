@@ -8,7 +8,6 @@ to = "zh_CN"
 
 dep = [
   "./r_base",
-  # TODO
 ]
 
 [[d]]
@@ -21,31 +20,77 @@ file-ext = ".替"
 [[d]]
 type = "keyword"
 [d.d]
+break = "断"
 else = "另"
 for = "为"
 function = "术"
 if = "若"
+in = "在"
+next = "继续"
 repeat = "循环"
 while = "当"
-# TODO
+FALSE = "假"
+Inf = "无穷"
+NaN = "非数"
+NA = "无"
+NA_integer_ = "无_整数_"
+NA_real_ = "无_实数_"
+NA_complex_ = "无_复数_"
+NA_character_ = "无_字符_"
+NULL = "空"
+TRUE = "真"
 
 [[d]]
 type = "type"
 [d.d]
-FALSE = "假"
-NA = "无"
-NaN = "非数"
 NULL = "空"
-TRUE = "真"
-# TODO
+symbol = "符号"
+pairlist = "对表"
+closure = "闭包"
+environment = "环境"
+promise = "许诺"
+language = "语言"
+special = "特殊"
+builtin = "内置"
+char = "字符"
+logical = "逻辑"
+integer = "整数"
+double = "实数"
+complex = "复数"
+character = "串"
+any = "任何"
+expression = "表达式"
+list = "列表"
+bytecode = "字节码"
+externalptr = "外部指针"
+weakref = "弱引用"
+raw = "字节"
+#S4  拒绝翻译
+numeric = "数字"
+call = "调用"
+name = "名"
 
 [[d]]
 type = "lib"
-# 特殊属性 (special attribute)
+# 特殊属性 (attribute)
 scope = "a:"
 [d.d]
 class = "类"
-# TODO
+contrasts = "对比"
+dim = "维"
+dimnames = "维名"
+levels = "级"
+names = "名"
+"row.names" = "行名"
+tsp = "时系"
+
+[[d]]
+type = "lib"
+# 特殊类 (class)
+scope = "c:"
+[d.d]
+factor = "因子"
+ordered = "有序"
 
 # TODO scope = ".p:"  .Primitive
 # TODO scope = ".i:"  .Internal
