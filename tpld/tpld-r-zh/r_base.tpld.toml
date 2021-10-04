@@ -785,9 +785,9 @@ scope = "s:"
 "lengths()" = "长度们()"
 "letters" = "小写字母"
 "LETTERS" = "大写字母"
-#levels
+"levels()" = "级()"
 "levels.default()" = "级默认()"
-"levels<-" = "级<-"
+#levels<-
 "levels<-.factor" = "级<-.因子"
 #lfactorial
 #lgamma
