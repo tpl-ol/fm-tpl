@@ -1,0 +1,6 @@
+# 替语言中文版 (tpld-zh) 翻译结果禁用词语
+# tpl-ast-toml tpld-check --fmt --block=tpld-zh/blocklist.txt
+父
+子
+兄
+弟

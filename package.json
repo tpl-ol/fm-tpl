@@ -7,7 +7,7 @@
   "scripts": {
     "fmt": "prettier --write . && echo TODO tpl-ast-toml fmt",
     "fmt:check": "prettier --check .",
-    "check": "echo TODO tpl-ast-toml tpld-check",
+    "check": "echo TODO tpl-ast-toml tpld-check --fmt --block=doc/tpld-zh/blocklist.txt",
     "test": "npm run fmt:check && npm run check"
   },
   "devDependencies": {
