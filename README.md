@@ -49,7 +49,7 @@ such as Chinese, or .. . whatever you like.
 
 - [常见问题 (FAQ)](./doc/faq.md)
 
-遇到问题欢迎 [提问(issue)](https://github.com/fm-elpac/fm-tpl/issues).
+遇到问题欢迎 [提问](https://github.com/fm-elpac/fm-tpl/discussions).
 如果在镜像页面看到此内容, 建议回到主仓库 (上方链接) 进行提问.
 在镜像仓库的提问不能保证及时回复.
 
