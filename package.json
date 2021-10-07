@@ -5,12 +5,15 @@
   "description": "test only",
   "author": "sceext",
   "scripts": {
-    "fmt": "prettier --write . && echo TODO tpl-ast-toml fmt",
-    "fmt:check": "prettier --check .",
-    "check": "echo TODO tpl-ast-toml tpld-check --fmt --block=doc/tpld-zh/blocklist.txt",
-    "test": "npm run fmt:check && npm run check"
+    "fmt": "壳依 fmt:prettier fmt:toml",
+    "fmt:prettier": "prettier --write .",
+    "fmt:toml": "echo TODO tpl-ast-toml fmt",
+    "check:prettier": "prettier --check .",
+    "check:tpld": "echo TODO tpl-ast-toml tpld-check --fmt --block=doc/tpld-zh/blocklist.txt",
+    "test": "壳依 check:prettier check:tpld"
   },
   "devDependencies": {
+    "@tpl-ol/nsh": "^0.1.0-a1",
     "prettier": "^2.4.1"
   },
   "engines": {
