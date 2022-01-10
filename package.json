@@ -13,11 +13,11 @@
     "test": "壳依 check:prettier check:tpld"
   },
   "devDependencies": {
-    "@tpl-ol/nsh": "^0.1.0-a1",
-    "prettier": "^2.4.1"
+    "@tpl-ol/nsh": "^0.1.0-a3",
+    "prettier": "^2.5.1"
   },
   "engines": {
-    "node": ">=16.0",
-    "npm": ">=7.0"
+    "node": ">=17.0",
+    "npm": ">=8.0"
   }
 }

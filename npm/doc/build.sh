@@ -1,19 +1,18 @@
-#!/bin/bash
-# TODO 使用 nsh 重写
+#!/usr/bin/env 壳 --壳
+# 构建脚本, 使用 nsh
 
 # 清理
-mkdir -p fm-tpl
-rm -r fm-tpl
+建目录 -确 fm-tpl
+删除 --递归 fm-tpl
 
 # 复制文件
-mkdir -p fm-tpl
-cd ../..
-cp -r doc logo tpl-spec tpl-tool tpld README.md npm/doc/fm-tpl
-cp LICENSE npm/doc/
-cp LICENSE npm/doc/fm-tpl
-cd npm/doc/fm-tpl
+建目录 -确 fm-tpl
+去 ../..
+复制 --递归 doc logo tpl-spec tpl-tool tpld README.md npm/doc/fm-tpl
+复制 LICENSE npm/doc/
+复制 LICENSE npm/doc/fm-tpl
+去 npm/doc/fm-tpl
 
-# 移除空文件
-find . -type f -empty -print -delete
-# 移除空目录
-find . -type d -empty -print -delete
+# 清理空文件
+递归删除空文件 --显示 .
+递归删除空目录 --显示 .

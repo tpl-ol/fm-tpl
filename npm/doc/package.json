@@ -1,6 +1,6 @@
 {
   "name": "@tpl-ol/doc",
-  "version": "0.1.0-a0.4",
+  "version": "0.1.0-a0.5",
   "description": "替语言文档  Document for TPL",
   "license": "CC-BY-SA-4.0",
   "keywords": [
@@ -20,7 +20,7 @@
     "fmt": "prettier --write .",
     "check": "prettier --check .",
     "build": "壳依 build:sh build:pack",
-    "build:sh": "bash ./build.sh",
+    "build:sh": "壳 --壳 ./build.sh",
     "build:pack": "npm pack",
     "test": "壳依 check"
   },
@@ -28,7 +28,7 @@
     "/fm-tpl"
   ],
   "devDependencies": {
-    "@tpl-ol/nsh": "^0.1.0-a1",
-    "prettier": "^2.4.1"
+    "@tpl-ol/nsh": "^0.1.0-a3",
+    "prettier": "^2.5.1"
   }
 }
